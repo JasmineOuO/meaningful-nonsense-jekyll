@@ -1,0 +1,103 @@
+@import 'https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pompiere|Dancing+Script|Wire+One|Open+Sans+Condensed:300';
+/* 
+font-family: 'Pompiere', cursive;
+font-family: 'Encode Sans Semi Condensed', sans-serif;
+font-family: 'Wire One', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+/*Header Banner*/
+#banner {
+    position: relative;
+}
+
+/*Header Text: Meaningless Nonsense*/
+#header_text {
+	padding-top: 35px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size:48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    font-size: 60px;
+    font-weight: 700;
+    opacity: 0.78;
+}
+
+/*Branches for Header*/
+img { 
+    transform: translate(0%, -10%);
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+a:link{
+    color: #544a4e;
+	text-decoration: none;
+}
+
+.navigationbar{
+    transform: translate(0%, -140%);
+	text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+	font-size:18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e8c5d6;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #544a4e;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #e8b4cd;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #e8b4cd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

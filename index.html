@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Meaningful Nonsense</title>
+
+<link href="resources/css/main.css" type="text/css" rel="stylesheet" />
+<link href="resources/css/jquery-sakura.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+	<!--Displays the website name with the branches-->
+	<div id="banner">
+		<img src="resources/images/branches.png" width="1300" />
+  		<div id="header_text">Meaningful Nonsense</div>
+	</div>
+	<div class="navigationbar">
+		<ul>
+			<li><a href="about.html">ABOUT</a></li>
+			<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">PHOTOGRAPHY</a>
+			<div class="dropdown-content">
+			  <a href="#">Food</a>
+			  <a href="#">Travel</a>
+			</div>
+			</li>
+
+			<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">STORIES</a>
+			<div class="dropdown-content">
+			  <a href="#">Motivational</a>
+			  <a href="#">Humor</a>
+			</div>
+			</li>
+
+			<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">LIFE</a>
+			<div class="dropdown-content">
+			  <a href="#">Everyday Thoughts</a>
+			  <a href="#">What I've Learned</a>
+			</div>
+			</li>
+		</ul>
+	</div>
+
+</body>
+
+<!--falling sakura animation-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="resources/js/jquery-sakura.min.js"></script>
+<script>
+$(window).load(function () {
+$('body').sakura();
+});
+</script>
+
+
+</html>
+
