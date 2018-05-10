@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pompiere|Dancing+Script|Wire+One|Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pompiere|Dancing+Script|Wire+One|Open+Sans+Condensed:300|Reenie+Beanie';
+
 /* 
 font-family: 'Pompiere', cursive;
 font-family: 'Encode Sans Semi Condensed', sans-serif;
@@ -39,14 +40,14 @@ img {
 }
 
 a:link{
-    color: #544a4e;
+  color: #544a4e;
 	text-decoration: none;
 }
 
 .navigationbar{
-    transform: translate(0%, -140%);
+  transform: translate(0%, -140%);
 	text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 	font-size:18px;
 }
 
@@ -101,3 +102,35 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.card {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: 30%; /* Full width */
+    border: none;
+    border-radius: 5px;
+}
+
+ .thumbnail {
+        height: 100%;
+    }
+
+    .thumbnail img {
+        max-height: 90%;
+        max-width: 70%;
+        border:100px solid #021a40
+    }
+
+.card .card-content {
+    position: relative; /* Position the background text */
+    background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
