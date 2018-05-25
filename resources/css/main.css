@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pompiere|Dancing+Script|Wire+One|Open+Sans+Condensed:300|Reenie+Beanie';
+@import 'https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pompiere|Dancing+Script|Wire+One|Open+Sans+Condensed:300|Reenie+Beanie|Rock+Salt';
 
 /* 
 font-family: 'Pompiere', cursive;
@@ -8,27 +8,26 @@ font-family: 'Open Sans Condensed', sans-serif;
 */
 
 /*Header Banner*/
-#banner {
+.banner {
     position: relative;
 }
 
 /*Header Text: Meaningless Nonsense*/
-#header_text {
-	padding-top: 35px;
-	text-align: center;
-	font-family: 'Dancing Script', cursive;
-	font-size:48px;
+.header_text {
+    padding-top: 35px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -120%);
-    font-size: 60px;
     font-weight: 700;
     opacity: 0.78;
+    font-size: 5vw;
 }
 
 /*Branches for Header*/
-img { 
+.banner img { 
     transform: translate(0%, -10%);
     width: 100%;
     height: auto;
@@ -86,7 +85,7 @@ li.dropdown {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown-content a {
@@ -97,8 +96,104 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #e8b4cd}
+.dropdown-content a:hover {
+    background-color: #e8b4cd
+
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.polaroid-wall {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+}
+
+.polaroid {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.polaroid a {
+    background: white;
+    display: inline;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid #ddd;
+    border-radius: 3px;
+    padding: 6px 6px 15px 6px;
+    margin-top: 8px;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .15s linear;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    z-index: 0;
+    position: relative;
+}
+
+.polaroid a:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    position: relative;
+    z-index: 5;
+}
+
+.polaroid a:hover:nth-child(2n) {
+    -webkit-transform: scale(1.15) rotate(4deg);
+    -moz-transform: scale(1.15) rotate(4deg);
+}
+
+.polaroid a:hover:nth-child(2n+1) {
+    -webkit-transform: scale(1.15) rotate(-4deg);
+    -moz-transform: scale(1.15) rotate(-4deg);
+}
+
+.polaroid a:after {
+    content: attr(title);
+    color: #333;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .polaroid {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .navigationbar {
+        display: none;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .polaroid {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
