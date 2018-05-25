@@ -190,6 +190,9 @@ li.dropdown {
         flex: 50%;
         max-width: 50%;
     }
+    .navigationbar {
+        display: none;
+    }
 }
 
 /* Landscape phones and down */
@@ -198,9 +201,5 @@ li.dropdown {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
-    }
-
-    .navigationbar {
-        display: none;
     }
 }
