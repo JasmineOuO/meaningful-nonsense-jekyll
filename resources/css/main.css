@@ -103,34 +103,36 @@ li.dropdown {
     display: block;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
 .card {
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    transition: 0.3s;
-    width: 30%; /* Full width */
-    border: none;
-    border-radius: 5px;
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 5rem .25em;
 }
 
- .thumbnail {
-        height: 100%;
+@media screen and (min-width: 40em) {
+    .card {
+       max-width: calc(50% -  1em);
     }
+}
 
-    .thumbnail img {
-        max-height: 90%;
-        max-width: 70%;
-        border:100px solid #021a40
+@media screen and (min-width: 60em) {
+    .card {
+        max-width: calc(25% - 1em);
     }
-
-.card .card-content {
-    position: relative; /* Position the background text */
-    background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    font-family: 'Reenie Beanie', cursive;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+.centered {
+    margin: 0 auto;
+    padding: 0 10em;
 }
 
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
