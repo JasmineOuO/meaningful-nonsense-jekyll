@@ -171,10 +171,16 @@ li.dropdown {
 
 /* Large desktop */
 @media (min-width: 1200px) {
+    .header-text{
+        font-size: 60px;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+    .header-text {
+        font-size: 30px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -184,9 +190,6 @@ li.dropdown {
         flex: 50%;
         max-width: 50%;
     }
-    .navigationbar {
-        display: none;
-    }
 }
 
 /* Landscape phones and down */
@@ -195,5 +198,9 @@ li.dropdown {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+
+    .navigationbar {
+        display: none;
     }
 }
