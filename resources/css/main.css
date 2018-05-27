@@ -5,50 +5,57 @@ font-family: 'Pompiere', cursive;
 font-family: 'Encode Sans Semi Condensed', sans-serif;
 font-family: 'Wire One', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Source Sans Pro", sans-serif; *****************************************
 */
 
-/*Header Banner*/
-.banner {
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#banner {
     position: relative;
 }
 
-/*Header Text: Meaningless Nonsense*/
-.header_text {
-    padding-top: 35px;
+    #banner h1 {
+        padding-top: 35px;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+        font-weight: 700;
+        opacity: 0.78;
+        font-size: 5vw;
+    }
+
+    #banner img {
+        transform: translate(0%, -10%);
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
+    }
+
+.bold {
+    font-weight: bold;
+}
+
+nav {
+    transform: translate(0%, -140%);
     text-align: center;
-    font-family: 'Dancing Script', cursive;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -120%);
-    font-weight: 700;
-    opacity: 0.78;
-    font-size: 5vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.3em;
 }
 
-/*Branches for Header*/
-.banner img { 
-    transform: translate(0%, -10%);
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-}
-
-.bold{
-	font-weight:bold;
-}
-
-a:link{
-  color: #544a4e;
-	text-decoration: none;
-}
-
-.navigationbar{
-  transform: translate(0%, -140%);
-	text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-	font-size:18px;
-}
+    nav a:link {
+        color: #544a4e;
+        text-decoration: none;
+    }
 
 ul {
     list-style-type: none;
@@ -62,17 +69,32 @@ li {
     float: left;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: #544a4e;
-    text-align: center;
-    padding: 14px 40px;
-    text-decoration: none;
+    li a, .dropbtn {
+        display: inline-block;
+        color: #544a4e;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+    }
 
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #e8b4cd;
+        }
+
+nav > ul > li.dropdown > a:after {
+    content: '';
+    position: relative;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #e8c5d6;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #e8b4cd;
+nav > ul > li.dropdown:hover > a:after {
+    border-bottom-color: #f9f9f9;
 }
 
 li.dropdown {
@@ -85,28 +107,27 @@ li.dropdown {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
+    width: 100%;
+    left: 0;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+    .dropdown-content a {
+        color: #a9b1b3;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
 
-.dropdown-content a:hover {
-    background-color: #e8b4cd
-
-}
+        .dropdown-content a:hover {
+            transition: all 0.3s ease-in;
+            color: #fff;
+            background-color: #a9b1b3;
+        }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .polaroid-wall {
@@ -126,39 +147,46 @@ li.dropdown {
     padding: 0 4px;
 }
 
-.polaroid a {
-    background: white;
-    display: inline;
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    border: 0.5px solid #ddd;
-    border-radius: 3px;
-    padding: 6px 6px 15px 6px;
-    margin-top: 8px;
-    vertical-align: middle;
-    -webkit-transition: -webkit-transform .15s linear;
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    z-index: 0;
-    position: relative;
-}
+    .polaroid a {
+        background: white;
+        display: inline;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        border: 0.5px solid #ddd;
+        border-radius: 3px;
+        padding: 6px 6px 15px 6px;
+        margin-top: 8px;
+        vertical-align: middle;
+        -webkit-transition: -webkit-transform .15s linear;
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        z-index: 0;
+        position: relative;
+    }
 
-.polaroid a:hover {
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-    position: relative;
-    z-index: 5;
-}
+        .polaroid a:hover {
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+            position: relative;
+            z-index: 1;
+        }
 
-.polaroid a:hover:nth-child(2n) {
-    -webkit-transform: scale(1.15) rotate(4deg);
-    -moz-transform: scale(1.15) rotate(4deg);
-}
+            .polaroid a:hover:nth-child(2n) {
+                -webkit-transform: scale(1.15) rotate(4deg);
+                -moz-transform: scale(1.15) rotate(4deg);
+            }
 
-.polaroid a:hover:nth-child(2n+1) {
-    -webkit-transform: scale(1.15) rotate(-4deg);
-    -moz-transform: scale(1.15) rotate(-4deg);
+            .polaroid a:hover:nth-child(2n+1) {
+                -webkit-transform: scale(1.15) rotate(-4deg);
+                -moz-transform: scale(1.15) rotate(-4deg);
+            }
+
+.flip {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transition: 1.6s;
+    transform-style: preserve-3d;
 }
 
 .polaroid a:after {
@@ -171,7 +199,7 @@ li.dropdown {
 
 /* Large desktop */
 @media (min-width: 1200px) {
-    .header-text{
+    .header-text {
         font-size: 60px;
     }
 }
@@ -190,7 +218,8 @@ li.dropdown {
         flex: 50%;
         max-width: 50%;
     }
-    .navigationbar {
+
+    nav {
         display: none;
     }
 }
