@@ -137,7 +137,6 @@ li.dropdown {
     flex-wrap: wrap;
     padding: 0 100px;
     margin: 0;
-    font-family: 'Rock Salt', cursive;
 }
 
 .polaroid {
@@ -147,55 +146,80 @@ li.dropdown {
     padding: 0 4px;
 }
 
-    .polaroid a {
-        background: white;
-        display: inline;
-        float: left;
-        text-align: center;
-        text-decoration: none;
-        border: 0.5px solid #ddd;
-        border-radius: 3px;
-        padding: 6px 6px 15px 6px;
-        margin-top: 8px;
-        vertical-align: middle;
-        -webkit-transition: -webkit-transform .15s linear;
-        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-        z-index: 0;
+.polaroid a {
+    background: white;
+    display: inline;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid #ddd;
+    border-radius: 3px;
+    padding: 6px 6px 15px 6px;
+    margin-top: 8px;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .15s linear;
+    z-index: 0;
+    position: relative;
+}
+
+    .polaroid a:after {
+        content: attr(title);
+        color: #333;
+        font-family: 'Rock Salt', cursive;
+        font-size: 5px;
         position: relative;
+        top: 5px;
     }
 
-        .polaroid a:hover {
-            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-            -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-            position: relative;
-            z-index: 1;
-        }
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
 
-            .polaroid a:hover:nth-child(2n) {
-                -webkit-transform: scale(1.15) rotate(4deg);
-                -moz-transform: scale(1.15) rotate(4deg);
-            }
+.flip-container, .front, .back {
+    width: 100%;
+    min-height:100px;
+}
 
-            .polaroid a:hover:nth-child(2n+1) {
-                -webkit-transform: scale(1.15) rotate(-4deg);
-                -moz-transform: scale(1.15) rotate(-4deg);
-            }
-
-.flip {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transition: 1.6s;
+/* flip speed goes here */
+.flipper {
+    transition: 1.0s;
     transform-style: preserve-3d;
+    position: relative;
 }
 
-.polaroid a:after {
-    content: attr(title);
-    color: #333;
-    font-size: 20px;
-    position: relative;
-    top: 5px;
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color:aqua;
+}
+
+    .back a {
+        width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+    }
 
 /* Large desktop */
 @media (min-width: 1200px) {
