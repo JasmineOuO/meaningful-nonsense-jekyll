@@ -111,23 +111,27 @@ li.dropdown {
     left: 0;
 }
 
-    .dropdown-content a {
-        color: #a9b1b3;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-    }
+.dropdown-content a {
+    color: #a9b1b3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
 
-        .dropdown-content a:hover {
-            transition: all 0.3s ease-in;
-            color: #fff;
-            background-color: rgba(102,102,102,0.4);
-        }
+.dropdown-content a:hover {
+    transition: all 0.3s ease-in;
+    color: #fff;
+    background-color: rgba(102,102,102,0.4);
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.myimg {
+    box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.5);
 }
 
 .polaroid-wall {
@@ -147,29 +151,33 @@ li.dropdown {
 }
 
 .polaroid a {
-    background: white;
+    background: #fcfcfc;
     display: inline;
     float: left;
     text-align: center;
     text-decoration: none;
     border: 0.5px solid #ddd;
     border-radius: 3px;
-    padding: 6px 6px 15px 6px;
-    margin-top: 8px;
+    padding: 10px 10px 15px 10px;
     vertical-align: middle;
     -webkit-transition: -webkit-transform .15s linear;
     z-index: 0;
     position: relative;
+    line-height: normal;
+    -webkit-box-shadow: inset 0px 0px 2px 2px #ddd;
+    -moz-box-shadow: inset 0px 0px 2px 2px #ddd;
+    box-shadow: inset 0px 0px 4px 2px #efefef;
+    margin-top:8px;
 }
 
-    .polaroid a:after {
-        content: attr(title);
-        color: #333;
-        font-family: 'Rock Salt', cursive;
-        font-size: 5px;
-        position: relative;
-        top: 5px;
-    }
+.polaroid a:after {
+    content: attr(title);
+    color: #333;
+    font-family: 'Rock Salt', cursive;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+}
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -183,6 +191,7 @@ li.dropdown {
 .flip-container, .front, .back {
     width: 100%;
     min-height:100px;
+    margin-top:inherit;
 }
 
 /* flip speed goes here */
@@ -194,12 +203,17 @@ li.dropdown {
 
 /* hide back of pane during swap */
 .front, .back {
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
     left: 0;
+}
+
+.front{
+    top:0;
+}
+
+.back {
+    top: 8px;
 }
 
 /* front pane, placed above back */
@@ -211,14 +225,17 @@ li.dropdown {
 
 /* back, initially hidden pane */
 .back {
+    -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef;
+    -moz-box-shadow: inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef;
+    box-shadow: inset 0px 0px 4px 3px #ddd, inset 0px 0px 0px 10px #efefef;
+    border-radius: 3px;
     transform: rotateY(180deg);
-    background-color:aqua;
+    background-color: rgba(0,0,0,0.85);
 }
 
     .back a {
         width: 100%;
-        -ms-flex: 100%;
-        flex: 100%;
+        display:none;
     }
 
 /* Large desktop */
