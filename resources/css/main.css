@@ -17,28 +17,24 @@ font-family: 'Open Sans Condensed', sans-serif;
     position: relative;
 }
 
-    #banner h1 {
-        padding-top: 35px;
-        text-align: center;
-        font-family: 'Dancing Script', cursive;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -120%);
-        font-weight: 700;
-        opacity: 0.78;
-        font-size: 5vw;
-    }
+#banner h1 {
+    padding-top: 35px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    font-weight: 700;
+    opacity: 0.78;
+    font-size: 5vw;
+}
 
-    #banner img {
-        transform: translate(0%, -10%);
-        width: 100%;
-        height: auto;
-        opacity: 0.8;
-    }
-
-.bold {
-    font-weight: bold;
+#banner img {
+    transform: translate(0%, -10%);
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
 }
 
 nav {
@@ -52,10 +48,10 @@ nav {
     letter-spacing: 0.3em;
 }
 
-    nav a:link {
-        color: #544a4e;
-        text-decoration: none;
-    }
+nav a:link {
+    color: #544a4e;
+    text-decoration: none;
+}
 
 ul {
     list-style-type: none;
@@ -69,17 +65,17 @@ li {
     float: left;
 }
 
-    li a, .dropbtn {
-        display: inline-block;
-        color: #544a4e;
-        text-align: center;
-        padding: 14px 40px;
-        text-decoration: none;
-    }
+li a, .dropbtn {
+    display: inline-block;
+    color: #544a4e;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
 
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: #e8b4cd;
-        }
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #e8b4cd;
+}
 
 nav > ul > li.dropdown > a:after {
     content: '';
@@ -143,6 +139,10 @@ li.dropdown {
     margin: 0;
 }
 
+.polaroid a, .flip-container, .back, .back a{
+    margin-top: 10px;
+}
+
 .polaroid {
     -ms-flex: 25%;
     flex: 25%;
@@ -150,39 +150,42 @@ li.dropdown {
     padding: 0 5px;
 }
 
-    .polaroid a {
-        background: #fcfcfc;
-        display: inline;
-        float: left;
-        text-align: center;
-        text-decoration: none;
-        border: 0.5px solid rgba(0,0,0,.2);
-        border-radius: 3px;
-        padding: 10px 10px 15px 10px;
-        vertical-align: middle;
-        -webkit-transition: -webkit-transform .15s linear;
-        z-index: 0;
-        position: relative;
-        line-height: normal;
-        -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
-        -moz-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
-        box-shadow: inset 0px 0px 4px 2px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-        margin-top: 10px;
-    }
-
-.polaroid a:after {
-    content: attr(title);
-    color: #333;
-    font-family: 'Rock Salt', cursive;
-    font-size: 15px;
+.polaroid a {
+    background: #fcfcfc;
+    display: inline;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    padding: 10px 10px 15px 10px;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .15s linear;
+    z-index: 0;
     position: relative;
-    top: 5px;
+    -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
+    -moz-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
+    box-shadow: inset 0px 0px 4px 2px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
 }
+
+    .polaroid a:after {
+        content: attr(title);
+        color: #333;
+        letter-spacing: 0.5em;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Rock Salt', cursive;
+        position: relative;
+        top: 7px;
+        white-space: nowrap;
+        line-height: normal;
+    }
 
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000px;
 }
+
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
@@ -231,12 +234,28 @@ li.dropdown {
     border-radius: 3px;
     transform: rotateY(180deg);
     background-color: rgba(0,0,0,0.85);
+    
 }
 
-    .back a {
-        width: 100%;
-        display:none;
-    }
+.back a {
+    width: calc(100% - 16px);
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: #efefef;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    padding: 0px 10px 7px 10px;
+}
+
+.back h1, .back h2 {
+    width: inherit;
+    color: azure;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -247,7 +266,7 @@ li.dropdown {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    .header-text {
+    .header-text { 
         font-size: 30px;
     }
 }

@@ -4,7 +4,7 @@ function updateHeight() {
     var height = [];
     var x = 0;
     $('.myimg').each(function () {
-        height[x] = $(this).height()+61.9;
+        height[x] = $(this).height()+80;
         console.log(height[x]);
         x++;
     });
@@ -26,7 +26,7 @@ function updateHeight() {
     x = 0;
     $('.back').each(function () {
 
-        $(this).height(height[x]);;
+        $(this).height(height[x]-10);;
         x++;
     });
 }
