@@ -147,28 +147,28 @@ li.dropdown {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 5px;
 }
 
-.polaroid a {
-    background: #fcfcfc;
-    display: inline;
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    border: 0.5px solid #ddd;
-    border-radius: 3px;
-    padding: 10px 10px 15px 10px;
-    vertical-align: middle;
-    -webkit-transition: -webkit-transform .15s linear;
-    z-index: 0;
-    position: relative;
-    line-height: normal;
-    -webkit-box-shadow: inset 0px 0px 2px 2px #ddd;
-    -moz-box-shadow: inset 0px 0px 2px 2px #ddd;
-    box-shadow: inset 0px 0px 4px 2px #efefef;
-    margin-top:8px;
-}
+    .polaroid a {
+        background: #fcfcfc;
+        display: inline;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        border: 0.5px solid rgba(0,0,0,.2);
+        border-radius: 3px;
+        padding: 10px 10px 15px 10px;
+        vertical-align: middle;
+        -webkit-transition: -webkit-transform .15s linear;
+        z-index: 0;
+        position: relative;
+        line-height: normal;
+        -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
+        -moz-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
+        box-shadow: inset 0px 0px 4px 2px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
+        margin-top: 10px;
+    }
 
 .polaroid a:after {
     content: attr(title);
@@ -213,7 +213,7 @@ li.dropdown {
 }
 
 .back {
-    top: 8px;
+    top: 10px;
 }
 
 /* front pane, placed above back */
@@ -225,9 +225,9 @@ li.dropdown {
 
 /* back, initially hidden pane */
 .back {
-    -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef;
-    -moz-box-shadow: inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef;
-    box-shadow: inset 0px 0px 4px 3px #ddd, inset 0px 0px 0px 10px #efefef;
+    -webkit-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
+    -moz-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
+    box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 4px 3px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
     border-radius: 3px;
     transform: rotateY(180deg);
     background-color: rgba(0,0,0,0.85);
