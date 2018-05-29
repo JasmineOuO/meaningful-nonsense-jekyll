@@ -68,7 +68,7 @@
         var sakura = $('<div class="' + options.className + '" />');
 
         // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
-        $('#page').css({ 'overflow-x': 'hidden' });
+        $('.body').css({ 'overflow': 'hidden' });
 
         // Function that inserts new petals into the document.
         var petalCreator = function () {

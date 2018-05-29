@@ -13,18 +13,19 @@ font-family: 'Open Sans Condensed', sans-serif;
     margin: 0;
 }
 
+body{
+    min-width:600px;
+}
+
 #banner {
     position: relative;
 }
 
 #banner h1 {
-    padding-top: 35px;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -120%);
+    font-family: 'Dancing Script', cursive;
+    top: 20%;
+    left: 31%;
     font-weight: 700;
     opacity: 0.78;
     font-size: 5vw;
@@ -38,14 +39,15 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 nav {
-    transform: translate(0%, -140%);
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 1.2vw;
     text-transform: uppercase;
     position: relative;
     z-index: 2;
     letter-spacing: 0.3em;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 nav a:link {
@@ -232,20 +234,19 @@ li.dropdown {
     border-radius: 3px;
     transform: rotateY(180deg);
     background-color: rgba(0,0,0,0.85);
-    
 }
 
-.back a {
-    width: calc(100% - 16px);
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    background: #efefef;
-    border-radius: 3px;
-    box-shadow: none;
-    border: none;
-    padding: 0px 10px 7px 10px;
-}
+    .back a {
+        width: calc(100% - 16px);
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        background: #efefef;
+        border-radius: 3px;
+        box-shadow: none;
+        border: none;
+        padding: 0px 10px 7px 10px;
+    }
 
 .back h1, .back h2 {
     width: inherit;
@@ -255,33 +256,28 @@ li.dropdown {
     text-decoration: none;
 }
 
-@media (min-width: 1200px) {
-    .header-text {
-        font-size: 60px;
-    }
-}
-@media (max-width: 900) {
-    .header-text {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 1200px) {
     .polaroid {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
+}
+
+@media (max-width: 700px) {
+    #banner h1 {
+        font-size: 30px;
+    }
 
     nav {
         display: none;
+        font-size:18px;
     }
-}
-
-@media (max-width: 600px) {
     .polaroid {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
 }
+
+
