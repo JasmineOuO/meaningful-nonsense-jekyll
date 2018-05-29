@@ -177,8 +177,6 @@ li.dropdown {
         font-family: 'Rock Salt', cursive;
         position: relative;
         top: 7px;
-        white-space: nowrap;
-        line-height: normal;
     }
 
 /* entire container, keeps perspective */
@@ -257,22 +255,18 @@ li.dropdown {
     text-decoration: none;
 }
 
-/* Large desktop */
 @media (min-width: 1200px) {
     .header-text {
         font-size: 60px;
     }
 }
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-    .header-text { 
+@media (max-width: 900) {
+    .header-text {
         font-size: 30px;
     }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .polaroid {
         -ms-flex: 50%;
         flex: 50%;
@@ -284,8 +278,7 @@ li.dropdown {
     }
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .polaroid {
         -ms-flex: 100%;
         flex: 100%;
