@@ -1,2 +1,4 @@
 name: Meaningless Nonsense
 markdown: kramdown
+url: "jasmineouo.github.io"
+permalink: /:title
