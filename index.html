@@ -1,52 +1,8 @@
-﻿<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Meaningful Nonsense</title>
-
-    <link href="resources/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="resources/css/jquery-sakura.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-</head>
-
-<body>
-    <div id="banner">
-        <img src="resources/images/branches.png" width="1300" />
-        <h1>Meaningful Nonsense</h1>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">PHOTOGRAPHY</a>
-                <div class="dropdown-content">
-                    <a href="polaroid-wall.html">Everyday</a>
-                    <a href="#">Food</a>
-                    <a href="#">Travel</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">STORIES</a>
-                <div class="dropdown-content">
-                    <a href="#">Motivational</a>
-                    <a href="#">Humor</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">LIFE</a>
-                <div class="dropdown-content">
-                    <a href="#">Everyday Thoughts</a>
-                    <a href="#">What I've Learned</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="polaroid-wall">
+---
+layout: default
+title: Hi this is my first blog post
+---
+<div class="polaroid-wall">
         <div class="polaroid">
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
@@ -117,13 +73,3 @@
             <a href="#" title="Chilling"><img src="resources/images/10.jpg" width="100%" alt="Cave" /></a>
         </div>
     </div>
-
-    <script src="resources/js/main.js" async defer></script>
-    <script src="resources/js/jquery-sakura.min.js" async defer></script>
-</body>
-</html>
-<script>
-        $(window).load(function () {
-            $('body').sakura();
-        });
-    </script>
