@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hey it's my first blog post!"
+title: My First Blog Post
 date: 2018-05-30
 ---
 
