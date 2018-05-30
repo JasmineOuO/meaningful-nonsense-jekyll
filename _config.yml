@@ -1,5 +1,4 @@
 name: Meaningless Nonsense
 markdown: kramdown
-baseurl: Blog/
 url: "jasmineouo.github.io"
 permalink: /:title
