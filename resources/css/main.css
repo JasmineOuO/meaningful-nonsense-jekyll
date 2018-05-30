@@ -46,8 +46,8 @@ nav {
     position: relative;
     z-index: 2;
     letter-spacing: 0.3em;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: -6vw;
+    margin-bottom: 2vw;
 }
 
 nav a:link {
@@ -137,8 +137,8 @@ li.dropdown {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 100px;
-    margin: 0;
+    padding: 0 10vw;
+    margin:0;
 }
 
 .polaroid a, .flip-container, .back, .back a{
