@@ -1,9 +1,24 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-  {{ content }}
-</div>
+<article class="post">
+    <div>
+        <div class="absolute-bg" style="background-image: url('https://source.unsplash.com/f9C8ytxaItI/2000x1200');"></div>
+    </div>
+    <div class="post__container">
+        <span class="post__category">Michelle's Travels</span>
+
+        <div class="post__content">
+            <header>
+                <time class="post__time">{{{{ page.date | date_to_string }}}}</time>
+                <h1 class="post__header"><span>{{ page.title }}</span> <span>the</span> <span>beach</span></h1>
+            </header>
+
+            <p class="post__text">{{ content }}</p>
+        </div>
+        <div class="post__link">
+            <a href="#">Older Posts</a>
+        </div>
+    </div>
+</article>
