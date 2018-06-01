@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\resources",
-    "\\resources\\css"
+    "\\resources\\css",
+    "\\resources\\js",
+    "\\_layouts"
   ],
-  "SelectedNode": "\\resources\\css\\main.css",
+  "SelectedNode": "\\_layouts\\default.html",
   "PreviewInSolutionExplorer": false
 }
