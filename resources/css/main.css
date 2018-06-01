@@ -11,6 +11,51 @@ html, body {
     min-width:300px;
 }
 
+.post {
+    margin: 10vw;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 100%;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+}
+
+.post img {
+    width: 100%;
+    -webkit-animation: fade-in 0.8s ease-in-out both 1s;
+    animation: fade-in 0.8s ease-in-out both 1s;
+}
+
+.post header {
+    text-align: center;
+    -webkit-animation: slide-up 0.8s ease-in-out both;
+    animation: slide-up 0.8s ease-in-out both;
+}
+
+.post h1 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.post p {
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    color: rgba(0,0,0,0.5);
+}
+
+time {
+    display: inline-block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 #banner {
     position: relative;
 }
@@ -250,6 +295,7 @@ nav > .dropdown:hover > a:after {
     text-decoration: none;
 }
 
+/* Scale for Different Screen Sizes */
 @media (max-width: 1200px) {
     .polaroid {
         -ms-flex: 50%;
@@ -309,5 +355,60 @@ nav > .dropdown:hover > a:after {
     .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
+    }
+}
+
+/* Animations */
+@-webkit-keyframes slide-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
