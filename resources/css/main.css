@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300|Abril+Fatface|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt|Montserrat|Source+Serif+Pro';
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono|IBM+Plex+Serif:300|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt|Montserrat';
 
 * {
     box-sizing: border-box;
@@ -245,9 +245,15 @@ nav > .dropdown:hover > a:after {
 .back h1, .back h2 {
     width: inherit;
     color: azure;
-    padding: 20px 20px 10px 20px;
+    padding: 40px 40px 10px 40px;
     text-align: center;
     text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.back h2 {
+    padding: 10px 40px 40px 40px;
 }
 
 .post {
