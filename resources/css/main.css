@@ -264,7 +264,6 @@ nav > .dropdown:hover > a:after {
     color: rgba(0,0,0,0.8);
     background-color: #fff;
 }
-
     .post img {
         width: 100%;
         -webkit-animation: fade-in 0.7s ease-in-out both 0.7s;
@@ -288,6 +287,8 @@ nav > .dropdown:hover > a:after {
         margin-bottom: 0.25em;
         color: rgba(0,0,0,0.5);
     }
+
+.post p:first-letter { font-size: 4rem; }
 
 time {
     overflow: hidden;
