@@ -6,15 +6,16 @@
 
     <link href="resources/css/main.css" type="text/css" rel="stylesheet" />
     <link href="resources/css/jquery-sakura.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <div id="banner">
+    <header>
         <img src="resources/images/branches.png" width="1300" />
         <h1>Meaningful Nonsense</h1>
-    </div>
+    </header>
 
     <nav class="topnav" id="myTopnav">
         <a href="{{ site.baseurl }}">Home</a>
@@ -49,6 +50,12 @@
     </nav>
 
     {{content}}
+
+    <footer>
+        <div>
+            This is the footer.
+        </div>
+    </footer>
 
     <script src="resources/js/main.js" async defer></script>
     <script src="resources/js/jquery-sakura.min.js" async defer></script>

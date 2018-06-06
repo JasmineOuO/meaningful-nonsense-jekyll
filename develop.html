@@ -2,46 +2,48 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Meaningful Nonsense</title>
+    <title>Meaningful Nonsense | {{page.title}}</title>
 
     <link href="resources/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="resources/css/jquery-sakura.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/jquery-sakura.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <div id="banner">
+    <header>
         <img src="resources/images/branches.png" width="1300" />
         <h1>Meaningful Nonsense</h1>
-    </div>
+    </header>
 
     <nav class="topnav" id="myTopnav">
-            <a href="develop.html">Home</a>
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">PHOTOGRAPHY</a>
-                <div class="dropdown-content">
-                    <a href="polaroid-wall.html">Everyday</a>
-                    <a href="#">Food</a>
-                    <a href="#">Travel</a>
-                </div>
+        <a href="{{ site.baseurl }}">Home</a>
+        <a href="{{ site.baseurl }}/about">about</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">PHOTOGRAPHY</a>
+            <div class="dropdown-content">
+                <a href="developing/polaroid-wall.html">Everyday</a>
+                <a href="developing/develop-post.html">Food</a>
+                <a href="#">Travel</a>
             </div>
+        </div>
 
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">STORIES</a>
-                <div class="dropdown-content">
-                    <a href="#">Motivational</a>
-                    <a href="#">Humor</a>
-                </div>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">STORIES</a>
+            <div class="dropdown-content">
+                <a href="#">Motivational</a>
+                <a href="#">Humor</a>
             </div>
+        </div>
 
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">LIFE</a>
-                <div class="dropdown-content">
-                    <a href="#">Everyday Thoughts</a>
-                    <a href="#">What I've Learned</a>
-                </div>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">LIFE</a>
+            <div class="dropdown-content">
+                <a href="#">Everyday Thoughts</a>
+                <a href="#">What I've Learned</a>
             </div>
+        </div>
 
         <a href="javascript:void(0);" class="icon" onclick="responsivenav()">&#9776;</a>
 
@@ -55,7 +57,7 @@
                     <div class="back">
                         <h1>My First Blog Post</h1>
                         <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>
-                        <a href="develop-post.html" title="5/29/2018"></a>
+                        <a href="{{ site.baseurl }}{% post_url 2018-05-30-My-First-Blog-Post %}" title="5/29/2018"></a>
                     </div>
                 </div>
             </div>
@@ -119,13 +121,26 @@
         </div>
     </div>
 
+    <!--https://www.w3schools.com/icons/icons_reference.asp-->
+    <footer>
+        <div>
+            <div id="plants">
+                <img src="resources/images/cacti-icon-plain.jpg" alt="plants" />
+                <a href="https://github.com/JasmineOuO/CritterSitter" style="right: 473px; bottom: 9.9vw"><i class="fa fa-github" style="font-size:35px; color: rgb(58,62,63)"></i></a>
+                <a href="https://github.com/JasmineOuO/CritterSitter" style="right: 33px; bottom: 10.25vw"><i class="fa fa-instagram" style="font-size:40px; color: rgb(58,62,63)"></i></a>
+                <a href="https://github.com/JasmineOuO/CritterSitter" style="right: 395px; bottom: 9.9vw"><i class="fa fa-linkedin" style="font-size:28px; color: rgb(58,62,63)"></i></a>
+                <a href="https://github.com/JasmineOuO/CritterSitter" style="right: 320px; bottom: 9.9vw"><i class="fa fa-facebook" style="font-size:28px; color: rgb(58,62,63)"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="resources/js/main.js" async defer></script>
     <script src="resources/js/jquery-sakura.min.js" async defer></script>
 </body>
 </html>
+<!--
 <script>
-        $(window).load(function () {
-            $('body').sakura();
-        });
-</script>
+    $(window).load(function () {
+        $('body').sakura();
+    });
+</script>-->
