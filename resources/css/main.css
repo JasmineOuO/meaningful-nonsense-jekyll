@@ -58,7 +58,7 @@ footer a {
     position: absolute;
 }
 
-footer i:hover {
+footer > i:hover {
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
