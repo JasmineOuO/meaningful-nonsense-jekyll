@@ -58,8 +58,12 @@ footer a {
     position: absolute;
 }
 
-footer > i:hover {
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+footer i {
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+footer i:hover {
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 nav {
@@ -300,7 +304,7 @@ nav > .dropdown:hover > a:after {
     animation: fade-in 0.7s ease-in-out both 0.7s;
 }
 
-.post header {
+#post-header {
     text-align: center;
     -webkit-animation: slide-up 0.8s ease-in-out both;
     animation: slide-up 0.8s ease-in-out both;
