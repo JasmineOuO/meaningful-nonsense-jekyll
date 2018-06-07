@@ -16,8 +16,7 @@ layout: default
                 </div>
             </div>
         </div>
-        {% assign colSize = 12 | divided_by: 3}
-        {% assign mod = forloop.index | modulo: colSize %}
+        {% assign mod = forloop.index | modulo: 4 %}
         {% if mod == 0 %}
             </div>
             <div class="polaroid">
