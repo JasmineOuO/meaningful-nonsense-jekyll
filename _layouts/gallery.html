@@ -8,7 +8,7 @@ layout: default
         {% for image in gallery.images %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-                <div class="front"><a title="{{ image.title }}"><img class="myimg" src="../{{ gallery.imagefolder }}/{{ image.filename }}" width="100%" alt="cave" /></a></div>
+                <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/{{ image.filename }}" width="100%" alt="cave" /></a></div>
                 <div class="back">
                     <h1>My First Blog Post</h1>
                     <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>

@@ -1,5 +1,5 @@
 - id: polaroid-home
-  imagefolder: resources/images
+  imagefolder: /resources/images
   images:
   - filename: 1.jpg
     title: The first image
