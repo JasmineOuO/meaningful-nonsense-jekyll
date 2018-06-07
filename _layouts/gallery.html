@@ -16,13 +16,14 @@ layout: default
                 </div>
             </div>
         </div>
-        {% assign mod = forloop.index | modulo: 3 %}
+        {% assign colSize = {{gallery.size}} | divided_by: 3}
+        {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
             </div>
-        <div class="polaroid">
-    {% endif %}
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
+            <div class="polaroid">
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
