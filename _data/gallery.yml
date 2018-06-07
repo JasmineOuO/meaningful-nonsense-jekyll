@@ -1,0 +1,14 @@
+- id: polaroid-home
+  imagefolder: /resources/images
+  images:
+  - filename: 1.jpg
+    title: The first image
+    date: 6/7/2018
+  - filename: 2.jpg
+    title: The second image
+    date: 6/8/2018
+  - filename: 3.jpg
+    title: The third image
+    date: 6/9/2018
+
+#https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder

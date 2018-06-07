@@ -361,6 +361,12 @@ time:after {
 
 /* Scale for Different Screen Sizes */
 @media (max-width: 1200px) {
+    header h1 {
+        /*word-spacing: 1200px;
+        text-align:center;
+        right:0;
+        top:10%;*/
+    }
     .polaroid {
         -ms-flex: 50%;
         flex: 50%;
@@ -372,9 +378,6 @@ time:after {
 }
 
 @media (max-width: 700px) {
-    #banner h1 {
-    }
-
     .polaroid {
         -ms-flex: 100%;
         flex: 100%;
@@ -385,7 +388,7 @@ time:after {
 /*responsive navbar*/
 @media (max-width: 1200px) {
     .topnav{
-        font-size:24px;
+        font-size:28px;
     }
 
     .topnav a:not(:first-child), .dropdown .dropbtn {
