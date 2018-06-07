@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-
-{% for gallery in site.data.galleries %}
-  {% if gallery.id == page.galleryid %}
-    {% for image in gallery.images %}
+<div class="polaroid-wall">
+    <div class="polaroid">
+        {% for gallery in site.data.galleries %}
+        {% if gallery.id == page.galleryid %}
+        {% for image in gallery.images %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/{{ image.filename }}" width="100%" alt="cave" /></a></div>
@@ -15,6 +16,8 @@ layout: default
                 </div>
             </div>
         </div>
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
