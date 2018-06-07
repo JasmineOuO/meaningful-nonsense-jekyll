@@ -38,5 +38,8 @@
   - filename: 12.jpg
     title: 12
     date: 6/9/2018
+  - filename: 13.jpg
+    title: 13
+    date: 6/9/2018
 
 #https://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
