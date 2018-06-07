@@ -16,7 +16,7 @@ layout: default
                 </div>
             </div>
         </div>
-        {% assign colSize = gallery.size | divided_by: 4 | ceil %}
+        {% assign colSize = gallery.size | divided_by: 4 | ceil | plus:1 %}
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
             </div>
