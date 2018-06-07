@@ -16,7 +16,7 @@ layout: default
             </div>
         </div>
     </div>
-    {% if forloop.index | modulo:2 %}
+    {% if (forloop.index | modulo:2) ==0 %}
         </div>
         <div class="polaroid">
     {% endif %}
