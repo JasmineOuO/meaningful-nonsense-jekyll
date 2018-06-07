@@ -15,7 +15,7 @@ layout: default
                 </div>
             </div>
         </div>
-        {% if forloop.counter0|divisibleby:"3" %}
+        {% if forloop.counter0|divisibleby:3 %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/11.jpg" width="100%" alt="cave" /></a></div>
