@@ -16,7 +16,7 @@ layout: default
                 </div>
             </div>
         </div>
-        {% assign colSize = gallery.size | times: 1.0 | divided_by: 4.0 | ceil %}
+        {% assign colSize = gallery.size | divided_by: 4.0 %}
         <script>
             console.log(colSize);
         </script>
