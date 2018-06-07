@@ -1,6 +1,6 @@
 - id: polaroid-home
   imagefolder: resources/images
-  size: 12
+  size: 13
   images:
   - filename: 1.jpg
     title: 1
