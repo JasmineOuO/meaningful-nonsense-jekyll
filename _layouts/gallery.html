@@ -2,32 +2,34 @@
 layout: default
 ---
 <div class="polaroid-wall">
-        {% for gallery in site.data.galleries %}
-        {% if gallery.id == page.galleryid %}
-        {% for image in gallery.images %}
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/{{ image.filename }}" width="100%" alt="cave" /></a></div>
-                <div class="back">
-                    <h1>My First Blog Post</h1>
-                    <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>
-                    <a href="{{ site.baseurl }}{% post_url 2018-05-30-My-First-Blog-Post %}" title="{{image.date}}"></a>
-                </div>
+    <div class="polaroid">
+    {% for gallery in site.data.galleries %}
+    {% if gallery.id == page.galleryid %}
+    {% for image in gallery.images %}
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/{{ image.filename }}" width="100%" alt="cave" /></a></div>
+            <div class="back">
+                <h1>My First Blog Post</h1>
+                <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>
+                <a href="{{ site.baseurl }}{% post_url 2018-05-30-My-First-Blog-Post %}" title="{{image.date}}"></a>
             </div>
         </div>
-        {% if forloop.counter0|divisibleby:3 %}
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/11.jpg" width="100%" alt="cave" /></a></div>
-                <div class="back">
-                    <h1>My First Blog Post</h1>
-                    <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>
-                    <a href="{{ site.baseurl }}{% post_url 2018-05-30-My-First-Blog-Post %}" title="{{image.date}}"></a>
-                </div>
+    </div>
+    {% if forloop.counter==3 %}
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front"><a title="{{ image.title }}"><img class="myimg" src="{{ gallery.imagefolder }}/11.jpg" width="100%" alt="cave" /></a></div>
+            <div class="back">
+                <h1>My First Blog Post</h1>
+                <h2>So today I was feeling quite happy. The morning was beautiful and...</h2>
+                <a href="{{ site.baseurl }}{% post_url 2018-05-30-My-First-Blog-Post %}" title="{{image.date}}"></a>
             </div>
         </div>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</div>
 </div>
