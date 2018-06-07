@@ -16,10 +16,11 @@ layout: default
                 </div>
             </div>
         </div>
-        {% assign colSize = gallery.size | divided_by: 4 | ceil | plus:1 %}
+        {% assign colSize = gallery.size | divided_by: 4 | ceil %}
+        console.log(colSize);
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
-            </div>
+    </div>
             <div class="polaroid">
         {% endif %}
         {% endfor %}
