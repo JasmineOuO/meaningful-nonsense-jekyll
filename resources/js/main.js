@@ -1,5 +1,7 @@
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
+$(document).ready(updateHeight);
+
 function updateHeight() {
     var height = [];
     var x = 0;
