@@ -17,9 +17,7 @@ layout: default
             </div>
         </div>
         {% assign colSize = gallery.size | divided_by: 4.0 %}
-        <script>
-            console.log(colSize);
-        </script>
+        {{colSize}}
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
     </div>
