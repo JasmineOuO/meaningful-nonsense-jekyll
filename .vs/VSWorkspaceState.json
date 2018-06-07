@@ -5,9 +5,10 @@
     "\\resources",
     "\\resources\\css",
     "\\resources\\js",
+    "\\_data",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_posts\\2018-05-30-My-First-Blog-Post.md",
+  "SelectedNode": "\\index-longmethod.html",
   "PreviewInSolutionExplorer": false
 }
