@@ -10,10 +10,10 @@ layout: default
         {% for image in image_files %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-                <div class="front"><a title="{{ image.basename }}"><img class="myimg" src="{{image.path}}" width="100%" alt="cave" /></a></div>
+                <div class="front"><a title="{{ image.basename }}"><img class="myimg" src="resources/images/{{ image.name }}" width="100%" alt="cave" /></a></div>
                 <div class="back">
                     <h1>{{ image.basename }}</h1>
-                    <a title="{{ image.modified_time }}"></a>
+                    <a title="{{ image.modified_time | date_to_string }}"></a>
                 </div>
             </div>
         </div>
