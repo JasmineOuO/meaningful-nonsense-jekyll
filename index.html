@@ -11,7 +11,8 @@ layout: default
                 <div class="back">
                     <h1>{{post.title}}</h1>
                     <h2>{{post.subtitle}}</h2>
-                    <a href="{{site.baseurl}}/{{post.url}}" title="{{ post.date | date_to_string }}"></a>
+                    {{post.url}}
+                    <a href="{{post.url}}" title="{{ post.date | date_to_string }}"></a>
                 </div>
             </div>
         </div>
