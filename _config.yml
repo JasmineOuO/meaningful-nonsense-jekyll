@@ -1,7 +1,7 @@
 name: Meaningless Nonsense
 markdown: kramdown
 url: "https://jasmineouo.github.io"
-permalink: /:title
+permalink: /:title/:categories
 defaults:
   - scope:
       path: "resources/images"
