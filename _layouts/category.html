@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="polaroid-wall">
     <div class="polaroid">
-        {% for post in site.categories.{{page.title}} %}
+        {% for post in site.categories.life %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front"><a title="{{ post.title }}"><img class="myimg" src="resources/images/{{ post.image }}" alt="cave" /></a></div>
