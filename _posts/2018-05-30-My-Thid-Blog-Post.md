@@ -4,8 +4,8 @@ title: Three
 subtitle: My Third Blog Post
 date: 2018-06-03
 image: 3.jpg
-categories: Life
-tags: What I've learned
+categories: life
+tags: what i've learned
 ---
 
 Hey my name is Jessica, but most people call me Jessie….so I guess that’s the name we’ll roll with. Right now, I’m sitting on my sister’s bed writing my first ever “blog post” or I guess the about page and it is currently a busy Friday night and I’m suppose to be studying for my very important tests but...nevermind that. So let me tell you a little about myself. I am currently fifteen years old, my birthday is October 9, 2002, I stand at a whopping 5 ‘2, I am Taiwanese-Canadian and well, scratch away all that….I’m just like you :). Yes, I know that I may not be able to relate with all your daily problems and challenges but hopefully (cross my fingers) if even one post can reach out and help you understand that you are not alone or motivate you to become a better and happier person, then that will be the biggest reward out there for me. 
