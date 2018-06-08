@@ -1,26 +1,6 @@
 ---
 title: Home
-layout: default
+layout: gallery
+type: posts
 ---
-<div class="polaroid-wall">
-    <div class="polaroid">
-        {% for post in site.posts %}
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front"><a title="{{ post.title }}"><img class="myimg" src="resources/images/{{ post.image }}" alt="cave" /></a></div>
-                <div class="back">
-                    <h1>{{post.title}}</h1>
-                    <h2>{{post.subtitle}}</h2>
-                    <a href="{{site.baseurl}}{{post.url}}" title="{{ post.date | date_to_string }}"></a>
-                </div>
-            </div>
-        </div>
-        {% assign colSize = site.posts | size | divided_by: 4.0 | ceil %}
-        {% assign mod = forloop.index | modulo: colSize %}
-        {% if mod == 0 %}
-    </div>
-    <div class="polaroid">
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
+
