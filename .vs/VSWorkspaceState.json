@@ -1,14 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\developing",
-    "\\resources",
-    "\\resources\\css",
-    "\\resources\\js",
-    "\\_data",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\index-longmethod.html",
+  "SelectedNode": "\\vendors",
   "PreviewInSolutionExplorer": false
 }

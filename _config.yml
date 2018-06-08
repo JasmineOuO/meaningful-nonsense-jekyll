@@ -2,3 +2,8 @@ name: Meaningless Nonsense
 markdown: kramdown
 url: "https://jasmineouo.github.io"
 permalink: /:title
+defaults:
+  - scope:
+      path: "resources/images"
+    values:
+      image: true

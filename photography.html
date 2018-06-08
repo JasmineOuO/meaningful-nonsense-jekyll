@@ -1,0 +1,28 @@
+---
+title: Home
+layout: default
+---
+
+{% assign image_files = site.static_files | where: "image", true %}
+
+<div class="polaroid-wall">
+    <div class="polaroid">
+        {% for image in image_files %}
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front"><a title="{{ image.basename }}"><img class="myimg" src="{{image.path}}" width="100%" alt="cave" /></a></div>
+                <div class="back">
+                    <h1>{{ image.basename }}</h1>
+                    <a title="{{ image.modified_time }}"></a>
+                </div>
+            </div>
+        </div>
+        {% assign colSize = image_files | size | divided_by: 4.0 | ceil %}
+        {% assign mod = forloop.index | modulo: colSize %}
+        {% if mod == 0 %}
+    </div>
+    <div class="polaroid">
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
