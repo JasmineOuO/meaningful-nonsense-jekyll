@@ -4,14 +4,15 @@ layout: default
 <div class="polaroid-wall">
     <div class="polaroid">
         {% if page.title == "Home" %}
-        {% for post in site.posts %}
+        {% assign type = posts %}
         {% elsif page.title == "life" %}
-        {% for post in site.categories.life %}
+        {% assign type = categories.life %}
         {% elsif page.title == "stories" %}
-        {% for post in site.categories.stories %}
+        {% assign type = categories.stories %}
         {% elsif page.title == "humour" %}
-        {% for post in site.tags.humour %}
+        {% assign type = tags.humour %}
         {% endif %}
+        {% for post in site.type %}
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front"><a title="{{ post.title }}"><img class="myimg" src="resources/images/{{ post.image }}" alt="cave" /></a></div>
