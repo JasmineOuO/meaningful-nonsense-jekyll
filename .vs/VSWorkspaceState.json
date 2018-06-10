@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\pages",
+    "\\resources",
+    "\\resources\\css",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_config.yml",
+  "SelectedNode": "\\_site",
   "PreviewInSolutionExplorer": false
 }

@@ -1,37 +1,52 @@
 ---
 layout: default
 ---
+
+{% if page.title == "photography" %}	
+	{% assign type = site.static_files | where: "image", true %}
+{% elsif page.title == "home" %}
+	{% assign type = site.posts %}
+{% elsif page.title == "life" %}
+	{% assign type = site.categories.life %}
+{% elsif page.title == "stories" %}
+	{% assign type = site.categories.stories %}
+{% elsif page.title == "humour" %}
+	{% assign type = site.tags.humour %}
+{% elsif page.title == "motivational" %}
+	{% assign type = site.tags.motivational %}
+{% elsif page.title == "life" %}
+	{% assign type = site.categories.life %}
+{% elsif page.title == "everydaythoughts" %}
+	{% assign type = site.tags.everydaythoughts %}
+{% elsif page.title == "learn" %}
+	{% assign type = site.tags.learn %}
+{% endif %}
+		
 <div class="polaroid-wall">
-    <div class="polaroid">		
-		{% if page.title == "photography" %}
-			{% assign type = site.static_files | where: "image", true %}
-		{% else %}
-			{% if page.title == "home" %}
-				{% assign type = site.posts %}
-			{% elsif page.title == "life" %}
-				{% assign type = site.categories.life %}
-			{% elsif page.title == "stories" %}
-				{% assign type = site.categories.stories %}
-			{% elsif page.title == "humour" %}
-				{% assign type = site.tags.humour %}
-			{% elsif page.title == "motivational" %}
-				{% assign type = site.tags.motivational %}
-			{% elsif page.title == "life" %}
-				{% assign type = site.categories.life %}
-			{% elsif page.title == "everydaythoughts" %}
-				{% assign type = site.tags.everydaythoughts %}
-			{% elsif page.title == "learn" %}
-				{% assign type = site.tags.learn %}
+    <div class="polaroid">	
+        {% for item in type %}
+
+			{% assign title = item.title %}
+			{% assign subtitle = item.subtitle %}
+			{% assign dateTime = item.date %}
+			{% assign url = item.url %}
+			{% assign img = item.image %}
+
+			{% if page.title == "photography" %}
+				{% assign title = item.basename %}
+				{% assign subtitle = '' %}
+				{% assign dateTime = item.modified_time %}
+				{% assign url = '' %}
+				{% assign img = item.name %}
 			{% endif %}
-		{% endif %}
-        {% for post in type %}
+
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
-                <div class="front"><a title="{{ post.title }}"><img class="myimg" src= "resources/images/polaroids/{{post.image}}" alt="cave" /></a></div>
+                <div class="front"><a title="{{title}}"><img class="myimg" src= "resources/images/polaroids/{{img}}" alt="image not found" /></a></div>
                 <div class="back">
-                    <h1>{{post.title}}</h1>
-                    <h2>{{post.subtitle}}</h2>
-                    <a href="{{site.baseurl}}{{post.url}}" title="{{ post.date | date_to_string }}"></a>
+                    <h1>{{title}}</h1>
+                    <h2>{{subtitle}}</h2>
+                    <a href="{{site.baseurl}}{{url}}" title="{{dateTime | date_to_string}}"></a>
                 </div>
             </div>
         </div>
