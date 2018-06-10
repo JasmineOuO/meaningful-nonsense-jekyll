@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\pages",
-    "\\resources",
     "\\resources\\css",
-    "\\_layouts",
-    "\\_posts"
+    "\\vendors",
+    "\\vendors\\sakura",
+    "\\_layouts"
   ],
-  "SelectedNode": "\\_site",
+  "SelectedNode": "\\vendors\\sakura\\jquery-sakura.js",
   "PreviewInSolutionExplorer": false
 }

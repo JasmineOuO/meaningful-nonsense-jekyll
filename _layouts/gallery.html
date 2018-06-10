@@ -46,7 +46,7 @@ layout: default
                 <div class="back">
                     <h1>{{title}}</h1>
                     <h2>{{subtitle}}</h2>
-                    <a href="{{site.baseurl}}{{url}}" title="{{dateTime | date_to_string}}"></a>
+                    <a href="{{site.baseurl}}{{url}}" title="{{dateTime | date: "%-d/%-m/%y" }}"></a>
                 </div>
             </div>
         </div>

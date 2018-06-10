@@ -1,5 +1,4 @@
 ﻿<html>
-
 <head>
     <meta charset="utf-8">
     <title>Meaningful Nonsense</title>
@@ -21,37 +20,37 @@
         <a href="{{ site.baseurl }}/">Home</a>
         <a href="{{ site.baseurl }}/about">about</a>
         <div class="dropdown">
-            <a href="{{ site.baseurl }}/photography" class="dropbtn">PHOTOGRAPHY</a>
+            <a class="dropbtn">PHOTOGRAPHY</a>
             <div class="dropdown-content">
-                <a href="{{ site.baseurl }}/everyday">Everyday</a>
+                <a href="{{ site.baseurl }}/photography">All Photography</a>
                 <a href="{{ site.baseurl }}/food">Food</a>
                 <a href="{{ site.baseurl }}/travel">Travel</a>
             </div>
         </div>
 
         <div class="dropdown">
-            <a href="{{ site.baseurl }}/stories" class="dropbtn">STORIES</a>
+            <a class="dropbtn">STORIES</a>
             <div class="dropdown-content">
+				<a href="{{ site.baseurl }}/stories">All Stories</a>
                 <a href="{{ site.baseurl }}/motivational">Motivational</a>
                 <a href="{{ site.baseurl }}/humour">Humour</a>
             </div>
         </div>
 
         <div class="dropdown">
-            <a href="{{ site.baseurl }}/life" class="dropbtn">LIFE</a>
+            <a class="dropbtn">LIFE</a>
             <div class="dropdown-content">
+				<a href="{{ site.baseurl }}/life">All Life Entries</a>
                 <a href="{{ site.baseurl }}/everydaythoughts">Everyday Thoughts</a>
                 <a href="{{ site.baseurl }}/learn">What I've Learned</a>
             </div>
         </div>
 
         <a href="javascript:void(0);" class="icon" onclick="responsivenav()">&#9776;</a>
-
     </nav>
-
+	
     {{content}}
 
-    <!--https://www.w3schools.com/icons/icons_reference.asp-->
     <footer>
         <div>
             <div id="plants">
@@ -68,7 +67,12 @@
     <script src="vendors/sakura/jquery-sakura.min.js" async defer></script>
 	<script>
     $(window).load(function () {
-        $('body').sakura();
+		if(!isMobile()){
+			$('body').sakura({
+				fallSpeed: 1.09, // Factor for petal fall speed
+				newOn: 1000, // Interval after which a new petal is added
+			});
+		}
     });
 	</script>
 </body>
