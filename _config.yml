@@ -20,6 +20,7 @@ github_username:  jekyll
 # Build settings
 plugins:
   - jekyll-feed
+  - searchyll
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -33,3 +34,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .vs/slnx.sqlite
+
+elasticsearch:
+    url: https://7a16e3rgmw:ik0iq34897@blog-data-7838678728.us-east-1.bonsaisearch.net  
+    index_name: Blog_Data 

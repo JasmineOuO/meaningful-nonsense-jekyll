@@ -320,7 +320,7 @@ nav > .dropdown:hover > a:after {
     font-weight: 100;
 }
 
-.post p {
+.post-content {
     margin-top: 2em;
     margin-bottom: 0.25em;
     color: rgba(0,0,0,0.6);
