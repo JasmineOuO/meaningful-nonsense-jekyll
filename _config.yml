@@ -36,5 +36,4 @@ exclude:
   - .vs/slnx.sqlite
 
 elasticsearch:
-    url: https://7a16e3rgmw:ik0iq34897@blog-data-7838678728.us-east-1.bonsaisearch.net  
-    index_name: Blog_Data 
+    index_name: blog
