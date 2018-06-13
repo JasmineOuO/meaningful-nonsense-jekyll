@@ -1,92 +1,26 @@
 ﻿<html>
-<head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meaningful Nonsense</title>
 
-    <link href="resources/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="vendors/sakura/jquery-sakura.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" >
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" >
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
+{% include head.html %}
 
 <body>
-    <header>
-        <img src="resources/images/elements/branches.png" width="1300" />
-        <h1>Meaningful Nonsense</h1>
-    </header>
 
-    <nav class="topnav" id="myTopnav">
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/about">about</a>
-        <div class="dropdown">
-            <a class="dropbtn">PHOTOGRAPHY</a>
-            <div class="dropdown-content">
-                <a href="{{ site.baseurl }}/photography">All Photography</a>
-                <a href="{{ site.baseurl }}/food">Food</a>
-                <a href="{{ site.baseurl }}/travel">Travel</a>
-            </div>
-        </div>
+    {% include header.html %}
 
-        <div class="dropdown">
-            <a class="dropbtn">STORIES</a>
-            <div class="dropdown-content">
-				<a href="{{ site.baseurl }}/stories">All Stories</a>
-                <a href="{{ site.baseurl }}/motivational">Motivational</a>
-                <a href="{{ site.baseurl }}/humour">Humour</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <a class="dropbtn">LIFE</a>
-            <div class="dropdown-content">
-				<a href="{{ site.baseurl }}/life">All Life Entries</a>
-                <a href="{{ site.baseurl }}/everydaythoughts">Everyday Thoughts</a>
-                <a href="{{ site.baseurl }}/learn">What I've Learned</a>
-            </div>
-        </div>
-
-        <a href="javascript:void(0);" class="icon" onclick="responsivenav()">&#9776;</a>
-    </nav>
-	
     {{content}}
 
-    <footer>
-        <div>
-            <div id="plants">
-                <div class="big-plants">
-                    <img src="resources/images/elements/cacti-icon.jpg" alt="plants" />
-                    <a href="https://github.com/JasmineOuO/CritterSitter" target="_blank" style="right: 473px; bottom: 99px"><i class="fa fa-github" style="font-size:35px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://www.instagram.com/yumluv_214/" target="_blank" style="right: 33px; bottom: 102px"><i class="fa fa-instagram" style="font-size:40px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://ca.linkedin.com/in/jasmine-ou" target="_blank" style="right: 395px; bottom: 99px"><i class="fa fa-linkedin" style="font-size:28px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://www.facebook.com/jasmine.ou2" target="_blank" style="right: 320px; bottom: 99px"><i class="fa fa-facebook" style="font-size:28px; color: rgb(58,62,63)"></i></a>
-                </div>
-                <div class="small-plants">
-                    <img src="resources/images/elements/cacti-icon-small.jpg" alt="plants" />
-                    <a href="https://github.com/JasmineOuO/CritterSitter" target="_blank" style="right: 260px; bottom: 99px"><i class="fa fa-github" style="font-size:35px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://www.instagram.com/yumluv_214/" target="_blank" style="right: 36px; bottom: 102px"><i class="fa fa-instagram" style="font-size:40px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://ca.linkedin.com/in/jasmine-ou" target="_blank" style="right: 180px; bottom: 99px"><i class="fa fa-linkedin" style="font-size:28px; color: rgb(58,62,63)"></i></a>
-                    <a href="https://www.facebook.com/jasmine.ou2" target="_blank" style="right: 110px; bottom: 99px"><i class="fa fa-facebook" style="font-size:28px; color: rgb(58,62,63)"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-	<div id="root"></div>
-	<script type="text/javascript" src="/dist/main.js" charset="utf-8"></script>
+    {% include footer.html %}
+
     <script src="resources/js/main.js" async defer></script>
     <script src="vendors/sakura/jquery-sakura.min.js" async defer></script>
-	<script>
-    $(window).load(function () {
-		if(!isMobile()){
-			$('body').sakura({
-				fallSpeed: 1.09, // Factor for petal fall speed
-				newOn: 1000, // Interval after which a new petal is added
-			});
-		}
-    });
-	</script>
+    <script>
+        $(window).load(function () {
+            if (!isMobile()) {
+                $('body').sakura({
+                    fallSpeed: 1.09,
+                    newOn: 1000, // Interval after which a new petal is added
+                });
+            }
+        });
+    </script>
 </body>
 </html>

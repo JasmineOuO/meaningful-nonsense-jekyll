@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.title == "photography" %}	
+{% if page.title == "photography" %}
 	{% assign type = site.static_files | where: "image", true %}
 {% elsif page.title == "home" %}
 	{% assign type = site.posts %}
@@ -21,41 +21,23 @@ layout: default
 {% elsif page.title == "learn" %}
 	{% assign type = site.tags.learn %}
 {% endif %}
-		
+
 <div class="polaroid-wall">
-    <div class="polaroid">	
+    <div class="polaroid">
         {% for item in type %}
 
-			{% assign title = item.title %}
-			{% assign subtitle = item.subtitle %}
-			{% assign dateTime = item.date %}
-			{% assign url = item.url %}
-			{% assign img = item.image %}
+            {% if page.title == "photography" %}
+                {% include polaroid.html title=item.basename subtitle="" img=item.name url="" dateTime=item.modified_time %}
+            {% else %}
+                {% include polaroid.html title=item.title subtitle=item.subtitle img=item.image url=item.url dateTime=item.date %}
+            {% endif %}
 
-			{% if page.title == "photography" %}
-				{% assign title = item.basename %}
-				{% assign subtitle = '' %}
-				{% assign dateTime = item.modified_time %}
-				{% assign url = '' %}
-				{% assign img = item.name %}
-			{% endif %}
-
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front"><a title="{{title}}"><img class="myimg" src= "resources/images/polaroids/{{img}}" alt="image not found" /></a></div>
-                <div class="back">
-                    <h1>{{title}}</h1>
-                    <h2>{{subtitle}}</h2>
-                    <a href="{{site.baseurl}}{{url}}" title="{{dateTime | date: "%-d/%-m/%y" }}"></a>
+            {% assign colSize = type | size | divided_by: 4.0 | ceil %}
+            {% assign mod = forloop.index | modulo: colSize %}
+            {% if mod == 0 %}
                 </div>
-            </div>
-        </div>
-        {% assign colSize = type | size | divided_by: 4.0 | ceil %}
-        {% assign mod = forloop.index | modulo: colSize %}
-        {% if mod == 0 %}
-    </div>
-    <div class="polaroid">
-        {% endif %}
-        {% endfor %}
+                <div class="polaroid">
+            {% endif %}
+            {% endfor %}
     </div>
 </div>

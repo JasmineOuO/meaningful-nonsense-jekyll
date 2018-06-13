@@ -138,8 +138,17 @@ nav .icon a {
 }
 
 /*navbar hover colour*/
-nav a:hover, .dropdown:hover .dropbtn {
+nav a:hover, .dropdown:hover .dropbtn{
     background-color: #e8b4cd;
+}
+
+nav .active, nav #active {
+    background-color: #e8b4cd;
+}
+
+nav .dropdown-content > .active {
+    color: #fff;
+    background-color: rgba(102,102,102,0.4);
 }
 
 /*The triangle for the dropdown*/
@@ -152,7 +161,7 @@ nav > .dropdown > a:after {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 8px solid #e8c5d6;
+    border-bottom: 8px solid transparent;
 }
 
 /*The triangle for the dropdown*/
@@ -279,6 +288,19 @@ nav > .dropdown:hover > a:after {
     box-shadow: none;
     border: none;
     padding: 0px 10px 7px 10px;
+}
+
+.post-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 
 .back h1, .back h2 {

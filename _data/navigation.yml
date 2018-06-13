@@ -1,0 +1,47 @@
+- name: Home
+  type: page
+  url: /
+  active: home
+- name: About
+  type: page
+  url: /about
+  active: about
+- name: Photography
+  type: category
+  active: photography
+  tags:
+  - name: All Photography
+    url: /photography
+    active: photography
+  - name: Food
+    url: /food
+    active: food
+  - name: Travel
+    url: /travel
+    active: travel
+- name: Stories
+  type: category
+  active: stories
+  tags:
+  - name: All Stories
+    url: /stories
+    active: stories
+  - name: Motivational
+    url: /motivational
+    active: motivational
+  - name: Humour
+    url: /humour
+    active: humour
+- name: Life
+  type: category
+  active: life
+  tags:
+  - name: All Life Entries
+    url: /life
+    active: life
+  - name: Everyday Thoughts
+    url: /everydaythoughts
+    active: everydaythoughts
+  - name: What I have Learned
+    url: /learn
+    active: learn
