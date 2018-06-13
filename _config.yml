@@ -34,6 +34,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .vs/slnx.sqlite
+  - node_modules
 
 elasticsearch:
     index_name: blog
+    url: https://o40rvotsqu:mib8gld012@blog-3323209391.us-east-1.bonsaisearch.net
