@@ -69,22 +69,24 @@ footer i:hover {
 
 nav {
     text-align: left;
+    margin-top: 5vw;
+    width: 100%;
+    background-color: #e8c5d6;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -2px;
+    z-index: 3;
+    max-height: 1000px; /*quick fix for mobile navbar bug*/
+}
+
+nav a, .dropbtn, .dropdown, .dropdown-content {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-    z-index: 2;
     letter-spacing: 0.3em;
-    margin-top: 5vw;
-    margin-bottom: 2vw;
-    width: 100%;
-    background-color: #e8c5d6;
-	position: -webkit-sticky;
-	position: sticky;
-	top: -2px;
-	max-height:1000px; /*quick fix for mobile navbar bug*/
 }
 
-nav a, .dropbtn {
+nav a, .dropbtn, .search_bar {
     display: inline-block;
     color: #544a4e;
     text-align: left;
@@ -105,7 +107,6 @@ nav .dropdown-content {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100%;
     left: 0;
-    z-index: 1;
 }
 
 nav .dropdown-content a {
@@ -297,7 +298,7 @@ nav > .dropdown:hover > a:after {
     top: 0;
     left: 0;
     text-decoration: none; /* No underlines on the link */
-    z-index: 10; /* Places the link above everything else in the div */
+    z-index: 3; /* Places the link above everything else in the div */
     background-color: #FFF; /* Fix to make div clickable in IE */
     opacity: 0; /* Fix to make div clickable in IE */
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
@@ -318,7 +319,7 @@ nav > .dropdown:hover > a:after {
 }
 
 .post {
-    margin: 10vw 20vw 10vw 20vw;
+    margin: 12vw 20vw 10vw 20vw;
     font-family: "Monteserrat", sans-serif;
     line-height: 1.6;
     color: rgba(0,0,0,0.6);
@@ -387,6 +388,9 @@ time:after {
 @media (max-width: 1200px) {
     header h1 {
         font-size: 5vw;
+    }
+    .search_bar{
+        display:none;
     }
 }
 

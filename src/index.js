@@ -6,4 +6,4 @@ import {render} from 'react-dom';
 import Search from './components/Search';
 
 // Mount apps to DOM.
-render(<Search/>, document.getElementById('search-bar'));
+render(<Search/>, document.getElementById('search'));

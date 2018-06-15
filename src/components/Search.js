@@ -18,8 +18,12 @@ import {
 	PaginationSelect,
     ResetFilters,
 	TopBar,
-	Layout, LayoutBody, LayoutResults,
-  ActionBar, ActionBarRow, SideBar
+	Layout, 
+	LayoutBody, 
+	LayoutResults,
+	ActionBar,
+	ActionBarRow,
+	SideBar
     } from "searchkit";
 import * as _ from "lodash";
 
@@ -43,37 +47,39 @@ class Search extends SearchkitComponent {
   render(){
 	return (
 		<SearchkitProvider searchkit={searchkit}>
-		<Layout size="s">
-			<div classname="search">
-				<div className="search__query">
+            <div className="search_bar">
+                <TopBar>
 					<SearchBox
 					searchOnChange={true}
 					autoFocus={true}
 					queryOptions={{analyzer:"standard"}}
 					translations={{"searchbox.placeholder":"Search", "NoHits.DidYouMean":"Search for {suggestion}."}}
-					queryFields={["title", "text"]}/>
-				</div>
-				<div className="_Search_display_wrapper">
-				<div className="_Search_facets">
-				  <RefinementListFilter
-					id="categories"
-					title="Category"
-					field="categories"
-					operator="AND"/>
-				</div>
-				<div className="search__results">
-				  <Hits hitsPerPage={50}
-					highlightFields={["title", "text"]}
-					 mod="sk-hits-grid"
-					itemComponent={HitItem}/>
-				  <NoHits className="sk-hits" translations={{
-					"NoHits.NoResultsFound":"No results were found for {query}",
-					"NoHits.DidYouMean":"Search for {suggestion}"
-					}} suggestionsField="text"/>
-				</div>
-			  </div>
-			</div>
-			</Layout>
+                    queryFields={["title", "text"]} />
+                </TopBar>
+            </div>
+            <div className="search_page">
+                <Layout>
+				    <LayoutResults className="_Search_display_wrapper">
+					    <div className="_Search_facets">
+						    <RefinementListFilter
+						    id="categories"
+						    title="Category"
+						    field="categories"
+						    operator="AND"/>
+					    </div>
+					    <div className="search_results">
+						    <Hits hitsPerPage={50}
+						    highlightFields={["title", "text"]}
+							    mod="sk-hits-list"
+						    itemComponent={HitItem}/>
+						    <NoHits className="sk-hits" translations={{
+						    "NoHits.NoResultsFound":"No results were found for {query}",
+						    "NoHits.DidYouMean":"Search for {suggestion}"
+						    }} suggestionsField="text"/>
+					    </div>
+				    </LayoutResults>
+                    </Layout>
+                </div>
 		</SearchkitProvider>
 	)
   }

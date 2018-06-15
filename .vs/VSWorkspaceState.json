@@ -7,9 +7,10 @@
     "\\resources\\js",
     "\\vendors",
     "\\vendors\\sakura",
+    "\\_includes",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\resources\\css\\main.css",
+  "SelectedNode": "\\_includes\\head.html",
   "PreviewInSolutionExplorer": false
 }
