@@ -2,23 +2,23 @@
 layout: default
 ---
 
-{% if page.title == "photography" %}
+{% if page.active == "photography" %}
 	{% assign type = site.static_files | where: "image", true %}
-{% elsif page.title == "home" %}
+{% elsif page.active == "home" %}
 	{% assign type = site.posts %}
-{% elsif page.title == "life" %}
+{% elsif page.active == "life" %}
 	{% assign type = site.categories.life %}
-{% elsif page.title == "stories" %}
+{% elsif page.active == "stories" %}
 	{% assign type = site.categories.stories %}
-{% elsif page.title == "humour" %}
+{% elsif page.active == "humour" %}
 	{% assign type = site.tags.humour %}
-{% elsif page.title == "motivational" %}
+{% elsif page.active == "motivational" %}
 	{% assign type = site.tags.motivational %}
-{% elsif page.title == "life" %}
+{% elsif page.active == "life" %}
 	{% assign type = site.categories.life %}
-{% elsif page.title == "everydaythoughts" %}
+{% elsif page.active == "everydaythoughts" %}
 	{% assign type = site.tags.everydaythoughts %}
-{% elsif page.title == "learn" %}
+{% elsif page.active == "learn" %}
 	{% assign type = site.tags.learn %}
 {% endif %}
 
@@ -26,18 +26,18 @@ layout: default
     <div class="polaroid">
         {% for item in type %}
 
-            {% if page.title == "photography" %}
-                {% include polaroid.html title=item.basename subtitle="" img=item.name url="" dateTime=item.modified_time %}
-            {% else %}
-                {% include polaroid.html title=item.title subtitle=item.subtitle img=item.image url=item.url dateTime=item.date %}
-            {% endif %}
+        {% if page.active == "photography" %}
+        {% include polaroid.html title=item.basename subtitle="" img=item.name url="" dateTime=item.modified_time %}
+        {% else %}
+        {% include polaroid.html title=item.title subtitle=item.subtitle img=item.image url=item.url dateTime=item.date %}
+        {% endif %}
 
-            {% assign colSize = type | size | divided_by: 4.0 | ceil %}
-            {% assign mod = forloop.index | modulo: colSize %}
-            {% if mod == 0 %}
-                </div>
-                <div class="polaroid">
-            {% endif %}
-            {% endfor %}
+        {% assign colSize = type | size | divided_by: 4.0 | ceil %}
+        {% assign mod = forloop.index | modulo: colSize %}
+        {% if mod == 0 %}
+    </div>
+    <div class="polaroid">
+        {% endif %}
+        {% endfor %}
     </div>
 </div>

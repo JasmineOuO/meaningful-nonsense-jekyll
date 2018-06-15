@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\pages",
-    "\\resources",
-    "\\resources\\css",
-    "\\resources\\js",
-    "\\vendors",
-    "\\vendors\\sakura",
+    "\\src",
+    "\\src\\components",
+    "\\_data",
     "\\_includes",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_includes\\head.html",
+  "SelectedNode": "\\pages\\stories.html",
   "PreviewInSolutionExplorer": false
 }
