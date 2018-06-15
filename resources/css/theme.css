@@ -1444,13 +1444,6 @@ body {
     transform: translate(0,-10px);
 }
 
-.search_bar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50px; /*makes up for navbar*/
-    z-index:2;
-}
-
 .sk-layout {
     box-sizing: border-box;
     background: #f4f4f4;
@@ -1577,13 +1570,13 @@ body {
         -webkit-box-shadow: none;
         box-shadow: none;
         background: transparent;
-        color: #fff;
+        color: rgba(84, 74, 78,0.5);
         font-size: 16px;
         padding-left: 10px;
     }
 
         .sk-search-box input.sk-search-box__text::-webkit-input-placeholder {
-            color: #fff;
+            color: rgba(84, 74, 78,0.5);
             font-weight: 100;
         }
 

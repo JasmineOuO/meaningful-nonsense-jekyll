@@ -7,7 +7,7 @@
 
     {% for item in site.data.navigation %}
 
-        {% if {{page.active}} == {{item.active}} %}
+        {% if {{page.active}} == {{item.active}} and {{page.active}} != "home" %}
             {% assign class = "active" %}
         {% else %}
             {% assign class = "" %}
@@ -34,9 +34,9 @@
                 </div>
             </div>
         {% elsif {{item.type}} == "searchbar" and {{page.active}} == "search" %}
-            <a href="{{ site.baseurl }}/"><i class="fa fa-close" style="font-size:18px; color: rgba(58,62,63,0.5)"></i></a>
+            <a class="search_icon" href="{{ site.baseurl }}/"><i class="fa fa-close" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
         {% elsif {{item.type}} == "searchbar" %}
-            <a href="{{ site.baseurl }}/search"><i class="fa fa-search" style="font-size:18px; color: rgba(58,62,63,0.5)"></i></a>
+            <a class="search_icon" href="{{ site.baseurl }}/search"><i class="fa fa-search" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
         {% else %}
             <a class="{{class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
         {% endif %}

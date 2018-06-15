@@ -132,6 +132,13 @@ nav .dropdown:hover .dropdown-content {
     content: '\00d7';
 }
 
+.search_bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px; /*makes up for navbar*/
+    z-index: 2;
+}
+
 /*The hamburger menu icon*/
 nav .icon {
     display: none;
@@ -445,10 +452,16 @@ time:after {
 	.topnav {
         position: relative;
     }
+    .search_bar{
+        top:0;
+        transform:translate(0,-2px);
+    }
+    /*.topnav a:not(:first-child):not(:last-child)*/
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
+        width: 0;
     }
-    .topnav a.icon {
+    .topnav a.icon{
         float: right;
         display: block;
     }
