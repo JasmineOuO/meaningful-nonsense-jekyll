@@ -74,7 +74,7 @@ nav {
     background-color: #e8c5d6;
     position: -webkit-sticky;
     position: sticky;
-    top: -2px;
+    top: -2px; /*makes up for tiny gap between top of screen and top of navbar*/
     z-index: 3;
     max-height: 1000px; /*quick fix for mobile navbar bug*/
 }
@@ -86,7 +86,7 @@ nav a, .dropbtn, .dropdown, .dropdown-content {
     letter-spacing: 0.3em;
 }
 
-nav a, .dropbtn, .search_bar {
+nav a, .dropbtn {
     display: inline-block;
     color: #544a4e;
     text-align: left;
@@ -126,6 +126,10 @@ nav .dropdown-content a:hover {
 
 nav .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.fa-times-thin:before {
+    content: '\00d7';
 }
 
 /*The hamburger menu icon*/
@@ -389,9 +393,6 @@ time:after {
     header h1 {
         font-size: 5vw;
     }
-    .search_bar{
-        display:none;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -440,7 +441,7 @@ time:after {
 }
 
 /*responsive navbar*/
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 	.topnav {
         position: relative;
     }

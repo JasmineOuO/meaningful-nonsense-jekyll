@@ -7,37 +7,39 @@
 
     {% for item in site.data.navigation %}
 
-    {% if {{page.active}} == {{item.active}} %}
-    {% assign class = "active" %}
-    {% else %}
-    {% assign class = "" %}
-    {% endif %}
-
-    {% if {{item.type}} == "category" %}
-    <div class="dropdown">
-        {% assign id = "" %}
-        {% for tag in item.tags %}
-        {% if {{page.active}} == {{tag.active}} %}
-        {% assign id = "active" %}
-        {% endif %}
-        {% endfor %}
-        <a class="dropbtn" id={{id}}>{{item.name}}</a>
-        <div class="dropdown-content">
-            {% for tag in item.tags %}
-            {% if {{page.active}} == {{tag.active}} %}
+        {% if {{page.active}} == {{item.active}} %}
             {% assign class = "active" %}
-            {% else %}
+        {% else %}
             {% assign class = "" %}
-            {% endif %}
-            <a class="{{class}}" href="{{ site.baseurl }}{{tag.url}}">{{tag.name}}</a>
-            {% endfor %}
-        </div>
-    </div>
-    {% else %}
-    <a class="{{class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
-    {% endif %}
+        {% endif %}
+
+        {% if {{item.type}} == "category" %}
+            <div class="dropdown">
+                {% assign id = "" %}
+                {% for tag in item.tags %}
+                    {% if {{page.active}} == {{tag.active}} %}
+                        {% assign id = "active" %}
+                    {% endif %}
+                {% endfor %}
+                <a class="dropbtn" id={{id}}>{{item.name}}</a>
+                <div class="dropdown-content">
+                    {% for tag in item.tags %}
+                        {% if {{page.active}} == {{tag.active}} %}
+                            {% assign class = "active" %}
+                        {% else %}
+                            {% assign class = "" %}
+                        {% endif %}
+                        <a class="{{class}}" href="{{ site.baseurl }}{{tag.url}}">{{tag.name}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% elsif {{item.type}} == "searchbar" and {{page.active}} == "search" %}
+            <a href="{{ site.baseurl }}/"><i class="fa fa-close" style="font-size:18px; color: rgba(58,62,63,0.5)"></i></a>
+        {% elsif {{item.type}} == "searchbar" %}
+            <a href="{{ site.baseurl }}/search"><i class="fa fa-search" style="font-size:18px; color: rgba(58,62,63,0.5)"></i></a>
+        {% else %}
+            <a class="{{class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
+        {% endif %}
     {% endfor %}
-    <script src="dist/main.js" async defer></script>
-    <div id="search"></div>
     <a href="javascript:void(0);" class="icon" onclick="responsivenav()">&#9776;</a>
 </nav>

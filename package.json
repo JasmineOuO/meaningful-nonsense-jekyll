@@ -24,10 +24,13 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "moment": "^2.22.2",
     "react": "^16.4.1",
     "react-addons-update": "^15.6.2",
     "react-dom": "^16.4.1",
     "searchkit": "^2.3.0",
+    "searchkit-datefilter": "^0.0.2",
+    "searchkit-daterangefilter": "^0.0.2",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.6"
   }

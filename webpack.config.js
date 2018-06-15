@@ -6,15 +6,19 @@ module.exports = {
     publicPath: '/public/'
   },*/
   module: {
-	rules: [
-	  {
-		test: /\.jsx?$/,
-		exclude: /node_modules/,
-		loader: "babel-loader",
-		query: {
-          presets: ["react", "env"]
+    rules: [
+        {
+            test: /\.css$/,
+            loader: 'style!css?importLoaders=1&url=false!postcss'
+        },
+	    {
+		    test: /\.jsx?$/,
+		    exclude: /node_modules/,
+		    loader: "babel-loader",
+		    query: {
+                presets: ["react", "env"]
         }
-	  }
+	    }
 	]
   }
 }

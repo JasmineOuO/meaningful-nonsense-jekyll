@@ -45,3 +45,7 @@
   - name: What I have Learned
     url: /learn
     active: learn
+- name: Search
+  type: searchbar
+  url: /search
+  active: search

@@ -454,11 +454,6 @@
     text-align: center;
     margin-top: 60px;
     color: #444;
-
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
 }
 
 .sk-no-hits__info {
@@ -972,7 +967,7 @@
 }
 
 .sk-hierarchical-refinement-list.is-disabled {
-    //display: none;
+   display: flex; /*none*/
 }
 
 .sk-hierarchical-refinement-option {
@@ -1449,6 +1444,13 @@ body {
     transform: translate(0,-10px);
 }
 
+.search_bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px; /*makes up for navbar*/
+    z-index:2;
+}
+
 .sk-layout {
     box-sizing: border-box;
     background: #f4f4f4;
@@ -1456,22 +1458,19 @@ body {
 }
 
 .sk-layout__top-bar {
-    background: rgba(232, 197, 214,0.5);
+    background: rgb(243, 226, 234);
     height: 60px;
-    position: absolute;
-    right:0;
-    top: 0;
-    width: 35%;
+    position: relative;
+    width: 100%;
     padding: 10px 0;
     z-index: 2; /*100*/
-    display: block; /*flex*/
-    float: right; /*not here before*/
-    /*box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);*/
+    display: flex; /*flex*/
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
 .sk-layout__body {
     display: flex;
-    margin: 60px auto 0;
+    margin: 10px auto 0; /*60px auto 0;*/
     min-width: 600px;
 }
 
@@ -1773,3 +1772,22 @@ body {
 .sk-layout__filters .sk-select select {
     width: 100%;
 }
+
+/*.sk-action-button,
+.sk-no-hits__step-action,
+.sk-range-input__submit,
+.sk-no--hits,
+.sk-hierarchical-refinement-option,
+.sk-hierarchical-refinement-list__header,
+.sk-hierarchical-refinement-list__root,
+.sk-hierarchical-refinement-list__hierarchical-options,
+.sk-hierarchical-refinement-list.is-disabled,
+.sk-hierarchical-refinement-option,
+.sk-hierarchical-refinement-option.is-active .sk-hierarchical-refinement-option__text,
+.sk-hierarchical-refinement-option.is-selected .sk-hierarchical-refinement-option__text,
+.sk-hierarchical-refinement-option__text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}*/
