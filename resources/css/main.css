@@ -428,6 +428,9 @@ time:after {
     .big-plants {
         display: none;
     }
+    .search_filter {
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -459,7 +462,6 @@ time:after {
     /*.topnav a:not(:first-child):not(:last-child)*/
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
-        width: 0;
     }
     .topnav a.icon{
         float: right;

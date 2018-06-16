@@ -60,20 +60,20 @@ class Search extends SearchkitComponent {
             <div className="search_page">
                 <Layout>
                     <LayoutBody>
-                        <SideBar>
-                            <div className="search_filter">
-                                <RefinementListFilter
-                                    id="categories"
-                                    title="Category"
-                                    field="categories"
-                                    operator="AND" />
-                                <RefinementListFilter
-                                    id="tags"
-                                    title="Tags"
-                                    field="tags"
-                                    operator="AND" />
-                            </div>
-                        </SideBar>
+                        <div className="search_filter">
+                            <SideBar>
+                                    <RefinementListFilter
+                                        id="categories"
+                                        title="Category"
+                                        field="categories"
+                                        operator="AND" />
+                                    <RefinementListFilter
+                                        id="tags"
+                                        title="Tags"
+                                        field="tags"
+                                        operator="AND" />
+                            </SideBar>
+                        </div>
 				        <LayoutResults className="_Search_display_wrapper">
 					        <div className="search_results">
 						        <Hits hitsPerPage={50}
