@@ -27,6 +27,7 @@ header img {
     height: auto;
     opacity: 0.8;
     margin-top:-7vw;
+    z-index:-1;
 }
 
 footer {
