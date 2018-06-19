@@ -7,6 +7,7 @@
         Comments
     </div>
 </p>
+{% endif %}
 <div class="comment_area">
     <div class="comments_all">
         {% assign comments = site.data.comments[page.slug] | sort %}
@@ -19,7 +20,7 @@
             </div>
         {% endfor %}
         </p>
-        {% endif %}
+
     </div>
     <!-- Comment form -->
     <div class="comment_form">
