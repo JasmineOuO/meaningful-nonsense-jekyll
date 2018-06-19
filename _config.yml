@@ -7,7 +7,9 @@ defaults:
       path: "resources/images/polaroids"
     values:
       image: true
-repository: Blog
+repository: JasmineOuO/Blog
+staticman:
+  branch: "master"
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
