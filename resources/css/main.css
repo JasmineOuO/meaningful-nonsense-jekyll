@@ -257,7 +257,7 @@ nav > .dropdown:hover > a:after {
 
 .flip-container, .front, .back {
     width: 100%;
-    min-height: 100px;
+
     margin-top: inherit;
 }
 
