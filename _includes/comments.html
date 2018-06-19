@@ -1,56 +1,48 @@
-<hr>
-
 {% if site.data.comments[page.slug] %}
-
 <p>
-    <h3>
+    <div class="comment_header">
         {% if site.data.comments[page.slug].size > 1 %}
         {{ site.data.comments[page.slug] | size }}
         {% endif %}
-        Comments:
-    </h3>
+        Comments
+    </div>
 </p>
+<div class="comment_area">
+    <div class="comments_all">
+        {% assign comments = site.data.comments[page.slug] | sort %}
+        <p>
+            {% for comment in comments %}
+            <div class="comment">
+                <div class="comment_name">{{ comment[1].name }}</div>
+                <div class="comment_date"> {{ comment[1].date | date: "%B %d, %Y" }} at {{ comment[1].date | date: "%r" }}</div>
+                <div class="comment_message">{{ comment[1].message | markdownify }}</div>
+            </div>
+        {% endfor %}
+        </p>
+        {% endif %}
+    </div>
+    <!-- Comment form -->
+    <div class="comment_form">
+        <p>
+            <!--<h3>Post a comment:</h3>-->
+            <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+                <input name="options[redirect]" type="hidden" value="http://idiologos.netlify.com">
+                <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+                <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
+             
+                <legend>Name*</legend>
+                <input name="fields[name]" type="text">
 
-<hr>
+                <legend>E-mail (optional)</legend>
+                <input name="fields[email]" type="email">
 
-  {% assign comments = site.data.comments[page.slug] | sort %}
+                <legend>Message*</legend>
+                <textarea name="fields[message]"></textarea>
 
-<p>
-    {% for comment in comments %}
-    <br>
-    <legend><strong>{{ comment[1].name }}</strong></legend>
-    <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
-<p>{{ comment[1].message | markdownify }}</p>
-<hr>
-    {% endfor %}
-  </p>
-{% endif %}
+                <!--<legend>Your comment will appear after approval~</legend>-->
+                <button type="submit">Comment</button>
 
-<!-- Comment form -->
-<p>
-    <h3>Post a comment:</h3>
-    <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
-        <input name="options[redirect]" type="hidden" value="http://idiologos.netlify.com">
-        <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-        <div>
-            <legend>Name</legend>
-            <input name="fields[name]" type="text">
-        </div>
-        <div>
-            <legend>E-mail (optional)</legend>
-            <input name="fields[email]" type="email">
-        </div>
-        <div>
-            <legend>Website (optional)</legend>
-            <input name="fields[url]" type="url">
-        </div>
-        <div>
-            <legend>Message (<a href="https://kramdown.gettalong.org/syntax.html">Markdown</a> allowed)</legend>
-            <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
-        </div>
-        <div>
-            <legend><em>Comments will appear after moderation.</em></legend>
-            <button type="submit">Submit Comment</button>
-        </div>
-    </form>
-</p>
+            </form>
+        </p>
+    </div>
+</div>
