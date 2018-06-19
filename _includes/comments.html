@@ -1,14 +1,16 @@
-{% if site.data.comments[page.slug] %}
+
 <p>
     <div class="comment_header">
-        {% if site.data.comments[page.slug].size > 1 %}
+        {% if site.data.comments[page.slug] and site.data.comments[page.slug].size > 1 %}
         {{ site.data.comments[page.slug] | size }}
         {% endif %}
         Comments
     </div>
 </p>
-{% endif %}
+
+
 <div class="comment_area">
+    {% if site.data.comments[page.slug] %}
     <div class="comments_all">
         {% assign comments = site.data.comments[page.slug] | sort %}
         <p>
@@ -20,7 +22,7 @@
             </div>
         {% endfor %}
         </p>
-
+    {% endif %}
     </div>
     <!-- Comment form -->
     <div class="comment_form">
