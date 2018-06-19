@@ -1,3 +1,16 @@
+<ul>
+    {% for comment in site.data.comments %}
+    <li>
+        <p><b>Commenter: <b>{{ comment.name }}</b> Date: <i>{{ comment.date | date: '%B %d, %Y' }}</i></p>
+        {% if comment.message %}
+        <p>
+            {{comment.message}}
+        </p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
 <form method="POST" action="https://api.staticman.net/v2/entry/JasmineOuO/Blog/master/comments">
     <input name="options[redirect]" type="hidden" value="https://jasmineouo.github.io/Blog/">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
