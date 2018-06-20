@@ -21,28 +21,20 @@
         </p>
         {% endif %}
     </div>
-    <!-- Comment form -->
     <div class="comment_form">
-        <p>
-            <!--<h3>Post a comment:</h3>-->
-            <form method="POST" action="https://api.staticman.net/v2/entry/{{site.repository}}/{{site.staticman.branch}}/comments">
-                <input name="options[redirect]" type="hidden" value="https://jasmineouo.github.io/Blog/{{page.slug}}">
-                <input name="options[slug]" type="hidden" value="{{page.slug}}">
-                <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
-             
-                <legend>Name*</legend>
-                <input name="fields[name]" type="text">
-
-                <legend>E-mail</legend>
-                <input name="fields[email]" type="email">
-
-                <legend>Message*</legend>
-                <textarea name="fields[message]"></textarea>
-
-                <!--<legend>Your comment will appear after approval~</legend>-->
-                <button type="submit">Comment</button>
-
-            </form>
-        </p>
+        <form id="comment-form" autocomplete="off" method="POST" action="https://api.staticman.net/v2/entry/{{site.repository}}/{{site.staticman.branch}}/comments">
+            <input name="options[redirect]" type="hidden" value="https://jasmineouo.github.io/Blog/{{page.slug}}">
+            <input name="options[slug]" type="hidden" value="{{page.slug}}">
+            <label for="comment-form-name">Name*</label>
+            <input type="text" id="comment-form-name" name="fields[name]">
+            <label for="comment-form-email">E-mail</label>
+            <input type="email" id="comment-form-email" name="fields[email]">
+            <label for="comment-form-message">Message*</label>
+            <textarea type="text" id="comment-form-message" name="fields[message]"></textarea>
+            <p class="hidden js-notice">
+                <span class="js-notice-text"></span>
+            </p>
+            <button type="submit" id="comment-form-submit">Comment</button>
+        </form>
     </div>
 </div>

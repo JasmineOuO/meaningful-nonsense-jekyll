@@ -282,7 +282,7 @@ textarea {
     resize: none;
 }
 
-legend, button {
+label, button {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em;
@@ -304,6 +304,10 @@ button {
     button:hover {
         background-color: #e8b4cd;
     }
+
+.btn-disabled:hover {
+    background-color: #e8c5d6;
+}
 
 .comment_header {
     margin: 50px 20vw -20px 25vw;
@@ -342,4 +346,16 @@ button {
 
 .comment_form{
     margin-top: 2em;
+}
+
+.js-notice-text {
+    font-family: "Monteserrat", sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+
+.js-notice{
+    padding: 10px;
 }
