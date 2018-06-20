@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Six
-subtitle: My Sixth Blog Post
-date: 2018-06-06
-image: 6.jpg
+title: Seven
+subtitle: My Seventh Blog Post
+date: 2018-06-07
+image: 7.jpg
 categories: stories
 tags: motivational
 ---
