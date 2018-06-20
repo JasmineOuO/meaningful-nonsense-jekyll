@@ -11,11 +11,16 @@
         flex: 50%;
         max-width: 50%;
     }
-
     .post {
         margin: 10vw 7vw 0 7vw;
     }
-}
+    .comment_area {
+        margin: 0 7vw 30px 7vw;
+    }
+    .comment_header {
+        margin: 0 7vw -0.25em 12vw;
+        font-size: 9vw;
+    }
 
 @media (max-width: 600px) {
     .polaroid {

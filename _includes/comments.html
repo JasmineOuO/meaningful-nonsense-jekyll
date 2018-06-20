@@ -1,4 +1,3 @@
-
 <p>
     <div class="comment_header">
         {% if site.data.comments[page.slug] and site.data.comments[page.slug].size > 1 %}
@@ -7,36 +6,34 @@
         Comments
     </div>
 </p>
-
-
 <div class="comment_area">
-    {% if site.data.comments[page.slug] %}
     <div class="comments_all">
+        {% if site.data.comments[page.slug] %}
         {% assign comments = site.data.comments[page.slug] | sort %}
         <p>
             {% for comment in comments %}
             <div class="comment">
-                <div class="comment_name">{{ comment[1].name }}</div>
-                <div class="comment_date"> {{ comment[1].date | date: "%B %d, %Y" }} at {{ comment[1].date | date: "%r" }}</div>
-                <div class="comment_message">{{ comment[1].message | markdownify }}</div>
+                <div class="comment_name">{{comment[1].name}}</div>
+                <div class="comment_date"> {{comment[1].date | date: "%B %d, %Y"}} at {{comment[1].date | date: "%r"}}</div>
+                <div class="comment_message">{{comment[1].message | markdownify}}</div>
             </div>
-        {% endfor %}
+            {% endfor %}
         </p>
-    {% endif %}
+        {% endif %}
     </div>
     <!-- Comment form -->
     <div class="comment_form">
         <p>
             <!--<h3>Post a comment:</h3>-->
-            <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
-                <input name="options[redirect]" type="hidden" value="http://idiologos.netlify.com">
-                <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+            <form method="POST" action="https://api.staticman.net/v2/entry/{{site.repository}}/{{site.staticman.branch}}/comments">
+                <input name="options[redirect]" type="hidden" value="https://jasmineouo.github.io/Blog/{{page.slug}}">
+                <input name="options[slug]" type="hidden" value="{{page.slug}}">
                 <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
              
                 <legend>Name*</legend>
                 <input name="fields[name]" type="text">
 
-                <legend>E-mail (optional)</legend>
+                <legend>E-mail</legend>
                 <input name="fields[email]" type="email">
 
                 <legend>Message*</legend>
