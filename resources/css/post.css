@@ -262,7 +262,7 @@ time {
     border-radius: 5px;
 }
 
-input.comment-form-name, input.comment-form-email, textarea.comment-form-message {
+input, textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -273,16 +273,16 @@ input.comment-form-name, input.comment-form-email, textarea.comment-form-message
     outline: none;
 }
 
-    input.comment-form-name:focus, input.comment-form-email:focus, textarea.comment-form-message:focus {
+    input:focus, textarea:focus {
         border: 2px solid rgba(0,0,0,0.4);
     }
 
-textarea.comment-form-message {
+textarea {
     height: 150px;
     resize: none;
 }
 
-label, button.comment-form-submit {
+label, button {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em;
@@ -290,7 +290,7 @@ label, button.comment-form-submit {
     font-size: 18px;
 }
 
-button.comment-form-submit {
+button {
     width: 100%;
     background-color: #e8c5d6;
     color: #544a4e;
@@ -301,7 +301,7 @@ button.comment-form-submit {
     cursor: pointer;
 }
 
-    button.comment-form-submit:hover {
+    button:hover {
         background-color: #e8b4cd;
     }
 
