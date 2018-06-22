@@ -1,32 +1,27 @@
 name: Meaningless Nonsense
-markdown: kramdown
+title: Meaningful Nonsense
 url: "https://jasmineouo.github.io/Blog"
+github_username:  JasmineOuO
+repository: JasmineOuO/Blog
+email: jasmineou99@gmail.com
+description: >-
+  This is a blog built from scratch to learn the basics of frontend 
+  development and to give my sister a place to improve her writing 
+  with blogging. The blog is generated with Jekyll through the use 
+  of Liquid-enhanced HTML templates and hosted on Github Pages.
+
+markdown: kramdown
 permalink: /:title
 defaults:
   - scope:
       path: "resources/images/polaroids"
     values:
       image: true
-repository: JasmineOuO/Blog
-staticman:
-  branch: "master"
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+      
 plugins:
   - jekyll-feed
-    #- searchyll
+  #- searchyll
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -38,6 +33,9 @@ exclude:
   - .vs/slnx.sqlite
   - node_modules
 
-    #elasticsearch:
-    #index_name: blog
-    #url: https://j9a2d7lhet:8vldytub88@blog-2086566074.us-east-1.bonsaisearch.net
+staticman:
+  branch: "master"
+  
+#elasticsearch:
+#  index_name: blog
+#  url:

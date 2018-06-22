@@ -967,7 +967,7 @@
 }
 
 .sk-hierarchical-refinement-list.is-disabled {
-   display: flex; /*none*/
+   display: none;
 }
 
 .sk-hierarchical-refinement-option {

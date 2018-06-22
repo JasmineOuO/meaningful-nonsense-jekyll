@@ -62,16 +62,16 @@ class Search extends SearchkitComponent {
                     <LayoutBody>
                         <div className="search_filter">
                             <SideBar>
-                                    <RefinementListFilter
-                                        id="categories"
-                                        title="Category"
-                                        field="categories"
-                                        operator="AND" />
-                                    <RefinementListFilter
-                                        id="tags"
-                                        title="Tags"
-                                        field="tags"
-                                        operator="AND" />
+                                <RefinementListFilter
+                                    id="categories"
+                                    title="Category"
+                                    field="categories"
+                                    operator="OR"/>
+                                <RefinementListFilter
+                                    id="tags"
+                                    title="Tags"
+                                    field="tags"
+                                    operator="OR" />
                             </SideBar>
                         </div>
 				        <LayoutResults className="_Search_display_wrapper">
