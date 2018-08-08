@@ -8,6 +8,8 @@ categories: life
 tags: learn
 ---
 
+![burano](../resources/images/post_images/burano.jpg)
+
 ### 1. Appreciating What You Already Have
 
 Now I don’t want to come off as preachy but I’m not one to necessarily sugar coat what I’m trying to get by. So hear me when I say this : life does not have to be perfect for you to be happy. Everyone is always going to be striving for better, setting new goals but we are all so focused on those things and when these random obstacles come into our lives and slap us in the face, we are so quick to become annoyed or frustrated for the rest of the day. What I want to ask you is that, when you achieve this goal of yours, is that when your happiness will begin? Will life suddenly become perfect? If your answer is yes, well damn I want to know what your goal is but if your answer is no like mine, then I want to ask yourself why you are making yourself suffer until you obtain this goal.  And as cheesy as this may sound, why not enjoy the journey instead of having the mindset of suffer now and be happy later. Which I call bullshit. Yes, I know, you may be going through some tedious school work or dealing with clients that are not the most pleasant company but it should not mean that your entire day or week is suddenly labeled sadness or annoyed on your emotions app on your phone. Don’t let those issues stop you from being present and living your life being grateful for what you already have. So the main point I’m trying to get across is that by appreciating and being grateful and aware of your surroundings and your privileges will break the curse of delayed happiness in your life.
