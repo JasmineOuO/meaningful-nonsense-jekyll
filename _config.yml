@@ -17,11 +17,6 @@ kramdown:
 highlighter: rouge
 
 permalink: /:title
-defaults:
-  - scope:
-      path: "resources/images/polaroids"
-    values:
-      image: true
       
 plugins:
   - jekyll-feed

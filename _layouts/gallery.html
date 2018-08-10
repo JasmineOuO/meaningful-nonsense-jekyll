@@ -2,8 +2,14 @@
 layout: default
 ---
 
-{% if page.active == "photography" %}
-	{% assign type = site.static_files | where: "image", true %}
+{% assign photography_path = "resources/images/polaroids/" | append: page.active %}
+
+{% if page.active == "food" %}
+    {% assign sorted_photos = site.data.food | sort: 'date' %}
+    {% assign type = sorted_photos %}
+{% elsif page.active == "travel" %}
+    {% assign sorted_photos = site.data.travel | sort: 'date' %}
+    {% assign type = sorted_photos %}
 {% elsif page.active == "home" %}
 	{% assign type = site.posts %}
 {% elsif page.active == "life" %}
@@ -26,11 +32,27 @@ layout: default
     <div class="polaroid">
         {% for item in type %}
 
-        {% if page.active == "photography" %}
-        {% include polaroid.html title=item.basename subtitle="" img=item.name url="" dateTime=item.modified_time %}
-        {% else %}
-        {% include polaroid.html title=item.title subtitle=item.subtitle img=item.image url=item.url dateTime=item.date %}
-        {% endif %}
+            {% assign post_url = site.baseurl | append: item.url %}
+
+            {% if page.active == "food" or page.active == "travel" %}
+                {% include polaroid.html 
+                    title=item.title 
+                    subtitle=item.subtitle 
+                    img=item.name 
+                    url="none"
+                    dateTime=item.date 
+                    path=photography_path
+                %}
+            {% else %}
+                {% include polaroid.html 
+                    title=item.title 
+                    subtitle=item.subtitle
+                    img=item.image 
+                    url=post_url 
+                    dateTime=item.date 
+                    path="resources/images/polaroids/post-thumbnail"
+                %}
+            {% endif %} 
 
         {% assign colSize = type | size | divided_by: 4.0 | ceil %}
         {% assign mod = forloop.index | modulo: colSize %}

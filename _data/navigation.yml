@@ -10,9 +10,6 @@
   type: category
   active: photography
   tags:
-  - name: All Photography
-    url: /photography
-    active: photography
   - name: Food
     url: /food
     active: food
