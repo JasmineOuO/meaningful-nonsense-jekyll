@@ -11,6 +11,11 @@ description: >-
   of Liquid-enhanced HTML templates and hosted on Github Pages.
 
 markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+highlighter: rouge
+
 permalink: /:title
 defaults:
   - scope:

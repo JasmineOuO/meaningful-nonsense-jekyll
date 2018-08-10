@@ -1,14 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pages",
+    "\\resources",
+    "\\resources\\css",
     "\\src",
     "\\src\\components",
-    "\\_data",
-    "\\_includes",
-    "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\pages\\stories.html",
+  "SelectedNode": "\\src\\components\\Search.js",
   "PreviewInSolutionExplorer": false
 }
