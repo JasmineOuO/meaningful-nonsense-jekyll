@@ -27,10 +27,52 @@
     -ms-animation: slide-up 0.8s ease-in-out both;
 }
 
-.post h1 {
+#post-title {
     font-family: "IBM Plex Serif", sans-serif;
     font-size: 4em;
     font-weight: 100;
+}
+
+.post h1 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+.post h2 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+.post h3 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+.post h4 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 1.25em;
+}
+
+.post h5 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 1em;
+}
+
+.post h6 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 1em;
+    color: #777;
 }
 
 .post-content {
