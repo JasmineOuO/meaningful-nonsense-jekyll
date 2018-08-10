@@ -4,16 +4,19 @@ $(document).ready(updateHeight);
 $('.topnav a').click(updateHeight);
 $('.topnav .dropdown-content a').click(updateHeight);
 
-// Assigns heights to each polaroid for accurate flipping animation
+// Assigns heights to each polaroid depending on image dimensions
 function updateHeight() {
     $('.flip-container').each(function () {
-        var polaroid_height = $(this).find("img").height() + 80;
-        $(this).height(polaroid_height);
-        $(this).find(".front").height(polaroid_height);
-        $(this).find(".back").height(polaroid_height - 10);
-        console.log(polaroid_height);
+        $(this).height($(this).find("img").height() + 80);
     });
 }
+
+// Assigns heights to back of the hovered polaroid for accurate flipping animation
+$(document).ready(function(){
+    $(".flip-container").mouseover(function(){
+        $(this).find(".back").height($(this).height() - 10);
+    });
+});
 
 // Enables responsive navbar when screen reaches specific width
 function responsivenav() {
