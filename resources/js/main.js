@@ -1,8 +1,15 @@
-// Assigns heights to back of the hovered polaroid for accurate flipping animation
-$(document).ready(function () {
+$(window).resize(updateHeight);
+
+// Assigns heights to each polaroid depending on image dimensions
+function updateHeight() {
     $('.flip-container').each(function () {
         $(this).height($(this).find("img").height() + 80);
     });
+}
+
+// Assigns heights to back of the hovered polaroid for accurate flipping animation
+$(document).ready(function () {
+    updateHeight();
     $(".flip-container").on("mouseenter click", function(){
         $(this).find(".back").height($(this).height() - 10);
     });
