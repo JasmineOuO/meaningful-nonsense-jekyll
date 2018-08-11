@@ -8,7 +8,7 @@ categories: life
 tags: learn
 ---
 
-​    ![burano](../resources/images/polaroids/post-thumbnail/burano.jpg)
+​    ![burano](resources/images/polaroids/post-thumbnail/burano.jpg)
 
 ### 1. Appreciating What You Already Have
 

@@ -5,7 +5,7 @@ subtitle: Beauty
 date: 2018-08-08
 image: sakura.jpg
 categories: life
-tags: everydaythoughts
+tags: [everydaythoughts, learn]
 
 ---
 
