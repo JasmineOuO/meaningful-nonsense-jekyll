@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Beauty
-subtitle: What it means to be beautiful
+title: What it means to be beautiful
+subtitle: Beauty
 date: 2018-08-08
 image: sakura.jpg
 categories: life

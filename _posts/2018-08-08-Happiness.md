@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Happiness
-subtitle: 3 Ways to be Truly Happy
+title: 3 Ways to be Truly Happy
+subtitle: Happiness
 date: 2018-08-08
 image: burano.jpg
 categories: life
 tags: learn
 ---
 
-​    <img src="../resources/images/polaroids/post-thumbnail/burano.jpg"/>
+​    ![burano](../resources/images/polaroids/post-thumbnail/burano.jpg)
 
 ### 1. Appreciating What You Already Have
 

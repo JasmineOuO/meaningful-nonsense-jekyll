@@ -343,16 +343,13 @@ nav > .dropdown:hover > a:after {
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 
-.back h1, .back h2 {
+.back h1 {
     width: inherit;
     color: azure;
     padding: 40px 40px 10px 40px;
     text-align: center;
     text-decoration: none;
     font-family: 'Cutive Mono', monospace;
+    font-size: 15px;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
-}
-
-.back h2 {
-    padding: 10px 40px 40px 40px;
 }
