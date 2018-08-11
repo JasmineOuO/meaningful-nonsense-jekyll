@@ -50,3 +50,8 @@ As you can see in the YAML Front Matter snippet above, you can include multiple 
 | Motivational        | motivational      |
 | Humour              | humour            |
 
+#### Line Breaks
+
+Be sure to break up your text into paragraphs by including line breaks with <br/> on a new line.
+You do not need line breaks if you separate paragraphs with a heading since headings have padding.
+
