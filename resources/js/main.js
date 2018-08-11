@@ -13,7 +13,7 @@ function updateHeight() {
 
 // Assigns heights to back of the hovered polaroid for accurate flipping animation
 $(document).ready(function(){
-    $(".flip-container").mouseover(function(){
+    $(".flip-container").on("mouseenter click", function(){
         $(this).find(".back").height($(this).height() - 10);
     });
 });
