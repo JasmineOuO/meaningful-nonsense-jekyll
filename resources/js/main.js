@@ -1,18 +1,8 @@
-$(window).ready(updateHeight);
-$(window).resize(updateHeight);
-$(document).ready(updateHeight);
-$('.topnav a').click(updateHeight);
-$('.topnav .dropdown-content a').click(updateHeight);
-
-// Assigns heights to each polaroid depending on image dimensions
-function updateHeight() {
+// Assigns heights to back of the hovered polaroid for accurate flipping animation
+$(document).ready(function () {
     $('.flip-container').each(function () {
         $(this).height($(this).find("img").height() + 80);
     });
-}
-
-// Assigns heights to back of the hovered polaroid for accurate flipping animation
-$(document).ready(function(){
     $(".flip-container").on("mouseenter click", function(){
         $(this).find(".back").height($(this).height() - 10);
     });
