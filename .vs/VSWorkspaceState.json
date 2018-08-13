@@ -3,10 +3,14 @@
     "",
     "\\resources",
     "\\resources\\css",
-    "\\src",
-    "\\src\\components",
+    "\\resources\\js",
+    "\\vendors",
+    "\\vendors\\sakura",
+    "\\_data",
+    "\\_includes",
+    "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\src\\components\\Search.js",
+  "SelectedNode": "\\_layouts\\gallery.html",
   "PreviewInSolutionExplorer": false
 }

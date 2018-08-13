@@ -1,12 +1,32 @@
-- name: 1.jpg
-  title: Fried Rice
-  subtitle: We both cooked
-  date: 2-10-2018
-- name: 11.jpg
+- name: dadpizza.jpg
   title: Pizza
-  subtitle: Dad made it
-  date: 1-10-2018
-- name: 14.jpg
-  title: Fish & Chips
-  subtitle: Out and about in Montreal
-  date: 3-10-2018
+  subtitle: Homemade pizza made by dad~
+  date: 04-29-2018	
+- name: fishnchips.jpg
+  title: Fish&Chips
+  subtitle: Brit & Chips @ Montreal, Quebec
+  date: 01-12-2018	
+- name: cafeleaves.jpeg
+  title: Latte
+  subtitle: Cafe Leaves @ Montreal, Quebec
+  date: 01-12-2018	
+- name: pescatore.jpeg
+  title: Pescatore
+  subtitle: Sambucas on Church @ Toronto, Ontario
+  date: 08-11-2018	
+- name: taco.jpeg
+  title: Tacos
+  subtitle: La Carnita Toronto, Ontario
+  date: 06-23-2018	
+- name: milkshakes.jpeg
+  title: Milkshakes
+  subtitle: Mel's Diner @ Waterloo, Ontario
+  date: 03-10-2018	
+- name: deepdishpizza.jpg
+  title: Deep Pizza
+  subtitle: Giordano's @ Chicago, Illinois
+  date: 08-04-2018	
+- name: bleu.jpeg
+  title: Bleu
+  subtitle: The Warehouse @ Montreal, Quebec
+  date: 02-22-2018

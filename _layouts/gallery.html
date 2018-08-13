@@ -2,14 +2,12 @@
 layout: default
 ---
 
-{% assign photography_path = "resources/images/polaroids/" | append: page.active %}
-
-{% if page.active == "food" %}
-    {% assign sorted_photos = site.data.food | sort: 'date' %}
-    {% assign type = sorted_photos %}
+{% if page.active == "photography" %}
+    {% assign type = site.static_files | where: "image", true %}
+{% elsif page.active == "food" %}
+    {% assign type = site.data.food | sort: 'date' %}
 {% elsif page.active == "travel" %}
-    {% assign sorted_photos = site.data.travel | sort: 'date' %}
-    {% assign type = sorted_photos %}
+    {% assign type = site.data.travel | sort: 'date' %}
 {% elsif page.active == "home" %}
 	{% assign type = site.posts %}
 {% elsif page.active == "life" %}
@@ -32,27 +30,27 @@ layout: default
     <div class="polaroid">
         {% for item in type %}
 
-            {% assign post_url = site.baseurl | append: item.url %}
+        {% assign post_url = site.baseurl | append: item.url %}
 
-            {% if page.active == "food" or page.active == "travel" %}
-                {% include polaroid.html 
-                    title=item.title 
-                    subtitle=item.subtitle 
-                    img=item.name 
-                    url="none"
-                    dateTime=item.date 
-                    path=photography_path
-                %}
-            {% else %}
-                {% include polaroid.html 
-                    title=item.title 
-                    subtitle=item.subtitle
-                    img=item.image 
-                    url=post_url 
-                    dateTime=item.date 
-                    path="resources/images/polaroids/post-thumbnail"
-                %}
-            {% endif %} 
+        {% if page.active == "food" or page.active == "travel" %}
+        {% include polaroid.html
+        title=item.subtitle
+        subtitle=item.title
+        img=item.name
+        url="none"
+        dateTime=item.date
+        path="resources/images/polaroids/photography"
+        %}
+        {% else %}
+        {% include polaroid.html
+        title=item.title
+        subtitle=item.subtitle
+        img=item.image
+        url=post_url
+        dateTime=item.date
+        path="resources/images/polaroids/post-thumbnail"
+        %}
+        {% endif %}
 
         {% assign colSize = type | size | divided_by: 4.0 | ceil %}
         {% assign mod = forloop.index | modulo: colSize %}

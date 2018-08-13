@@ -3,7 +3,7 @@ layout: post
 title: What it means to be beautiful
 subtitle: Beauty
 date: 2018-08-08
-image: sakura.jpg
+image: sakura.jpeg
 categories: life
 tags: [everydaythoughts, learn]
 
