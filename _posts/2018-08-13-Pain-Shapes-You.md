@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pain 
-subtitle: Your Pain Shapes You
+title: Your Pain Shapes You 
+subtitle: Pain
 date: 2018-08-13
 image: parma.jpg
 categories: life
