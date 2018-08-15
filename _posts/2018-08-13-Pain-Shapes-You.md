@@ -3,7 +3,7 @@ layout: post
 title: Your Pain Shapes You 
 subtitle: Pain
 date: 2018-08-13
-image: parma.jpg
+image: milan2.jpg
 categories: life
 tags: everydaythoughts
 ---
