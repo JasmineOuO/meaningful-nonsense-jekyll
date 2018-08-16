@@ -793,11 +793,11 @@
 }
 
 .autumn {
-    background: -webkit-linear-gradient(120deg, rgb(216, 141, 60, 0.9), rgb(221, 158, 68, 0.9));
-    background: -o-linear-gradient(120deg, rgb(216, 141, 60, 0.9), rgb(221, 158, 68, 0.9));
-    background: -ms-linear-gradient(120deg, rgb(216, 141, 60, 0.9), rgb(221, 158, 68, 0.9));
-    background: -moz-linear-gradient(120deg, rgb(216, 141, 60, 0.9), rgb(221, 158, 68, 0.9));
-    background: linear-gradient(120deg, rgb(216, 141, 60, 0.9), rgb(221, 158, 68, 0.9));
+    background: -webkit-linear-gradient(120deg, rgba(216, 141, 60, 0.9), rgba(221, 158, 68, 0.9));
+    background: -o-linear-gradient(120deg, rgba(216, 141, 60, 0.9), rgba(221, 158, 68, 0.9));
+    background: -ms-linear-gradient(120deg, rgba(216, 141, 60, 0.9), rgba(221, 158, 68, 0.9));
+    background: -moz-linear-gradient(120deg, rgba(216, 141, 60, 0.9), rgba(221, 158, 68, 0.9));
+    background: linear-gradient(120deg, rgba(216, 141, 60, 0.9), rgba(221, 158, 68, 0.9));
     -webkit-border-radius: 12px 1px;
     -o-border-radius: 12px 1px;
     -ms-border-radius: 12px 1px;
@@ -810,3 +810,23 @@
     pointer-events: none;
     position: absolute
 }
+
+.summer {
+    background: -webkit-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
+    background: -o-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
+    background: -ms-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
+    background: -moz-linear-gradient(120deg, rgba(187, 224, 100, 0.9)), rgba(208, 237, 120, 0.9));
+    background: linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
+    -webkit-border-radius: 12px 1px;
+    -o-border-radius: 12px 1px;
+    -ms-border-radius: 12px 1px;
+    -moz-border-radius: 12px 1px;
+    border-radius: 12px 1px;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    position: absolute
+}
+
