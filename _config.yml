@@ -43,5 +43,11 @@ staticman:
   branch: "master"
   
 #elasticsearch:
-#  index_name: blog
-#  url:
+  #index_name: blog
+
+  # Indexing Blog Posts in Elasticsearch
+  # uncomment {- searchyll, elasticsearch: , index_name: blog} lines from above and {gem "searchyll"} from Gemfile
+  # bundle install
+  # BONSAI_URL=<YOUR KEY HERE> bundle exec jekyll serve
+  # re-comment the lines
+  # bundle install

@@ -1684,6 +1684,8 @@ body {
 
     /*post title link*/
     .sk-hits-list a {
+        padding-top: 2px;
+        text-align: right;
         text-decoration: none;
         font-family: "IBM Plex Serif", sans-serif;
         font-weight: 100;
