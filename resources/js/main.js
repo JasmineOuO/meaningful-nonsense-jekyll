@@ -2,10 +2,14 @@ $(window).resize(updateHeight);
 
 // Assigns heights to each polaroid depending on image dimensions
 function updateHeight() {
-    $('.flip-container').each(function () {
-        $(this).height($(this).find("img").height() + 80);
+    imagesLoaded(document.body, function() {
+        var polaroids = document.querySelectorAll('.flip-container');
+        Array.prototype.forEach.call(polaroids, function(polaroid) {
+            polaroid.style.height = polaroid.querySelector("img").height + 79 + "px";
+        });
     });
 }
+
 
 // Assigns heights to back of the hovered polaroid for accurate flipping animation
 $(window).load(function () {

@@ -6,13 +6,14 @@
 <body>
     
     <div class="loader"></div>
-    
+
     {% include header.html %}
 
     {{content}}
 
     {% include footer.html %}
 
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="dist/main.js" async defer></script>
     <script src="resources/js/main.js" async defer></script>
     <script src="vendors/sakura/jquery-sakura.min.js" async defer></script>
