@@ -51,3 +51,7 @@ staticman:
   # BONSAI_URL=<YOUR KEY HERE> bundle exec jekyll serve
   # re-comment the lines
   # bundle install
+  # bundle exec jekyll build
+  # bundle exec jekyll serve
+  # BONSAI_URL=blah bundle exec jekyll serve
+  # verify that it doesn't index anymore

@@ -14,18 +14,8 @@
     {% include footer.html %}
 
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/sakura/jquery-sakura.js" async defer></script>
     <script src="dist/main.js" async defer></script>
     <script src="resources/js/main.js" async defer></script>
-    <script src="vendors/sakura/jquery-sakura.min.js" async defer></script>
-    <script>
-        $(window).load(function () {
-            if (!isMobile()) {
-                $('body').sakura({
-                    fallSpeed: 1.09,
-                    newOn: 1000, // Interval after which a new petal is added
-                });
-            }
-        });
-    </script>
 </body>
 </html>

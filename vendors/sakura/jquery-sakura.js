@@ -52,7 +52,7 @@
         // Defaults for the option object, which gets extended below.
         var defaults = {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
-            className: 'sakura',
+            className: 'spring',
             fallSpeed: 1,
             maxSize: 14,
             minSize: 9,
@@ -66,6 +66,18 @@
         var documentHeight = $(document).height();
         var documentWidth = $(document).width();
         var sakura = $('<div class="' + options.className + '" />');
+
+        $("#autumn").click(function(){
+            sakura = $('<div class="autumn" />');
+        });
+
+        $("#spring").click(function(){
+            sakura = $('<div class="spring" />');
+        });
+
+        $("#summer").click(function(){
+            sakura = $('<div class="summer" />');
+        });
 
         // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
         $('body').css({ 'overflow-x': 'hidden' });

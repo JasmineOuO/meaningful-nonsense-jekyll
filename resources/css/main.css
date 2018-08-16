@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt';
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script|Open+Sans+Condensed:300,700|Rock+Salt';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -80,6 +80,7 @@ footer i:hover {
 nav {
     text-align: left;
     margin-top: 5vw;
+    margin-bottom: .5em;
     width: 100%;
     background-color: #e8c5d6;
     position: sticky;
@@ -190,6 +191,28 @@ nav > .dropdown > a:after {
 /*The triangle for the dropdown*/
 nav > .dropdown:hover > a:after {
     border-bottom-color: #f9f9f9;
+}
+
+#season-panel{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+    color: rgba(0,0,0,0.2);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.season{
+    display: inline-block;
+}
+
+.season:hover{
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
 }
 
 .myimg {

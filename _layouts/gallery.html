@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<div id="season-panel">
+    <div class="season" id="summer">summer</div>
+    <div style="display:inline-block">&#183;</div>
+    <div class="season" id="autumn">autumn</div>
+    <div style="display:inline-block">&#183;</div>
+    <div class="season" id="spring">spring</div>
+</div>
 
 {% if page.active == "photography" %}
     {% assign type = site.static_files | where: "image", true %}
