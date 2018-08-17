@@ -789,7 +789,8 @@
     -ms-pointer-events: none;
     -o-pointer-events: none;
     pointer-events: none;
-    position: absolute
+    position: absolute;
+    z-index: 10;
 }
 
 .autumn {
@@ -808,14 +809,15 @@
     -ms-pointer-events: none;
     -o-pointer-events: none;
     pointer-events: none;
-    position: absolute
+    position: absolute;
+    z-index: 10;
 }
 
 .summer {
     background: -webkit-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
     background: -o-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
     background: -ms-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
-    background: -moz-linear-gradient(120deg, rgba(187, 224, 100, 0.9)), rgba(208, 237, 120, 0.9));
+    background: -moz-linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
     background: linear-gradient(120deg, rgba(187, 224, 100, 0.9), rgba(208, 237, 120, 0.9));
     -webkit-border-radius: 12px 1px;
     -o-border-radius: 12px 1px;
@@ -827,6 +829,28 @@
     -ms-pointer-events: none;
     -o-pointer-events: none;
     pointer-events: none;
-    position: absolute
+    position: absolute;
+    z-index: 10;
 }
+
+.winter {
+    background: -webkit-linear-gradient(120deg, rgba(178, 221, 255, 0.9), rgba(216, 239, 255, 0.9));
+    background: -o-linear-gradient(120deg, rgba(178, 221, 255, 0.9), rgba(216, 239, 255, 0.9));
+    background: -ms-linear-gradient(120deg, rgba(178, 221, 255, 0.9), rgba(216, 239, 255, 0.9));
+    background: -moz-linear-gradient(120deg, rgba(178, 221, 255, 0.9), rgba(216, 239, 255, 0.9));
+    background: linear-gradient(120deg, rgba(178, 221, 255, 0.9), rgba(216, 239, 255, 0.9));
+    -webkit-border-radius: 12px 12px;
+    -o-border-radius: 12px 12px;
+    -ms-border-radius: 12px 12px;
+    -moz-border-radius: 12px 12px;
+    border-radius: 12px 12px;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+}
+
 

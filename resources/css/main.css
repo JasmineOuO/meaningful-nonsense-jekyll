@@ -80,7 +80,6 @@ footer i:hover {
 nav {
     text-align: left;
     margin-top: 5vw;
-    margin-bottom: .5em;
     width: 100%;
     background-color: #e8c5d6;
     position: sticky;
@@ -118,7 +117,20 @@ nav .dropdown-content {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100%;
     left: 0;
-    z-index:5;
+    z-index: 5;
+
+    /************slide effect************/
+    -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 nav .dropdown-content a {
@@ -142,6 +154,17 @@ nav .dropdown-content a {
 
 nav .dropdown:hover .dropdown-content {
     display: block;
+
+    /************slide effect************/
+    -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+    max-height: 144px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .search_bar {
@@ -199,11 +222,11 @@ nav > .dropdown:hover > a:after {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-
     color: rgba(0,0,0,0.2);
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    margin-top: .5em;
 }
 
 .season{

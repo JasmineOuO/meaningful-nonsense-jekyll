@@ -32,6 +32,14 @@ $(window).load(function () {
     $(".flip-container").on("mouseenter click", function(){
         $(this).find(".back").height($(this).height() - 10);
     });
+    //Set max height for dropdown allowing for smooth animation
+    $("nav .dropdown").mouseenter(function(){
+        $(this).find(".dropdown-content").css('max-height', this.id + 'px');;
+    });
+     //Set max height back to 0 for dropdown allowing for smooth animation
+     $("nav .dropdown").mouseleave(function(){
+        $(this).find(".dropdown-content").css('max-height', '0px');;
+    });
 });
 
 // Enables responsive navbar when screen reaches specific width

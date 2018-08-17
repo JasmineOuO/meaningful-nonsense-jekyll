@@ -8,28 +8,29 @@
     {% for item in site.data.navigation %}
 
         {% if {{page.active}} == {{item.active}} and {{page.active}} != "home" %}
-            {% assign class = "active" %}
+            {% assign active_class = "active" %}
         {% else %}
-            {% assign class = "" %}
+            {% assign active_class = "" %}
         {% endif %}
 
         {% if {{item.type}} == "category" %}
-            <div class="dropdown">
-                {% assign id = "" %}
+            {% assign dropdown_height = item.tags | size | times: 48 %}
+            <div class="dropdown" id={{dropdown_height}}>
+                {% assign active_id = "" %}
                 {% for tag in item.tags %}
                     {% if {{page.active}} == {{tag.active}} %}
-                        {% assign id = "active" %}
+                        {% assign active_id = "active" %}
                     {% endif %}
                 {% endfor %}
-                <a class="dropbtn" id={{id}}>{{item.name}}</a>
+                <a class="dropbtn" id={{active_id}}>{{item.name}}</a>
                 <div class="dropdown-content">
                     {% for tag in item.tags %}
                         {% if {{page.active}} == {{tag.active}} %}
-                            {% assign class = "active" %}
+                            {% assign active_class = "active" %}
                         {% else %}
-                            {% assign class = "" %}
+                            {% assign active_class = "" %}
                         {% endif %}
-                        <a class="{{class}}" href="{{ site.baseurl }}{{tag.url}}">{{tag.name}}</a>
+                        <a class="{{active_class}}" href="{{ site.baseurl }}{{tag.url}}">{{tag.name}}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -38,7 +39,7 @@
         {% elsif {{item.type}} == "searchbar" %}
             <a class="search_icon" href="{{ site.baseurl }}/search"><i class="fa fa-search" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
         {% else %}
-            <a class="{{class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
+            <a class="{{active_class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
         {% endif %}
     {% endfor %}
     <a href="javascript:void(0);" class="icon" onclick="responsivenav()">&#9776;</a>
