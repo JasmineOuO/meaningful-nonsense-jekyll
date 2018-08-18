@@ -4,13 +4,8 @@
     "\\resources",
     "\\resources\\css",
     "\\resources\\js",
-    "\\vendors",
-    "\\vendors\\sakura",
-    "\\_data",
-    "\\_includes",
-    "\\_layouts",
-    "\\_posts"
+    "\\_includes"
   ],
-  "SelectedNode": "\\_layouts\\gallery.html",
+  "SelectedNode": "\\_includes\\searchbar.html",
   "PreviewInSolutionExplorer": false
 }
