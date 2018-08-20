@@ -1,4 +1,4 @@
-$(window).resize(updateHeight);
+window.addEventListener('resize', updateHeight);
 
 // Disables sakura animation if it is a mobile device
 function isMobile() {
@@ -11,15 +11,17 @@ function updateHeight() {
     imagesLoaded(document.body, function() {
         var polaroids = document.querySelectorAll('.flip-container');
         Array.prototype.forEach.call(polaroids, function(polaroid) {
-            polaroid.style.height = polaroid.querySelector("img").height + 79 + "px";
+			var height = polaroid.querySelector('img').height + 79;
+            polaroid.style.height = height + "px";
+			polaroid.querySelector('.back').style.height = height - 10 + "px";
         });
     });
 }
 
-$(window).load(function () {
+window.onload = function() {
     // Loads all images
     updateHeight();
-    $(".loader").fadeOut("slow");
+    $("#loader").fadeOut("slow");
     //Starts animation
     if (!isMobile()) {
         $('body').sakura({
@@ -28,19 +30,16 @@ $(window).load(function () {
             newOn: 1000, // Interval after which a new petal is added
         });
     }
-    // Assigns heights to back of the hovered polaroid for accurate flipping animation
-    $(".flip-container").on("mouseenter click", function(){
-        $(this).find(".back").height($(this).height() - 10);
-    });
+	var navbar = document.querySelector('nav');
     //Set max height for dropdown allowing for smooth animation
-    $("nav .dropdown").mouseenter(function(){
-        $(this).find(".dropdown-content").css('max-height', this.id + 'px');;
+    navbar.querySelector('.dropdown').addEventListener('mouseover', function() {
+        this.querySelector('.dropdown-content').style.height = this.id + "px";
     });
      //Set max height back to 0 for dropdown allowing for smooth animation
-     $("nav .dropdown").mouseleave(function(){
-        $(this).find(".dropdown-content").css('max-height', '0px');;
+    navbar.querySelector('.dropdown').addEventListener('mouseout', function() {
+        this.querySelector('.dropdown-content').style.height = "0px";
     });
-});
+};
 
 // Enables responsive navbar when screen reaches specific width
 function responsivenav() {
