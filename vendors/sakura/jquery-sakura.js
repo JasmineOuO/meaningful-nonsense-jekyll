@@ -66,39 +66,42 @@
         var documentHeight = $(document).height();
         var documentWidth = $(document).width();
         var sakura = $('<div class="' + options.className + '" />');
-
-        $("#autumn").click(function(){
-            sakura = $('<div class="autumn" />');
-            fallSpeed = 1.5;
-            maxSize = 18;
-            minSize = 12;
-            newOn = 200;
+        
+        $( "#archives-panel" ).on( "change-season", function(event, season) {
+            if (season == "winter")
+            {
+                sakura = $('<div class="winter" />');
+                fallSpeed = 1.5;
+                maxSize = 0.5;
+                minSize = 0.2;
+                newOn = 100;
+            }
+            else if (season == "summer")
+            {
+                sakura = $('<div class="summer" />');
+                fallSpeed = 1;
+                maxSize = 18;
+                minSize = 12;
+                newOn = 300;
+            }
+            else if (season == "autumn")
+            {
+                sakura = $('<div class="autumn" />');
+                fallSpeed = 1.5;
+                maxSize = 18;
+                minSize = 12;
+                newOn = 200;
+            }
+            else
+            {
+                sakura = $('<div class="spring" />');
+                fallSpeed = 1;
+                maxSize = 14;
+                minSize = 9;
+                newOn = 300;
+            }
         });
-
-        $("#spring").click(function(){
-            sakura = $('<div class="spring" />');
-            fallSpeed = 1;
-            maxSize = 14;
-            minSize = 9;
-            newOn = 300;
-        });
-
-        $("#summer").click(function(){
-            sakura = $('<div class="summer" />');
-            fallSpeed = 1;
-            maxSize = 18;
-            minSize = 12;
-            newOn = 300;
-        });
-
-        $("#winter").click(function(){
-            sakura = $('<div class="winter" />');
-            fallSpeed = 1.5;
-            maxSize = 0.5;
-            minSize = 0.2;
-            newOn = 100;
-        });
-
+          
         // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
         $('body').css({ 'overflow-x': 'hidden' });
 
