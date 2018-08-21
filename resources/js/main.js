@@ -7,6 +7,7 @@ function isMobile() {
     return check; }
 
 // Assigns heights to each polaroid depending on image dimensions
+// Update height for the archive message vertical centering
 function updateHeight() {
     imagesLoaded(document.body, function() {
         var polaroids = document.querySelectorAll('.flip-container');
@@ -16,6 +17,9 @@ function updateHeight() {
 			polaroid.querySelector('.back').style.height = height - 10 + "px";
         });
     });
+    console.log(window.innerHeight+" innerheight");
+    console.log(window.innerHeight - 609.19 + "px");
+    document.querySelector('#archives-message').style.height = window.innerHeight - 609.19 + "px";
 }
 
 window.onload = function() {
@@ -89,10 +93,28 @@ function showAlert(message) {
     $('#comment-form .js-notice').removeClass('hidden');
     $('#comment-form .js-notice-text').html(message);
 }
-
 function showHide (className, show)
 {
     var items = document.querySelectorAll(className);
+    console.log(items);
+    var archive_message = document.querySelector('#archives-message');
+    if (show == true && items.length == 0) 
+    {
+        if (curseason == "all")
+        {
+            archive_message.innerHTML =  "No posts written in all of " + curyear;
+        }
+        else
+        {
+            archive_message.innerHTML =  "No posts written in the " + curseason + " of " + curyear;
+        }
+        archive_message.style.display = "block";
+    }
+    else
+    {
+        archive_message.style.display = "none";
+    }
+    
     Array.prototype.forEach.call(items, function(item) {
         if (show == true)
         {
@@ -122,7 +144,6 @@ document.querySelector('#year-up').addEventListener('click', function(){
     else
     {
         year.style.color = 'rgba(0,0,0,0.5)';
-        showHide('.year-' + curyear, true);
     }
 });
 

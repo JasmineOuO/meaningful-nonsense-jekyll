@@ -4,8 +4,9 @@
     "\\resources",
     "\\resources\\css",
     "\\resources\\js",
-    "\\_includes"
+    "\\_includes",
+    "\\_layouts"
   ],
-  "SelectedNode": "\\_includes\\searchbar.html",
+  "SelectedNode": "\\.babelrc",
   "PreviewInSolutionExplorer": false
 }

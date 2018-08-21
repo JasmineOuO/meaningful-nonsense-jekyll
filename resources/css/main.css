@@ -371,7 +371,14 @@ nav > .dropdown:hover > a:after {
 .range-labels .active.selected::before {
     display: none;
 }
-  
+
+#archives-message{
+    font-size:16px;
+    text-align: center;
+    padding-top: 150px;
+    display: none;
+}
+
 .myimg {
     box-shadow: 0px 0px 0.5px 0.1px rgba(0,0,0,0.5);
     width:100%;
