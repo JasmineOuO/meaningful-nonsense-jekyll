@@ -1,4 +1,8 @@
-window.addEventListener('resize', updateHeight);
+window.addEventListener('resize', function (){
+	updateHeight();
+	document.querySelector('#archives-message').style.height = window.innerHeight - 609.19 + "px";
+});
+
 
 // Disables sakura animation if it is a mobile device
 function isMobile() {
@@ -19,7 +23,7 @@ function updateHeight() {
     });
     console.log(window.innerHeight+" innerheight");
     console.log(window.innerHeight - 609.19 + "px");
-    document.querySelector('#archives-message').style.height = window.innerHeight - 609.19 + "px";
+
 }
 
 window.onload = function() {
