@@ -1,6 +1,10 @@
 window.addEventListener('resize', function (){
 	updateHeight();
-	document.querySelector('#archives-message').style.height = window.innerHeight - 609.19 + "px";
+	var archive_message=document.querySelector('#archives-message');
+if(archive_message != null)
+{
+	archive_message.style.height = window.innerHeight - 609.19 + "px";
+	}
 });
 
 
