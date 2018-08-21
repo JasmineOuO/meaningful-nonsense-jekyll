@@ -30,13 +30,12 @@ window.onload = function() {
             newOn: 1000, // Interval after which a new petal is added
         });
     }
-	var navbar = document.querySelector('nav');
     //Set max height for dropdown allowing for smooth animation
-    navbar.querySelector('.dropdown').addEventListener('mouseover', function() {
-        this.querySelector('.dropdown-content').style.height = this.id + "px";
+    document.querySelector('nav .dropdown').addEventListener('mouseover', function() {
+        this.querySelector('nav .dropdown-content').style.height = this.id + "px";
     });
      //Set max height back to 0 for dropdown allowing for smooth animation
-    navbar.querySelector('.dropdown').addEventListener('mouseout', function() {
+    document.querySelector('.dropdown').addEventListener('mouseout', function() {
         this.querySelector('.dropdown-content').style.height = "0px";
     });
 };
@@ -87,6 +86,58 @@ function showAlert(message) {
     $('#comment-form .js-notice-text').html(message);
 }
 
+function showHide (className, show)
+{
+    var items = document.querySelectorAll(className);
+    Array.prototype.forEach.call(items, function(item) {
+        if (show == true)
+        {
+            item.style.display = "block";
+        }
+        else
+        {
+            item.style.display = "none";
+        }
+    });
+}
+
+// Select year with the up and down arrows
+var year = document.querySelector('#year');
+var curyear = parseInt(year.innerHTML, 10);
+var curseason = "all";
+document.querySelector('#year-up').addEventListener('click', function(){
+    curyear = parseInt(year.innerHTML, 10);
+    showHide('.' + curseason + curyear, false);
+    curyear++;
+    year.innerHTML = curyear;
+    showHide('.' + curseason + curyear, true);
+    if (curyear >= 2022)
+    {
+        year.style.color = '#e87889';
+    }
+    else
+    {
+        year.style.color = 'rgba(0,0,0,0.5)';
+        showHide('.year-' + curyear, true);
+    }
+});
+
+document.querySelector('#year-down').addEventListener('click', function(){
+    curyear = parseInt(year.innerHTML, 10);
+    showHide('.' + curseason + curyear, false);
+    curyear--;
+    year.innerHTML = curyear;
+    showHide('.' + curseason + curyear, true);
+    if (curyear <= 2015)
+    {
+        year.style.color = '#e87889';
+    }
+    else
+    {
+        year.style.color = 'rgba(0,0,0,0.5)';
+    }
+});
+
 /***************** RANGE SLIDER ******************* */
 var sheet = document.createElement('style'),  
   $rangeInput = $('.range input'),
@@ -96,7 +147,7 @@ document.body.appendChild(sheet);
 
 var getTrackStyle = function (el) {  
   var curVal = el.value,
-      val = (curVal - 1) * 16.666666667,
+      val = (curVal - 1) * 25,
       style = '';
   
   // Set active label
@@ -107,6 +158,10 @@ var getTrackStyle = function (el) {
   curLabel.addClass('active selected');
   curLabel.prevAll().addClass('selected');
   
+  //Set the curseason variable with slider changes and change animation
+  curseason = curLabel.attr("data-season");
+  $("#archives-panel").trigger("change-season", curseason);
+        
   // Change background gradient
   for (var i = 0; i < prefs.length; i++) {
     style += '.range {background: linear-gradient(to right, #e8c5d6 0%, #e8c5d6 ' + val + '%, #fff ' + val + '%, #fff 100%)}';
@@ -117,13 +172,17 @@ var getTrackStyle = function (el) {
 }
 
 $rangeInput.on('input', function () {
-  sheet.textContent = getTrackStyle(this);
+    showHide('.' + curseason + curyear, false);
+    console.log("hide "+ '.' + curseason + curyear);
+    sheet.textContent = getTrackStyle(this);
+    showHide('.' + curseason + curyear, true);
+    console.log("show "+ '.' + curseason + curyear);
 });
 
 // Change input value on label click
-$('.range-labels li').on('click', function () {
-  var index = $(this).index();
-  
-  $rangeInput.val(index + 1).trigger('input');
-  
+var range_labels = document.querySelectorAll('.range-labels li');
+Array.prototype.forEach.call(range_labels, function(label) {
+    label.addEventListener('click', function () {
+        $rangeInput.val( $(this).index() + 1).trigger('input');        
+    });
 });

@@ -52,6 +52,10 @@
         display: none;
     }
 
+    #archives-panel{
+        display:none;
+    }
+
     nav{
         margin-bottom: 2em;
     }

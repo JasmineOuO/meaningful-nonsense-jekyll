@@ -2,31 +2,26 @@
 layout: default
 ---
 
-<div id="season-panel">
-    <div class="season" id="summer">summer</div>
-    <div style="display:inline-block">&#183;</div>
-    <div class="season" id="autumn">autumn</div>
-    <div style="display:inline-block">&#183;</div>
-    <div class="season" id="winter">winter</div>
-    <div style="display:inline-block">&#183;</div>
-    <div class="season" id="spring">spring</div>
-</div>
-
-<!-- <div id = "slider">
-    <div class="range">
-        <input type="range" min="1" max="7" steps="1" value="1">
+<div id="archives-panel">
+    <div id = "slider">
+        <div id = "select-year">
+            <div id = "year-up" style="padding-bottom: 5px;"><i class="fa fa-angle-up" style="font-size:24px"></i></div>
+            <div id = "year-down"><i class="fa fa-angle-down" style="font-size:24px"></i></div>
+        </div>
+            
+        <div class="range">
+            <input type="range" min="1" max="5" steps="1" value="1">
+        </div>
+        
+        <ul class="range-labels">
+            <li data-season = "all" id = "year" class="active selected" style="color: rgba(0, 0, 0, 0.5)">2018</li>
+            <li data-season = "winter">winter</li>
+            <li data-season = "spring">spring</li>    
+            <li data-season = "summer">summer</li>
+            <li data-season = "autumn">autumn</li>
+        </ul>
     </div>
-    
-    <ul class="range-labels">
-        <li class="active selected">'18</li>
-        <li>Summer</li>
-        <li>Autumn</li>
-        <li>Winter</li>
-        <li>'19</li>   
-        <li>Spring</li>    
-        <li>Summer</li>
-    </ul>
-</div> -->
+</div>
 
 {% if page.active == "photography" %}
     {% assign type = site.static_files | where: "image", true %}
@@ -59,25 +54,40 @@ layout: default
         {% assign post_url = site.baseurl | append: item.url %}
 
         {% if page.active == "food" or page.active == "travel" %}
-        {% include polaroid.html
-        title=item.subtitle
-        subtitle=item.title
-        img=item.name
-        url="none"
-        dateTime=item.date
-        path="resources/images/polaroids/photography"
-        %}
+            {% include polaroid.html
+            title=item.subtitle
+            subtitle=item.title
+            img=item.name
+            url="none"
+            dateTime=item.date
+            path="resources/images/polaroids/photography"
+            %}
         {% else %}
-        {% include polaroid.html
-        title=item.title
-        subtitle=item.subtitle
-        img=item.image
-        url=post_url
-        dateTime=item.date
-        path="resources/images/polaroids/post-thumbnail"
-        %}
+            {% assign season = "all" %}
+            {% capture year %}{{item.date | date: "%Y"}}{% endcapture %}
+            {% capture month %}{{item.date | date: "%m"}}{% endcapture %}
+            {% if month == "01" or month == "02" or month == "03" %}
+                {% assign season = "winter" %}
+            {% elsif month == "04" or month == "05" or month == "06"%}
+                {% assign season = "spring" %}
+            {% elsif month == "07" or month == "08" or month == "09"%}
+                {% assign season = "summer" %}
+            {% elsif month == "10" or month == "11" or month == "12"%}
+                {% assign season = "autumn" %}
+            {% endif %}
+            {% assign archive-filter = year | prepend: season %}
+            {% assign all-filter = year | prepend: "all" %}
+            <div class = "{{all-filter}} {{archive-filter}}">
+                {% include polaroid.html
+                title=archive-filter
+                subtitle=item.subtitle
+                img=item.image
+                url=post_url
+                dateTime=item.date
+                path="resources/images/polaroids/post-thumbnail"
+                %}
+            </div>
         {% endif %}
-
         {% assign colSize = type | size | divided_by: 4.0 | ceil %}
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
