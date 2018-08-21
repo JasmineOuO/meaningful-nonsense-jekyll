@@ -53,8 +53,23 @@ layout: default
         {% for item in type %}
 
         {% assign post_url = site.baseurl | append: item.url %}
+        {% assign season = "all" %}
+        {% capture year %}{{item.date | date: "%Y"}}{% endcapture %}
+        {% capture month %}{{item.date | date: "%m"}}{% endcapture %}
+        {% if month == "01" or month == "02" or month == "03" %}
+            {% assign season = "winter" %}
+        {% elsif month == "04" or month == "05" or month == "06"%}
+            {% assign season = "spring" %}
+        {% elsif month == "07" or month == "08" or month == "09"%}
+            {% assign season = "summer" %}
+        {% elsif month == "10" or month == "11" or month == "12"%}
+            {% assign season = "autumn" %}
+        {% endif %}
+        {% assign archive-filter = year | prepend: season %}
+        {% assign all-filter = year | prepend: "all" %}
 
         {% if page.active == "food" or page.active == "travel" %}
+            <div class = "{{all-filter}} {{archive-filter}}">
             {% include polaroid.html
             title=item.subtitle
             subtitle=item.title
@@ -63,24 +78,11 @@ layout: default
             dateTime=item.date
             path="resources/images/polaroids/photography"
             %}
+            </div>
         {% else %}
-            {% assign season = "all" %}
-            {% capture year %}{{item.date | date: "%Y"}}{% endcapture %}
-            {% capture month %}{{item.date | date: "%m"}}{% endcapture %}
-            {% if month == "01" or month == "02" or month == "03" %}
-                {% assign season = "winter" %}
-            {% elsif month == "04" or month == "05" or month == "06"%}
-                {% assign season = "spring" %}
-            {% elsif month == "07" or month == "08" or month == "09"%}
-                {% assign season = "summer" %}
-            {% elsif month == "10" or month == "11" or month == "12"%}
-                {% assign season = "autumn" %}
-            {% endif %}
-            {% assign archive-filter = year | prepend: season %}
-            {% assign all-filter = year | prepend: "all" %}
             <div class = "{{all-filter}} {{archive-filter}}">
                 {% include polaroid.html
-                title=archive-filter
+                title=item.title
                 subtitle=item.subtitle
                 img=item.image
                 url=post_url

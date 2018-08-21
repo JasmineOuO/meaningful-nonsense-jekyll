@@ -133,10 +133,12 @@ var curyear = parseInt(year.innerHTML, 10);
 var curseason = "all";
 document.querySelector('#year-up').addEventListener('click', function(){
     curyear = parseInt(year.innerHTML, 10);
-    showHide('.' + curseason + curyear, false);
+    showHide('.all' + curyear, false);
+    console.log("hide "+ '.all' + curyear);
     curyear++;
     year.innerHTML = curyear;
     showHide('.' + curseason + curyear, true);
+    console.log("show "+ '.' + curseason + curyear);
     if (curyear >= 2022)
     {
         year.style.color = '#e87889';
@@ -149,10 +151,12 @@ document.querySelector('#year-up').addEventListener('click', function(){
 
 document.querySelector('#year-down').addEventListener('click', function(){
     curyear = parseInt(year.innerHTML, 10);
-    showHide('.' + curseason + curyear, false);
+    showHide('.all' + curyear, false);
+    console.log("hide "+ '.all' + curyear);
     curyear--;
     year.innerHTML = curyear;
     showHide('.' + curseason + curyear, true);
+    console.log("show "+ '.' + curseason + curyear);
     if (curyear <= 2015)
     {
         year.style.color = '#e87889';
