@@ -142,12 +142,18 @@ nav .dropdown-content a {
         background-color: rgb(190,190,190);
     }
 
-    nav .dropdown:hover .dropdown-content {
+    nav .dropdown:hover .dropdown-content {   
     -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
     -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
     -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
     -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
     transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay:.5s;
 
     max-height: 144px;
     opacity: 1;
@@ -196,11 +202,25 @@ nav > .dropdown > a:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 8px solid transparent;
+    border-bottom-color: #f9f9f9;
+    opacity:0;
 }
 
 /*The triangle for the dropdown*/
-nav > .dropdown:hover > a:after {
-    border-bottom-color: #f9f9f9;
+nav > .dropdown:hover > a:after {    
+    -webkit-transition: opacity 0.2s;
+    -moz-transition:  opacity 0.2s;
+    -ms-transition:  opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay:.5s;
+
+    opacity:1;
 }
 
 #slider{
