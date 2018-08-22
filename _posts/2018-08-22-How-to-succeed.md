@@ -3,7 +3,7 @@ layout: post
 title: How to succeed
 subtitle: Success
 date: 2018-08-22
-image: milan2.jpg
+image: twoparma.jpg
 categories: life
 tags: everydaythoughts
 ---
