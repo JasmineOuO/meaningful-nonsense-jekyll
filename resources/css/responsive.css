@@ -95,6 +95,7 @@
     .topnav a.icon {
         float: right;
         display: block;
+        font-size: 18.5px;
     }
 
     .topnav.responsive {

@@ -71,6 +71,7 @@ footer i:hover {
 nav {
     text-align: left;
     margin-top: 5vw;
+    margin-bottom: 0;
     width: 100%;
     background-color: #e8c5d6;
     position: sticky;
@@ -170,11 +171,6 @@ nav .dropdown-content a {
 /*The hamburger menu icon*/
 nav .icon {
     display: none;
-}
-
-/*The hamburger menu icon*/
-nav .icon a {
-    font-size: 18px;
 }
 
 /*navbar hover colour*/
