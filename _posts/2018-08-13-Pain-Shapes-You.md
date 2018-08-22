@@ -8,9 +8,14 @@ categories: life
 tags: everydaythoughts
 ---
 
-![milan](resources/images/polaroids/post-images/milan.jpg)
-
- <br/>
+{% include post-image.html 
+    folder="post-images" 
+    file="milan.jpg"
+    date="2018-07-26"
+    location="Milan, Italy"
+    photographer="Jessica Ou"
+    caption="A metropolis in Italy's northern Lombardy region"
+%}
  
 Do you ever just feel *on edge*? Like your state of happiness and bliss are being tested on such a fragile equilibrium that any second, minute or day now, it will surely tip over and shatter your entire illusion of peace. I know it's stupid to think that the happiness we feel will always be there but doesn't it frighten you knowing that your future will inevitably be filled with so much pain. It doesn't matter how far you go to avoid those situations, life will always be able to find a way to make you experience the art of pain. 
 

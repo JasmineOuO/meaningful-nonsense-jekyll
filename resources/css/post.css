@@ -119,6 +119,14 @@ time {
         background: linear-gradient(to left, #FFFFFF, #353535);
     }
 
+    .caption{        
+        padding-top: 0.1em;
+        padding-bottom: 2em;
+        font-size: 0.7em;
+        color: #777;
+        text-align: center;
+    }
+
 /* Sliding up animation for post header */
 @keyframes slide-up {
     0% {

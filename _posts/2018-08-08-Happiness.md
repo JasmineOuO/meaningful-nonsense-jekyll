@@ -8,7 +8,14 @@ categories: life
 tags: learn
 ---
 
-​    ![burano](resources/images/polaroids/post-thumbnail/burano.jpg)
+{% include post-image.html 
+    folder="post-thumbnail" 
+    file="burano.jpg"
+    date="2018-07-26"
+    location="Burano, Italy"
+    photographer="Jessica Ou"
+    caption="An island in the Venetian Lagoon"
+%}
 
 ### 1. Appreciating What You Already Have
 

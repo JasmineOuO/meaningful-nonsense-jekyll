@@ -1,6 +1,6 @@
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
     <div class="flipper">
-        <div class="front"><a title="{{include.subtitle}}"><img id="myimg" class="myimg" src="{{include.path}}/{{include.img}}" alt="image not found" /></a></div>
+        <div class="front"><a title="{{include.subtitle}}"><img id="myimg" class="myimg" src="{{include.path}}/{{include.img}}" alt="{{include.img}} not found" /></a></div>
         <div class="back">
             <h1>{{include.title}}</h1>
             <a title="{{include.dateTime | date: "%-d/%-m/%y" }}"></a>

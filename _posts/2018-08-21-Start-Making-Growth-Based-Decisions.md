@@ -8,7 +8,14 @@ categories: life
 tags: motivational
 ---
 
-![burano2](resources/images/polaroids/post-images/burano2.jpg)
+{% include post-image.html 
+    folder="post-images" 
+    file="burano2.jpg"
+    date="2018-07-26"
+    location="Burano, Italy"
+    photographer="Jessica Ou"
+    caption="An island in the Venetian Lagoon"
+%}
 
 Fear plays a very interesting role in my life and probably in many of yours as well. In fact, I’d go so far as to say that we welcome fear. And why do we? Why do we let it **control** us? Why do we let it into our decision-making, into our livelihoods, into our relationships? Well, because it’s a good safety mechanism. It stops us from doing things that would put us in danger, but the problem is when it starts to dictate our every thought, our every action, our every decision. Fear can *paralyze* our minds. And, what’s worse, society ingrains this debilitating fear into every single child as he or she grows up - it becomes their second nature. It never leaves us!  I’ve spent a great deal of my life making decisions out of fear and let me tell you, it is extremely exhausting! Because I was a puppet being stringed along by the judgment of others, and when I didn’t live up to their expectations, it really crumpled my sense of self-worth. Then one day, I stumbled upon this video on Youtube and the woman asked me whether I make my decisions out of fear or if I make them out of growth. This shift in perspective changed everything because suddenly I started to put my happiness first and realized that fear *shackles* you like a prisoner in the shadows. But growth, **growth** frees you from the chains of apprehension, allowing you to look beyond your limitations and into yourself, where you see the bigger picture and take action to step out of the shadows. 
 
