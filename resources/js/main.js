@@ -1,9 +1,9 @@
 window.addEventListener('resize', function (){
 	updateHeight();
 	var archive_message=document.querySelector('#archives-message');
-if(archive_message != null)
-{
-	archive_message.style.height = window.innerHeight - 609.19 + "px";
+    if(archive_message != null)
+    {
+	    archive_message.style.height = window.innerHeight - 609.19 + "px";
 	}
 });
 
@@ -27,7 +27,6 @@ function updateHeight() {
     });
     console.log(window.innerHeight+" innerheight");
     console.log(window.innerHeight - 609.19 + "px");
-
 }
 
 window.onload = function() {
@@ -46,13 +45,21 @@ window.onload = function() {
     {
         document.querySelector('#archives-panel').style.display = "none";
     }
-    //Set max height for dropdown allowing for smooth animation
-    document.querySelector('nav .dropdown').addEventListener('mouseover', function() {
-        this.querySelector('nav .dropdown-content').style.height = this.id + "px";
-    });
-     //Set max height back to 0 for dropdown allowing for smooth animation
-    document.querySelector('.dropdown').addEventListener('mouseout', function() {
-        this.querySelector('.dropdown-content').style.height = "0px";
+    
+    var nav_dropdowns = document.querySelectorAll('nav .dropdown');
+    Array.prototype.forEach.call(nav_dropdowns, function(nav_dropdown) {
+        //Set max height for dropdown allowing for smooth animation
+        nav_dropdown.addEventListener('mouseover', function() {
+            this.querySelector('.dropdown-content').style.maxHeight = this.getAttribute("data-height") + "px";
+        });
+        //Set max height back to 0 for dropdown allowing for smooth animation
+        nav_dropdown.addEventListener('mouseout', function() {
+            this.querySelector('.dropdown-content').style.maxHeight = "0px";
+        });
+        //Show dropdown content on click
+        /*nav_dropdown.addEventListener('click', function() {
+            this.querySelector('.dropdown-content').classList.toggle("show");
+        });*/
     });
 };
 

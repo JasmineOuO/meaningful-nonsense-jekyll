@@ -4,9 +4,10 @@
     "\\resources",
     "\\resources\\css",
     "\\resources\\js",
+    "\\_data",
     "\\_includes",
     "\\_layouts"
   ],
-  "SelectedNode": "\\.babelrc",
+  "SelectedNode": "\\_data\\food.yml",
   "PreviewInSolutionExplorer": false
 }

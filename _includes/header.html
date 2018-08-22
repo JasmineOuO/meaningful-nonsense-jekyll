@@ -15,7 +15,7 @@
 
         {% if {{item.type}} == "category" %}
             {% assign dropdown_height = item.tags | size | times: 48 %}
-            <div class="dropdown" id={{dropdown_height}}>
+            <div class="dropdown" data-height = {{dropdown_height}}>
                 {% assign active_id = "" %}
                 {% for tag in item.tags %}
                     {% if {{page.active}} == {{tag.active}} %}
