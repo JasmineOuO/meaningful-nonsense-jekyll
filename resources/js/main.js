@@ -45,7 +45,6 @@ window.onload = function() {
     {
         document.querySelector('#archives-panel').style.display = "none";
     }
-    
     var nav_dropdowns = document.querySelectorAll('nav .dropdown');
     Array.prototype.forEach.call(nav_dropdowns, function(nav_dropdown) {
         //Set max height for dropdown allowing for smooth animation
@@ -56,20 +55,16 @@ window.onload = function() {
         nav_dropdown.addEventListener('mouseout', function() {
             this.querySelector('.dropdown-content').style.maxHeight = "0px";
         });
-        //Show dropdown content on click
-        /*nav_dropdown.addEventListener('click', function() {
-            this.querySelector('.dropdown-content').classList.toggle("show");
-        });*/
     });
 };
 
 // Enables responsive navbar when screen reaches specific width
 function responsivenav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var navbar = document.querySelector("#myTopnav");
+    if (navbar.className === "topnav") {
+        navbar.className += " responsive";
     } else {
-        x.className = "topnav";
+        navbar.className = "topnav";
     }
 }
 
@@ -117,11 +112,11 @@ function showHide (className, show)
     {
         if (curseason == "all")
         {
-            archive_message.innerHTML =  "No posts written in all of " + curyear;
+            archive_message.innerHTML =  "Nothing found in all of " + curyear;
         }
         else
         {
-            archive_message.innerHTML =  "No posts written in the " + curseason + " of " + curyear;
+            archive_message.innerHTML =  "Nothing found in the " + curseason + " of " + curyear;
         }
         archive_message.style.display = "block";
     }

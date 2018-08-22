@@ -82,7 +82,7 @@ nav {
 
 nav a, .dropbtn, .dropdown, .dropdown-content {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     text-transform: uppercase;
     letter-spacing: 0.3em;
 }
@@ -178,7 +178,7 @@ nav .icon a {
 }
 
 /*navbar hover colour*/
-nav a:hover, .dropdown:hover .dropbtn{
+nav a:hover, .dropdown:hover{
     background-color: #e8b4cd;
 }
 
