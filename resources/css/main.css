@@ -12,7 +12,7 @@ header h1 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 60px;
-    color:rgb(64,64,64);
+    color:#404040;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ nav .dropdown-content a {
         -o-transition: all 0.3s ease-in;
         -ms-transition: all 0.3s ease-in;
         color: #fff;
-        background-color: rgb(190,190,190);
+        background-color: #BEBEBE;
     }
 
     nav .dropdown:hover .dropdown-content {   
@@ -188,7 +188,7 @@ nav .active, nav #active {
 
 nav .dropdown-content > .active {
     color: #fff;
-    background-color: rgb(190,190,190);
+    background-color: #BEBEBE;
 }
 
 /*The triangle for the dropdown*/
@@ -252,13 +252,13 @@ nav > .dropdown:hover > a:after {
     left: -60px;
     font-size: 20px;
     font-weight:700;
-    color: rgba(0,0,0,.35);
+    color: #B2B2B2;
     visibility: hidden;
     opacity: 0;
 }
 
 #year-up:hover, #year-down:hover{
-    color: rgba(0,0,0,.7);
+    color: #4F4F4F;
     cursor: pointer;
 }
 
@@ -372,11 +372,11 @@ nav > .dropdown:hover > a:after {
 
 .range-labels li:first-child{
     font-weight:700;
-    color: rgba(0,0,0,0.5);
+    color: #7F7F7F;
 }
 
 .range-labels .active {
-    color: rgba(0,0,0,0.5);
+    color: #7F7F7F;
     font-weight: 700;
 }
 
@@ -527,7 +527,7 @@ nav > .dropdown:hover > a:after {
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
-    background-color: rgba(0,0,0,0.85);
+    background-color: #262626;
 }
 
 .back a {

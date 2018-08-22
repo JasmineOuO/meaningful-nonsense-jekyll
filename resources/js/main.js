@@ -87,13 +87,13 @@ $('#comment-form').submit(function () {
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
             $('#comment-form-submit').html('Submitted').addClass('btn-disabled').prop('disabled', true);
-            $('#comment-form .js-notice').attr('style', 'background-color:rgba(136, 216, 60, 0.5)');
+            $('#comment-form .js-notice').attr('style', 'background-color: #BCE496');
             showAlert('<strong>Thanks for your comment!</strong> It will show on the site once it has been reviewed and approved.');
         },
         error: function (err) {
             console.log(err);
             $('#comment-form-submit').html('Submit Comment');
-            $('#comment-form .js-notice').attr('style', 'background-color:rgba(229, 43, 43, 0.3);');
+            $('#comment-form .js-notice').attr('style', 'background-color: #EEB6B6;');
             showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
             for (var i = 0; i < form_fields.length; ++i) {
                 form_fields[i].readOnly = false;
@@ -160,7 +160,7 @@ document.querySelector('#year-up').addEventListener('click', function(){
     }
     else
     {
-        year.style.color = 'rgba(0,0,0,0.5)';
+        year.style.color = '#7F7F7F';
     }
 });
 
@@ -178,7 +178,7 @@ document.querySelector('#year-down').addEventListener('click', function(){
     }
     else
     {
-        year.style.color = 'rgba(0,0,0,0.5)';
+        year.style.color = '#7F7F7F';
     }
 });
 

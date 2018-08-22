@@ -5,7 +5,7 @@
     margin: 12vw 20vw 10vw 20vw;
     font-family: "Monteserrat", sans-serif;
     line-height: 1.6;
-    color: rgba(0,0,0,0.6);
+    color: #676767;
     background-color: #fff;
 }
 
@@ -78,7 +78,7 @@
 .post-content {
     margin-top: 2em;
     margin-bottom: 0.25em;
-    color: rgba(0,0,0,0.6);
+    color: #676767;
     font-size: 18px;
 }
 
@@ -110,13 +110,13 @@ time {
     time:before {
         right: 1em;
         margin-left: -50%;
-        background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
+        background: linear-gradient(to right, #FFFFFF, #353535);
     }
 
     time:after {
         left: 1em;
         margin-right: -50%;
-        background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.8));
+        background: linear-gradient(to left, #FFFFFF, #353535);
     }
 
 /* Sliding up animation for post header */
@@ -316,7 +316,7 @@ time {
 }
 
     .comment_form input:focus, textarea:focus {
-        border: 2px solid rgba(0,0,0,0.4);
+        border: 2px solid #999999;
     }
 
 textarea {
@@ -362,7 +362,7 @@ button {
 .comment {
     font-family: "Monteserrat", sans-serif;
     line-height: 1.6;
-    color: rgba(0,0,0,0.6);
+    color: #676767;
     background-color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     padding: 20px;
@@ -395,7 +395,7 @@ button {
     line-height: 1.6;
     text-decoration: none;
     font-size: 16px;
-    color: rgba(0,0,0,0.6);
+    color: #676767;
 }
 
 .js-notice{
