@@ -26,11 +26,23 @@ tags: [everydaythoughts, learn]
 
 #### Inserting Images
 
-Click Edit -> Image Tools -> Insert Local Images then browse for the image you want
+Copy and paste this wherever you want to insert an image. You can leave some variables empty by setting it to an empty string "". Make sure to specify the folder and file.
 
-Next, change the image path to start with resources/ by removing the first part of the path. Even though you won't see the image in here anymore, you will see it appear on the blog.
+{% include post-image.html 
 
-![burano](resources\images\polaroids\post-thumbnail\burano.jpg)
+​    folder="post-thumbnail" 
+
+​    file="burano.jpg"
+
+​    date="2018-07-26"
+
+​    location="Burano, Italy"
+
+​    photographer="Jessica Ou"
+
+​    caption="An island in the Venetian Lagoon"
+
+%}
 
 #### Tags and Categories
 
