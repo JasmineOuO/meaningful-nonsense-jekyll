@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Bentham|IBM+Plex+Serif:300|Montserrat:400,500';
+﻿@import 'https://fonts.googleapis.com/css?family=Bentham|IBM+Plex+Serif:300|Montserrat:400,500';
 @import 'https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt';
 
 .post {
@@ -130,7 +130,7 @@ time {
 
 blockquote {
     position: relative;
-    margin: 0;
+    margin-top: 2em;
     padding: .5rem;
     text-align: center;
     font-family: "Monteserrat", sans-serif;
