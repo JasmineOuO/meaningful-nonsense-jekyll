@@ -17,13 +17,20 @@
     .post {
         margin: 10vw 7vw 0 7vw;
     }
+
     .comment_area {
         margin: 0 7vw 30px 7vw;
     }
+
     .comment_header {
         margin: 50px 7vw -0.25em 12vw;
         font-size: 9vw;
     }
+
+    #post-title {
+        font-size: 7vw;
+    }
+}
 
 @media (max-width: 600px) {
     .polaroid {
@@ -75,7 +82,7 @@
         -webkit-transform: translate(0,-2px);
         -moz-transform: translate(0,-2px);
     }
-    /*.topnav a:not(:first-child):not(:last-child)*/
+    
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
