@@ -25,8 +25,6 @@ function updateHeight() {
 			polaroid.querySelector('.back').style.height = height - 10 + "px";
         });
     });
-    console.log(window.innerHeight+" innerheight");
-    console.log(window.innerHeight - 609.19 + "px");
 }
 
 window.onload = function() {
@@ -106,7 +104,6 @@ function showAlert(message) {
 function showHide (className, show)
 {
     var items = document.querySelectorAll(className);
-    console.log(items);
     var archive_message = document.querySelector('#archives-message');
     if (show == true && items.length == 0) 
     {
@@ -144,11 +141,9 @@ var curseason = "all";
 document.querySelector('#year-up').addEventListener('click', function(){
     curyear = parseInt(year.innerHTML, 10);
     showHide('.all' + curyear, false);
-    console.log("hide "+ '.all' + curyear);
     curyear++;
     year.innerHTML = curyear;
     showHide('.' + curseason + curyear, true);
-    console.log("show "+ '.' + curseason + curyear);
     if (curyear >= 2022)
     {
         year.style.color = '#e87889';
@@ -162,11 +157,9 @@ document.querySelector('#year-up').addEventListener('click', function(){
 document.querySelector('#year-down').addEventListener('click', function(){
     curyear = parseInt(year.innerHTML, 10);
     showHide('.all' + curyear, false);
-    console.log("hide "+ '.all' + curyear);
     curyear--;
     year.innerHTML = curyear;
     showHide('.' + curseason + curyear, true);
-    console.log("show "+ '.' + curseason + curyear);
     if (curyear <= 2015)
     {
         year.style.color = '#e87889';
@@ -212,10 +205,8 @@ var getTrackStyle = function (el) {
 
 $rangeInput.on('input', function () {
     showHide('.' + curseason + curyear, false);
-    console.log("hide "+ '.' + curseason + curyear);
     sheet.textContent = getTrackStyle(this);
     showHide('.' + curseason + curyear, true);
-    console.log("show "+ '.' + curseason + curyear);
 });
 
 // Change input value on label click

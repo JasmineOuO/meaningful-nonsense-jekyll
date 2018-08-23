@@ -63,8 +63,8 @@
         var options = $.extend({}, defaults, options);
 
         // Declarations.
-        var documentHeight = $(document).height();
-        var documentWidth = $(document).width();
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
         var sakura = $('<div class="' + options.className + '" />');
         
         $( "#archives-panel" ).on( "change-season", function(event, season) {
@@ -114,14 +114,13 @@
             // Get one random animation of each type and randomize fall time of the petals.
             var blowAnimation = options.blowAnimations[Math.floor(Math.random() * options.blowAnimations.length)];
             var swayAnimation = options.swayAnimations[Math.floor(Math.random() * options.swayAnimations.length)];
-            var fallTime = (Math.round(documentHeight * 0.007) + Math.random() * 5) * options.fallSpeed;
-
+            var fallTime = (Math.round(windowHeight * 0.007) + Math.random() * 5) * options.fallSpeed;
             var animations = 'fall ' + fallTime + 's linear 0s 1' + ', ' +
                 blowAnimation + ' ' + (((fallTime > 30 ? fallTime : 30) - 20) + getRandomInt(0, 20)) + 's linear 0s infinite' + ', ' +
                 swayAnimation + ' ' + getRandomInt(2, 4) + 's linear 0s infinite';
             var petal = sakura.clone();
             var size = getRandomInt(options.minSize, options.maxSize);
-            var startPosLeft = Math.random() * documentWidth - 100;
+            var startPosLeft = Math.random() * windowWidth - 100;
             var startPosTop = -((Math.random() * 20) + 15);
 
             // Apply Event Listener to remove petals that reach the bottom of the page.
@@ -152,10 +151,10 @@
         };
 
 
-        // Recalculate documentHeight and documentWidth on browser resize.
+        // Recalculate windowHeight and windowWidth on browser resize.
         $(window).resize(function () {
-            documentHeight = $(document).height();
-            documentWidth = $(document).width();
+            windowHeight = $(window).height();
+            windowWidth = $(window).width();
         });
 
         // Finally: Start adding petals.
