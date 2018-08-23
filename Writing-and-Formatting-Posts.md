@@ -67,3 +67,10 @@ Be sure to break up your text into paragraphs by including line breaks with
 
 You do not need line breaks if you separate paragraphs with a heading since headings have padding.
 
+#### Quotations
+
+```
+<blockquote>The man who comes back through the door in the wall will never be quite the same as the man who went out.</blockquote>
+<cite>Aldous Huxley</cite>
+```
+
