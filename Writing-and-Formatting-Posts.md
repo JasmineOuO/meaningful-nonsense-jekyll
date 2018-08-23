@@ -28,21 +28,18 @@ tags: [everydaythoughts, learn]
 
 Copy and paste this wherever you want to insert an image. You can leave some variables empty by setting it to an empty string "". Make sure to specify the folder and file.
 
+```html
 {% include post-image.html 
-
-​    folder="post-thumbnail" 
-
-​    file="burano.jpg"
-
-​    date="2018-07-26"
-
-​    location="Burano, Italy"
-
-​    photographer="Jessica Ou"
-
-​    caption="An island in the Venetian Lagoon"
-
+    folder="post-thumbnail" 
+    file="burano.jpg"
+    date="2018-07-26"
+    location="Burano, Italy"
+    photographer="Jessica Ou"
+    caption="An island in the Venetian Lagoon"
 %}
+```
+
+
 
 #### Tags and Categories
 
