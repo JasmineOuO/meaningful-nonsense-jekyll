@@ -32,18 +32,6 @@
         max-width: 100%;
     }
 
-    .small-plants {
-        display: block;
-    }
-
-        .small-plants img {
-            width: 323px;
-        }
-
-    .big-plants {
-        display: none;
-    }
-
     .search_filter {
         display: none;
     }
