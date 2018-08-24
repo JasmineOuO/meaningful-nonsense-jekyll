@@ -18,21 +18,21 @@ header h1 {
     justify-content: center;
     align-items: center;
     margin-top: 7vw;
-    text-align:center;
+    text-align: center;
 }
 
-header img {
-    position:absolute;
+#branches {
+    position: absolute;
     width: 100%;
     height: auto;
-    opacity: 0.8;
-    margin-top:-7vw;
+    margin-top:-4vw;
     z-index:-1;
+    fill: #676768;
 }
 
 footer {
-    position:relative;
-    background-color: rgba(36, 24, 36, 0.4);
+    position: relative;
+    background-color: #A7A3A7;
     color: #FFFFFF;
     margin-top: 200px;
     padding-top: 50px;
@@ -48,9 +48,9 @@ footer {
 }
 
 footer a {
-    display:inline-block;
+    display: inline-block;
     padding: 10px;
-    font-size:20px;
+    font-size: 20px;
 }
 
 footer i {
@@ -63,6 +63,36 @@ footer i:hover {
 
 footer i:active {
     color: #e8b4cd;
+}
+
+#bench{
+    position: absolute;
+    right: 100px;
+    bottom: 198px;
+    fill: #A7A3A7;
+}
+
+#tree{
+    position: absolute;
+    right: 0;
+    bottom: 195px;
+    fill: #A7A3A7;
+}
+
+#tree2{
+    position: absolute;
+    right: -10px;
+    bottom: 195px;
+    fill: #D6D4D6;
+    z-index: -1;
+}
+
+#lamp{
+    position: absolute;
+    right: 180px;
+    bottom: 198px;
+    width: 20px;
+    fill: #A7A3A7;
 }
 
 nav {
