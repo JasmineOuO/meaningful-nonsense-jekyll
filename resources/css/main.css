@@ -68,31 +68,65 @@ footer i:active {
 #bench{
     position: absolute;
     right: 100px;
-    bottom: 198px;
+    bottom: 200px;
     fill: #A7A3A7;
-}
-
-#tree{
-    position: absolute;
-    right: 0;
-    bottom: 195px;
-    fill: #A7A3A7;
-}
-
-#tree2{
-    position: absolute;
-    right: -10px;
-    bottom: 195px;
-    fill: #D6D4D6;
-    z-index: -1;
+    width: 70px;
 }
 
 #lamp{
     position: absolute;
     right: 180px;
-    bottom: 198px;
+    bottom: 200px;
     width: 20px;
     fill: #A7A3A7;
+}
+
+#right-trees, #left-trees{
+    position: absolute;
+    bottom: 195px;
+    z-index: -1;
+}
+
+#right-trees{
+    right: 0;
+}
+
+#left-trees{
+    left: 0;
+}
+
+/* #right-trees g{
+    transform: translateX(10000px);
+    animation: slideleft 3s 1s ease infinite;
+}
+
+#left-trees g{
+    transform: translateX(-10000px);
+    animation: slideright 3s 1s ease infinite;
+} */
+
+@keyframes slideleft {
+    0% {
+      transform: translateX(10000px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(10000px);
+    }
+}
+
+@keyframes slideright {
+    0% {
+      transform: translateX(-10000px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-10000px);
+    }
 }
 
 nav {
