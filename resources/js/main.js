@@ -20,7 +20,7 @@ function updateHeight() {
     imagesLoaded(document.body, function() {
         var polaroids = document.querySelectorAll('.flip-container');
         Array.prototype.forEach.call(polaroids, function(polaroid) {
-			var height = polaroid.querySelector('img').height + 79;
+			var height = polaroid.querySelector('img').height + 83;
             polaroid.style.height = height + "px";
 			polaroid.querySelector('.back').style.height = height - 10 + "px";
         });

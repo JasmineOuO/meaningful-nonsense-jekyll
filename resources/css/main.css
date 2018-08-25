@@ -478,12 +478,12 @@ nav > .dropdown:hover > a:after {
 }
 
     .polaroid a {
-        background: #fcfcfc;
+        background: #f7f7f7;
         display: inline;
         float: left;
         text-align: center;
         text-decoration: none;
-        border: 0.5px solid rgba(0,0,0,.2);
+        border: 0.5px solid rgba(0,0,0,0.2);
         border-radius: 3px;
         padding: 10px 10px 15px 10px;
         vertical-align: middle;
@@ -494,9 +494,11 @@ nav > .dropdown:hover > a:after {
         -moz-transition: -moz-transform .15s linear;
         -o-transition: -o-transform .15s linear;
         -ms-transition: -ms-transform .15s linear;
-        box-shadow: inset 0px 0px 4px 2px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-        -webkit-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
-        -moz-box-shadow: inset 0px 0px 2px 2px #ddd, 0 3px 6px 0px rgba(0,0,0,.35);
+        box-shadow: inset 0px 0px 2px 1px #ddd, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        -webkit-box-shadow: inset 0px 0px 2px 1px #ddd, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        -moz-box-shadow: inset 0px 0px 2px 1px #ddd, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        -o-box-shadow: inset 0px 0px 2px 1px #ddd, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        -ms-box-shadow: inset 0px 0px 2px 1px #ddd, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
 
 .polaroid a:after {
@@ -573,11 +575,11 @@ nav > .dropdown:hover > a:after {
 
 /* back, initially hidden pane */
 .back {
-    box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 4px 3px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-    -webkit-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-    -moz-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-    -o-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
-    -ms-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px 0px rgba(0,0,0,.35);
+    box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 4px 3px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -webkit-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -o-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -ms-box-shadow: inset 0px 0px 0px 0.5px rgba(0,0,0,0.2), inset 0px 0px 2px 2px #ddd, inset 0px 0px 0px 10px #efefef, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 3px;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
