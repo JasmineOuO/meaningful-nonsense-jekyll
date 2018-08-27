@@ -40,10 +40,7 @@ window.onload = function() {
             newOn: 1000, // Interval after which a new petal is added
         });
     }
-    else
-    {
-        document.querySelector('#archives-panel').style.display = "none";
-    }
+    
     var nav_dropdowns = document.querySelectorAll('nav .dropdown');
     Array.prototype.forEach.call(nav_dropdowns, function(nav_dropdown) {
         //Set max height for dropdown allowing for smooth animation
