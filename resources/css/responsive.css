@@ -47,10 +47,14 @@
         display: none;
     }
 
-    #archives-panel{
+    #slider{
         display: none;
     }
 
+    select{
+        display: block;
+    }
+    
     #lamp{
         display: none;
     }
