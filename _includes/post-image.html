@@ -1,6 +1,13 @@
+{% assign photo_info = "Photographed" %}
+{% if include.location != "" %}
+    {% assign photo_info = photo_info | append: " in " | append: include.location %}
+{% endif %}
+{% if include.date != "" %}
+    {% assign date = include.date | date: "%B %-d, %Y"%}
+    {% assign photo_info = photo_info | append: " on " | append: date %}
+{% endif %}
+{% if include.photographer != "" %}
+    {% assign photo_info = photo_info | append: " by " | append: include.photographer %}
+{% endif %}
 <img src="resources/images/polaroids/{{include.folder}}/{{include.file}}" alt="{{include.file}} not found"/>
-<p class="caption">
-    Photographed in {{include.location}} on {{include.date | date: "%B %-d, %Y" }} by {{include.photographer}}
-    <br/>
-    {{include.caption}}
-</p>
+<p class="caption">{{photo_info}}<br/>{{include.caption}}</p>
