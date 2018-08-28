@@ -232,6 +232,7 @@ nav .dropdown-content a {
 /*The hamburger menu icon*/
 nav .icon {
     display: none;
+    color: #917986;
 }
 
 /*navbar hover colour*/

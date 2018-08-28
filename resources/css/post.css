@@ -1,4 +1,4 @@
-﻿@import 'https://fonts.googleapis.com/css?family=Bentham|IBM+Plex+Serif:300|Montserrat:400,500';
+﻿@import 'https://fonts.googleapis.com/css?family=Bentham|IBM+Plex+Serif:300|Montserrat:400,500,600';
 @import 'https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt';
 
 .post {
@@ -32,6 +32,12 @@
     font-family: "IBM Plex Serif", sans-serif;
     font-size: 4em;
     font-weight: 100;
+}
+
+#post-author {
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
 }
 
 .post h1 {
@@ -157,13 +163,13 @@ blockquote {
     blockquote:before {
         content: '“';
         left: -5rem;
-        top: -2rem;
+        top: -3rem;
     }
     
     blockquote:after {
         content: '”';
         right: -5rem;
-        bottom: 1rem;
+        bottom: 0rem;
     }
     
 cite {
@@ -171,6 +177,7 @@ cite {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+	margin-top: 1em;
     margin-bottom: 2em;
 }
 

@@ -39,6 +39,24 @@
         max-width: 100%;
     }
 
+	blockquote {
+		margin-left: auto;
+		margin-right: auto;
+	}
+    
+    blockquote:before, blockquote:after {
+        font-size: 6rem;
+        width: 2rem;
+        height: 2rem;
+    }
+	
+	 blockquote:before {
+        left: -3rem;
+    }
+    
+    blockquote:after {
+        right: -2.5rem;
+    }
     .search_filter {
         display: none;
     }
