@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Your Pain Shapes You 
-subtitle: Pain
+caption: Pain
 date: 2018-08-13
 image: milan2.jpg
 categories: life

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start Making Growth-Based Decisions
-subtitle: Growth
+caption: Growth
 date: 2018-08-21
 image: church.jpg
 categories: life

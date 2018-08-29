@@ -17,7 +17,12 @@
     .post {
         margin: 10vw 7vw 0 7vw;
     }
-
+	
+	#profile {
+		padding: 0; 
+		margin: 3em 7vw 3em 7vw;
+	}
+	
     .comment_area {
         margin: 0 7vw 30px 7vw;
     }

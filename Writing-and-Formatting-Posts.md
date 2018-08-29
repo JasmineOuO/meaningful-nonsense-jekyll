@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writing and Formatting Posts
-subtitle: One Word
+caption: One Word
 date: 2018-08-08
 image: post-thumbnail.jpg
 categories: life
@@ -18,7 +18,7 @@ Click Paragraph -> YAML Front Matter and then Copy/Paste this:
 
 layout: post
 title: Writing and Formatting Posts
-subtitle: One Word
+caption: One Word
 date: 2018-08-08
 image: post-thumbnail.jpg
 categories: life

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 Ways to be Truly Happy
-subtitle: Happiness
+caption: Happiness
 date: 2018-08-08
 image: burano.jpg
 categories: life

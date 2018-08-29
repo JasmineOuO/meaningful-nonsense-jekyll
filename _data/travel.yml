@@ -1,20 +1,20 @@
 - name: aquarium1.jpg
   title: Deep End
-  subtitle: Shedd Aquarium @ Chicago, Illinois - Coral Reef Underworld
+  description: Shedd Aquarium @ Chicago, Illinois - Coral Reef Underworld
   date: 2018-08-05	
 - name: aquarium2.jpg
   title: Deep End
-  subtitle: Shedd Aquarium @ Chicago, Illinois
+  description: Shedd Aquarium @ Chicago, Illinois
   date: 2018-08-05	
 - name: aquarium3.jpg
   title: Fuchsia
-  subtitle: Shedd Aquarium @ Chicago, Illinois - This fish wears the most beautiful colours on its scales.
+  description: Shedd Aquarium @ Chicago, Illinois - This fish wears the most beautiful colours on its scales.
   date: 2018-08-05	
 - name: aquarium4.jpg
   title: Ceilings
-  subtitle: Shedd Aquarium @ Chicago, Illinois - When the architecture is just as fascinating as the marine life.
+  description: Shedd Aquarium @ Chicago, Illinois - When the architecture is just as fascinating as the marine life.
   date: 2018-08-05	
 - name: park.jpg
   title: Park
-  subtitle: Goulding Park @ Toronto, Ontario
+  description: Goulding Park @ Toronto, Ontario
   date: 2018-06-23

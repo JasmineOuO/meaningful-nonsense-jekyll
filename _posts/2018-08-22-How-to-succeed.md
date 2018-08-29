@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Succeed
-subtitle: Success
+caption: Success
 date: 2018-08-22
 image: parma2.jpg
 categories: life

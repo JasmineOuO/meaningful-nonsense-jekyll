@@ -53,7 +53,7 @@ layout: default
 {% endif %}
 
 <div class="polaroid-wall">
-    <div class="polaroid">
+    <div class="polaroid polaroid-flex-3">
         {% for item in type %}
 
         {% assign post_url = site.baseurl | append: item.url %}
@@ -75,8 +75,8 @@ layout: default
         {% if page.active == "food" or page.active == "travel" %}
             <div class = "{{all-filter}} {{archive-filter}}">
             {% include polaroid.html
-            title=item.subtitle
-            subtitle=item.title
+            front=item.title
+            back=item.description
             img=item.name
             url="none"
             dateTime=item.date
@@ -86,8 +86,8 @@ layout: default
         {% else %}
             <div class = "{{all-filter}} {{archive-filter}}">
                 {% include polaroid.html
-                title=item.title
-                subtitle=item.subtitle
+                front=item.caption
+                back=item.title
                 img=item.image
                 url=post_url
                 dateTime=item.date
@@ -99,7 +99,7 @@ layout: default
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
     </div>
-    <div class="polaroid">
+    <div class="polaroid polaroid-flex-3">
         {% endif %}
         {% endfor %}
     </div>

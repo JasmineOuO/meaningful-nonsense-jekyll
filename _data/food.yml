@@ -1,32 +1,32 @@
 - name: dadpizza.jpg
   title: Pizza
-  subtitle: Homemade pizza made by dad~
+  description: Homemade pizza made by dad~
   date: 2018-04-29
 - name: fishnchips.jpg
   title: Fish&Chips
-  subtitle: Brit & Chips @ Montreal, Quebec
+  description: Brit & Chips @ Montreal, Quebec
   date: 2018-01-12
 - name: cafeleaves.jpeg
   title: Latte
-  subtitle: Cafe Leaves @ Montreal, Quebec
+  description: Cafe Leaves @ Montreal, Quebec
   date: 2018-01-12
 - name: pescatore.jpeg
   title: Pescatore
-  subtitle: Sambucas on Church @ Toronto, Ontario
+  description: Sambucas on Church @ Toronto, Ontario
   date: 2018-08-11
 - name: taco.jpeg
   title: Tacos
-  subtitle: La Carnita Toronto, Ontario
+  description: La Carnita Toronto, Ontario
   date: 2018-06-23
 - name: milkshakes.jpeg
   title: Milkshakes
-  subtitle: Mel's Diner @ Waterloo, Ontario
+  description: Mel's Diner @ Waterloo, Ontario
   date: 2018-03-10
 - name: deepdishpizza.jpg
   title: Deep Pizza
-  subtitle: Giordano's @ Chicago, Illinois
+  description: Giordano's @ Chicago, Illinois
   date: 2018-08-04
 - name: Bleu.jpeg
   title: Bleu
-  subtitle: The Warehouse @ Montreal, Quebec
+  description: The Warehouse @ Montreal, Quebec
   date: 2018-02-22

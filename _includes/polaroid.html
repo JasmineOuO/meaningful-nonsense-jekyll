@@ -1,9 +1,13 @@
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
     <div class="flipper">
-        <div class="front"><a title="{{include.subtitle}}"><img id="myimg" class="myimg" src="{{include.path}}/{{include.img}}" alt="{{include.img}} not found" /></a></div>
+        <div class="front"><a title="{{include.front}}"><img id="myimg" class="myimg" src="{{include.path}}/{{include.img}}" alt="{{include.img}} not found" /></a></div>
         <div class="back">
-            <h1>{{include.title}}</h1>
-            <a title="{{include.dateTime | date: "%-d/%-m/%y" }}"></a>
+            <h1>{{include.back}}</h1>
+			{% if include.dateTime == "" %}
+				<a title="{{include.role}}"></a>
+			{% else %}
+				<a title="{{include.dateTime | date: "%-d/%-m/%y" }}"></a>
+			{% endif %}
             {% if include.url != "none" %}
                 <a class="post-link" href="{{include.url}}"></a>
             {% endif %}

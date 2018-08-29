@@ -12,30 +12,32 @@ active: about
         <time class="post__time">{{ page.date | date: "%B %-d, %Y" }}</time>
     </div>
     <article class="post-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        This blog is nothing more than a collection of 1s and 0s. What you see is nothing more than a collection of colourful pixels. But what you will find is nothing more than nonsense, nothing short of meaningful. 
+        <br/><br/>
+        We are two sisters who seek to encapsulate the world we see into the four walls of a screen. Whether it be through the photography, short stories or thoughtful posts, we hope that you discover meaning in a world that's all too often nonsensical.
     </article>
 </div>
-<div style="margin-left:auto; margin-right: auto;">
-<div class="polaroid-wall">
-    <div class="polaroid">
+<div id="profile">
+    <div class="polaroid polaroid-flex-2">
         {% include polaroid.html
-            title="Jasmine Ou"
-            subtitle="Jasmine"
-            img="laptoplounge.jpg"
+            back="As you can probably tell from a single glance at our blog, my favourite colour is pink. I love instant photography and taking pictures of what I eat is just as vital as eating itself."
+            front="Jasmine"
+            img="jasmine.jpeg"
             url=""
-            dateTime="1999-11-15"
+			dateTime=""
+            role="developer"
             path="resources/images/polaroids/post-thumbnail"
         %}
     </div>
-    <div class="polaroid">
-            {% include polaroid.html
-                title="Jessica Ou"
-                subtitle="Jessie"
-                img="laptoplounge.jpg"
-                url=""
-                dateTime="2002-10-09"
-                path="resources/images/polaroids/post-thumbnail"
-            %}
-        </div>
-</div>
+    <div class="polaroid polaroid-flex-2">
+		{% include polaroid.html
+			back="Jessica Ou"
+			front="Jessie"
+			img="laptoplounge.jpg"
+			url=""
+			dateTime=""
+			role="writer"
+			path="resources/images/polaroids/post-thumbnail"
+		%}
+	</div>
 </div>
