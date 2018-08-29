@@ -7,7 +7,9 @@ sed -i '/^#.*searchyll/s/^#//' Gemfile
 echo "Installing Searchyll packages"
 bundle install
 echo "Building Jekyll Site with Bonsai"
-BONSAI_URL=$1 bundle exec jekyll build
+read -r bonsaikey < credentials.txt
+echo "Using $bonsaikey"
+BONSAI_URL=$bonsaikey bundle exec jekyll build
 
 echo "Commenting out Elasticsearch and Searchyll Configs"
 sed -i '/searchyll/s/^/#/g' _config.yml
