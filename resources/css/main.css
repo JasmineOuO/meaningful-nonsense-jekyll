@@ -298,12 +298,12 @@ nav > .dropdown:hover > a:after {
 
 select{
     margin: 20px auto;
-    padding: 10px;
+    padding: 15px;
     outline: none;
     border: none;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 120px;
+    border-radius: 10px;
     background-color: rgb(221, 221, 221);
     color: #544a4e;
     display: none;

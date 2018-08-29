@@ -22,6 +22,14 @@ By default, the blog is built in the "development" mode.
 
 #### Indexing with Elasticsearch
 
+##### Use the Bash Script to Automate the Process
+
+Just run `./IndexBlog.sh <BONSAI_URL Key Here>`
+
+Then verify that it doesn't index on regeneration be doing steps 8 and 9 below.
+
+##### The process
+
 Whenever there is a new post, you must re-index the blog to the elasticsearch cluster on bonsai in order to include it in the search results of the blog's search function. 
 
 1. uncomment lines from _config.yml
