@@ -1,8 +1,9 @@
 ﻿@import 'https://fonts.googleapis.com/css?family=Bentham|IBM+Plex+Serif:300|Montserrat:400,500,600';
 @import 'https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script|Open+Sans+Condensed:300|Rock+Salt';
 
-.post {
-    margin: 12vw 20vw 10vw 20vw;
+.post{
+    margin: 10em 20vw 10em 20vw;
+    padding-bottom: 5em;
     font-family: "Monteserrat", sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -84,7 +85,7 @@
 
 .post-content {
     margin-top: 2em;
-    margin-bottom: 0.25em;
+    margin-bottom: 4em;
     color: #676767;
     font-size: 18px;
 }
@@ -179,6 +180,35 @@ cite {
     justify-content: center;
 	margin-top: 1em;
     margin-bottom: 2em;
+}
+
+.post-navigation a{
+    width: 40%;
+    font-family: "Monteserrat", sans-serif;
+    color: #676767;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+    .post-navigation a:hover i{
+        color: #676767;
+    }
+
+    .post-navigation a:hover{
+        color: #313131;
+    }
+
+.post-navigation i{
+    color: #b2b2b2;
+    font-size: 50px;
+}
+
+.post-navigation p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 /* Sliding up animation for post header */
@@ -360,7 +390,7 @@ cite {
 }
 
 .comment_area {
-    margin: 0 20vw 30px 20vw;
+    margin: 0 20vw 0 20vw;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
