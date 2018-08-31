@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Balance between Your Health and Hustle is Essential for Success
+title: Balancing Health and Hustle for Success
 caption: Balance
 date: 2018-08-26
 image: milan3.jpg

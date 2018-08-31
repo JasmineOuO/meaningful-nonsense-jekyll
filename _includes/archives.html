@@ -1,0 +1,25 @@
+<div id="archives-panel">
+        <div id = "slider">
+            <div id = "select-year">
+                <div id = "year-up" style="padding-bottom: 5px;"><i class="fa fa-angle-up" style="font-size:24px"></i></div>
+                <div id = "year-down"><i class="fa fa-angle-down" style="font-size:24px"></i></div>
+            </div>
+            <div class="range">
+                <input type="range" min="1" max="5" steps="1" value="1">
+            </div>
+            <ul class="range-labels">
+                <li data-season = "all" id = "year" class="active selected" style="color: rgba(0, 0, 0, 0.5)">2018</li>
+                <li data-season = "winter">winter</li>
+                <li data-season = "spring">spring</li>    
+                <li data-season = "summer">summer</li>
+                <li data-season = "autumn">autumn</li>
+            </ul>
+        </div>
+        <select onchange="setYear()">
+            <option selected>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+        <div id="archives-message"></div>
+    </div>

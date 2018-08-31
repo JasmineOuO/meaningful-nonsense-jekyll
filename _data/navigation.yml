@@ -23,6 +23,9 @@
   - name: All Stories
     url: /stories
     active: stories
+  - name: Constant | A Novel
+    url: /constant
+    active: constant
   - name: Motivational
     url: /motivational
     active: motivational

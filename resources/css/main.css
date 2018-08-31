@@ -242,6 +242,7 @@ nav .icon {
 /*navbar hover colour*/
 nav a:hover, .dropdown:hover{
     background-color: #e8b4cd;
+    cursor: pointer;
 }
 
 nav .active, nav #active {
@@ -292,6 +293,7 @@ nav > .dropdown:hover > a:after {
     text-transform: uppercase;
     letter-spacing: 0.3em;
     text-decoration: none;
+    padding-top: 2em;
 }
 
 #archives-panel:hover #select-year{
@@ -482,7 +484,7 @@ select{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 10vw;
+    padding: 2em 10vw 0 10vw;
     margin: 0;
 }
 
