@@ -54,15 +54,17 @@ window.onload = function() {
     });
 };
 
-// Enables responsive navbar when screen reaches specific width
-function responsivenav() {
+// Toggles responsive navbar with hamburger button
+var hamburger = document.querySelector('nav button');
+hamburger.addEventListener('click', function(){
+    this.classList.toggle("is-active");
     var navbar = document.querySelector("#myTopnav");
     if (navbar.className === "topnav") {
         navbar.className += " responsive";
     } else {
         navbar.className = "topnav";
     }
-}
+});
 
 // Handles comment submission with error/success messages and disabling/enabling form elements
 $('#comment-form').submit(function () {

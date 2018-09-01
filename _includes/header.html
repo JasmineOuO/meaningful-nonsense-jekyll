@@ -43,5 +43,10 @@
             <a class="{{active_class}}" href="{{site.baseurl}}{{item.url}}">{{item.name}}</a>
         {% endif %}
     {% endfor %}
-    <a href="javascript:void(0);" class="icon" onclick="responsivenav()"><i class="fa fa-bars"></i></a>
+        
+    <a href="javascript:void(0);" class="icon" style="padding:15px 30px 9px 30px;">
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </button>
+    </a>
 </nav>
