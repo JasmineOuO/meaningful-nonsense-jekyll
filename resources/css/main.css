@@ -183,9 +183,11 @@ nav .dropdown-content {
 
     max-height: 0;
     display: block;
-    overflow: hidden;
     opacity: 0;
     visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 nav .dropdown-content a {
@@ -494,7 +496,8 @@ select{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 	padding: 0; 
-	margin: 3em 20vw 3em 20vw;
+    margin: 0 20vw 0 20vw;
+    transform: translate(0,-150px);
 }
 
 .polaroid-flex-2{
