@@ -9,5 +9,5 @@
 {% if include.photographer != "" %}
     {% assign photo_info = photo_info | append: " by " | append: include.photographer %}
 {% endif %}
-<img src="resources/images/polaroids/{{include.folder}}/{{include.file}}" alt="{{include.file}} not found"/>
+<img src="{{site.baseurl}}/resources/images/polaroids/{{include.folder}}/{{include.file}}" alt="{{include.file}} not found"/>
 <p class="caption">{{photo_info}}<br/>{{include.caption}}</p>
