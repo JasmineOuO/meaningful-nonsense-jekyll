@@ -5,7 +5,7 @@ caption: Growth
 date: 2018-08-21
 image: church.jpg
 categories: life
-tags: motivational
+tags: learn
 ---
 
 {% include post-image.html 

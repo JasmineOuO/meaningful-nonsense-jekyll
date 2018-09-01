@@ -26,12 +26,6 @@
   - name: Constant | Romance Novel
     url: /constant
     active: constant
-  - name: Motivational
-    url: /motivational
-    active: motivational
-  - name: Humour
-    url: /humour
-    active: humour
 - name: Life
   type: category
   active: life
