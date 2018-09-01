@@ -54,7 +54,7 @@ window.onload = function() {
     });
 };
 
-// Toggles responsive navbar with hamburger button
+// Toggles the responsive navbar with hamburger button
 var hamburger = document.querySelector('nav button');
 hamburger.addEventListener('click', function(){
     this.classList.toggle("is-active");
