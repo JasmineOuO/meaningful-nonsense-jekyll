@@ -31,16 +31,16 @@
                         {% else %}
                             {% assign active_class = "" %}
                         {% endif %}
-                        <a class="{{active_class}}" href="{{ site.baseurl }}{{tag.url}}">{{tag.name}}</a>
+                        <a class="{{active_class}}" href="{{site.baseurl}}{{tag.url}}">{{tag.name}}</a>
                     {% endfor %}
                 </div>
             </div>
         {% elsif {{item.type}} == "searchbar" and {{page.active}} == "search" %}
-            <a class="search_icon" href="{{ site.baseurl }}/"><i class="fa fa-close" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
+            <a class="search_icon" href="{{site.baseurl}}/"><i class="fa fa-close" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
         {% elsif {{item.type}} == "searchbar" %}
-            <a class="search_icon" href="{{ site.baseurl }}/search"><i class="fa fa-search" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
+            <a class="search_icon" href="{{site.baseurl}}/search"><i class="fa fa-search" style="font-size:24px; color: rgba(58,62,63,0.5)"></i></a>
         {% else %}
-            <a class="{{active_class}}" href="{{ site.baseurl }}{{item.url}}">{{item.name}}</a>
+            <a class="{{active_class}}" href="{{site.baseurl}}{{item.url}}">{{item.name}}</a>
         {% endif %}
     {% endfor %}
     <a href="javascript:void(0);" class="icon" onclick="responsivenav()"><i class="fa fa-bars"></i></a>

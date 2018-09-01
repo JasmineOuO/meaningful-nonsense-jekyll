@@ -23,7 +23,7 @@
     </div>
     <div class="comment_form">
         <form id="comment-form" autocomplete="off" method="POST" action="https://api.staticman.net/v2/entry/{{site.repository}}/{{site.staticman.branch}}/comments">
-            <input name="options[redirect]" type="hidden" value="https://jasmineouo.github.io/Blog/{{page.slug}}">
+            <input name="options[redirect]" type="hidden" value="{{site.baseurl}}{{page.slug}}">
             <input name="options[slug]" type="hidden" value="{{page.slug}}">
             <label for="comment-form-name">Name*</label>
             <input type="text" id="comment-form-name" name="fields[name]">
