@@ -23,9 +23,9 @@
   - name: All Stories
     url: /stories
     active: stories
-  - name: Constant | Romance Novel
-    url: /constant
-    active: constant
+  - name: Serendipity
+    url: /serendipity
+    active: serendipity
 - name: Life
   type: category
   active: life
