@@ -69,7 +69,12 @@ layout: default
                 %}
             </div>
         {% endif %}
-        {% assign colSize = type | size | divided_by: 4.0 | ceil %}
+        {% assign colSize = type | size | divided_by: 4.0 %}
+        {% if colSize < 2 %}
+            {% assign colSize = colSize | ceil %}
+        {% else %}
+            {% assign colSize = colSize | floor %}
+        {% endif %}
         {% assign mod = forloop.index | modulo: colSize %}
         {% if mod == 0 %}
     </div>
