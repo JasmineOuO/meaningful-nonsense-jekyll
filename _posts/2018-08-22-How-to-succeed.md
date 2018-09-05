@@ -3,7 +3,7 @@ layout: post
 title: How to Succeed
 caption: Success
 date: 2018-08-22
-image: parma2.jpg
+image: parma2.jpeg
 categories: life
 tags: everydaythoughts
 ---

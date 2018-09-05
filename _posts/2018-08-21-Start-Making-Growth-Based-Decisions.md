@@ -3,7 +3,7 @@ layout: post
 title: Start Making Growth-Based Decisions
 caption: Growth
 date: 2018-08-21
-image: church.jpg
+image: church.jpeg
 categories: life
 tags: learn
 ---
