@@ -3,7 +3,7 @@ layout: post
 title: Balancing Health and Hustle for Success
 caption: Balance
 date: 2018-08-26
-image: milan3.jpg
+image: milan3.jpeg
 categories: life
 tags: everydaythoughts
 ---
