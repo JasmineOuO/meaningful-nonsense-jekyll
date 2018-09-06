@@ -10,7 +10,7 @@ tags: learn
 
 {% include post-image.html 
     folder="post-thumbnail" 
-    file="burano.jpg"
+    file="burano.jpeg"
     date="2018-07-26"
     location="Burano, Italy"
     photographer="Jessica Ou"
