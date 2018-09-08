@@ -74,3 +74,12 @@ You do not need line breaks if you separate paragraphs with a heading since head
 <cite>Aldous Huxley</cite>
 ```
 
+#### Author's Note
+
+```html
+{% include authorsnote.html 
+    note="Your author's note here"
+%}
+```
+
+Please include this at the very end of your blog post to ensure proper formatting with the rest of the page.
