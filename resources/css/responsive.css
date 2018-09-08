@@ -99,6 +99,11 @@
         word-spacing: 1000px;
         font-size: 9.5vw;
     }
+
+    .comment_header {
+        margin: 50px 7vw -0.25em 12vw;
+        font-size: 48px;
+    }
 }
 
 /*responsive navbar*/
