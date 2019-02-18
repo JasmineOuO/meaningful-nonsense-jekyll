@@ -20,23 +20,19 @@ Their message advocates an optimistic mindset, one that suggests that all you ha
 
  <br/>
 
-First and foremost: failure. Failure is an absolute vital component in your path to success. We’ve all experienced failure. And our first reaction is to quit and run away from that uncomfortable feeling. My failures in life have been a learning experience and helped me shape a personal philosophy based on 3 principles that will positively impact your life forever. 
+First and foremost: failure. Failure is an absolute vital component in your path to success. We’ve all experienced failure. And our first reaction is to quit and run away from that uncomfortable feeling. Personally, I have never been one to escape these difficult thoughts that were constantly swarming around in my head. However, one day, I stumbled upon this ted talk video by Edward Zanatta. He shared his personal philosophy based on 3 principles and after hearing it, absorbing it, and using it, gradually, I felt more in control of who I was. 
 
 #### 1. Don’t give up so easily 
 
-At one point or another, we will stumble upon obstacles that are seemingly impossible and when we feel overwhelmed, it is very easy to convince ourselves to quit. However, giving up too soon could cause us to miss out on subsequent success. Think about Michael Jordan, the greatest basket player to ever play. He openly confessed that he had missed over 9,000 shots in his career. 26 times he was given the chance to score the game winning shot and missed. He failed *over* and *over* again in his life but **persevered** to win 6 championships! 
+At one point or another, we will stumble upon obstacles that are seemingly impossible and when we feel overwhelmed, it is very easy to convince ourselves to quit. However, giving up too soon could cause us to miss out on subsequent success. Zanatta reminded me of Michael Jordan, the greatest basket player to ever play. Before hearing this principle, it had never occurred to me that Michael Jordan was capable of ever failing. I have only ever seen his successes, his famous shoes, his legacy, his championships, and completely forgot that successful people have also been scratched and bruised in the past to be where they are now. He openly confessed that he had missed over 9,000 shots in his career. 26 times he was given the chance to score the game winning shot and missed. He failed *over* and *over* again in his life but **persevered** to win 6 championships! 
 
 #### 2. There is no such thing as failure
 
-Sometimes you try your best and succeed. However, sometimes you try your best and fail, but you learn from your mistakes and improve upon them until you succeed. We are constantly being told that if we try hard enough, we will succeed. But what if we do try our hardest and, the results still don’t measure up to someone’s definition of success? Then we are told that we did not try hard enough. Because more often than not, we measure our success or failure through the outcome, not the effort, which should not be the case. Robert Kiyosaki, the famed author of the Rich Dad Poor Dad books, put it well when he said,
+ Sometimes you try your best and succeed. However, sometimes you try your best and fail, but you learn from your mistakes and improve upon them until you succeed. We are constantly being told that if we try hard enough, we will succeed. But what if we do try our hardest and, the results still don’t measure up to someone’s definition of success? Then we are told that we did not try hard enough. Zanatta said that it is because more often than not, we measure our success or failure through the outcome, not the effort, which should not be the case. When he talked about the way we measure success and failure, it really hit me *hard*. Perhaps because no one told me it was okay to fail, that as long as you learn something, no one will be disappointed. But in the end, I believe that the best way to not let your failures determine your abilities, is to not put your sense of worthiness in other people's hands. That way, when you do fail, which is inevitable, you will not be anxious or worried of how others will react and spend that time, reflecting upon your mistakes and trying to fix them. 
 
-<blockquote>Sometimes we win and sometimes we learn.</blockquote>
+#### 3. Don't let the past define who you are 
 
-<cite>Robert Kiyosaki</cite>
-
-#### 3. The past does not equal the future
-
-Our past failures don’t mean we will fail every time but it can leave us broken and deflated. We can succeed 1000 times but that one failure will wipe out all our previous accomplishments. Anthony Robbins, a world renown motivational speaker once said, 
+Our past failures don’t mean we will fail every time but it can leave us broken and deflated. We can succeed 1000 times but that one failure will wipe out all our previous accomplishments. I was reminded of a quote I had once heard before, 
 
 <blockquote>The only thing keeping you for getting what you want, is the story you keep telling yourself about why you cannot have it.</blockquote>
 <cite>Anthony Robbins</cite> 
