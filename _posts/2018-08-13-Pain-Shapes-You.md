@@ -9,12 +9,12 @@ tags: everydaythoughts
 ---
 
 {% include post-image.html 
-    folder="post-images" 
-    file="milan.jpg"
-    date="2018-07-26"
-    location="Milan, Italy"
-    photographer="Jessica Ou"
-    caption="A metropolis in Italy's northern Lombardy region"
+​    folder="post-images" 
+​    file="milan.jpg"
+​    date="2018-07-26"
+​    location="Milan, Italy"
+​    photographer="Jessica Ou"
+​    caption="A metropolis in Italy's northern Lombardy region"
 %}
 
 Do you ever just feel *on edge*? Like your state of happiness is being tested on such a fragile equilibrium so that any second, minute or day now, it will surely tip over and shatter your entire illusion of peace. I know it's stupid to think that the happiness we feel will always be there but doesn't it frighten you knowing that your future will inevitably be filled with so much pain? Because it doesn't matter how far you go to avoid those situations, life will always be able to find a way to make you experience the art of pain. 
@@ -53,4 +53,4 @@ This pain that you feel right now, you have to believe that it will get better. 
 
  <br/>
 
-If everything starts to feel hopeless despite everything you try, just take it one day at a time. And if that is too hard, then just take it an hour at a time. If that's also too hard, then take it minute by minute. But if that is too much then don't even think about what's going to happen in the next second and just live in the moment. 
+If everything starts to feel hopeless despite everything you try, just take it one day at a time. But if that is too difficult, count down the hours. And if that doesn't work out, then focus on the minutes, and let each second that passes by be a hopeful one. But if that starts to become unbearable, then don't even think about what's going to happen in the next second and just live in the moment. And let every single moment of pain be filled with hope that one day it will fade away. 
